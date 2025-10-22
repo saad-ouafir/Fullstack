@@ -6,10 +6,10 @@ import { latestStats } from "./server.js"; // importation de la variable `latest
 const logger = new Logger(); // creation d'une instance de la classe `Logger`
 
 //Ecoute ce événement créer "lowMemory"
-logger.on("lowMemory", (percent) => {
+/*logger.on("lowMemory", (percent) => {
   //cette fct sera execute chaque fois que lévénement est émis
   console.log(`Attension Memoire libre!  ${percent}%`); //affiche ce message d’alerte dans la console.
-});
+});*/
 
 // Écoute de l'événement "lowMemory" pour afficher une alerte console
 logger.on("lowMemory", (memoryPercentage) => {
