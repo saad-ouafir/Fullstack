@@ -1,6 +1,6 @@
 ## Membre du goupe
 
-Ce projet est realisé par le groupe G5 du Bootcamp YNOVxJOBINTECH MERN Stack - Rabat
+Ce projet est realisé par le groupe `G5` du Bootcamp `YNOVxJOBINTECH MERN Stack` - Rabat
 
 - Saad Ouafir
 - Achraf Tabchi
@@ -24,6 +24,6 @@ Le programme collecte la mémoire libre, la mémoire totale et le temps d’acti
 
 ## 🚀 Setup et Exécution
 
-1. Lancer monitor.js pour démarrer la surveillance.
-2. Lancer server.js pour accéder aux logs sur http://localhost:3000
-3. Le fichier log.txt se met à jour automatiquement toutes les 5 secondes.
+1. Lancer `monitor.js` pour démarrer la surveillance.
+2. Lancer `server.js` pour accéder aux logs sur `http://localhost:3000`
+3. Le fichier `log.txt` se met à jour automatiquement toutes les 5 secondes.
