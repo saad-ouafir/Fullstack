@@ -1,4 +1,4 @@
-## Membre du goupe
+## 👥 Membre du goupe
 
 Ce projet est realisé par le groupe `G5` du Bootcamp `YNOVxJOBINTECH MERN Stack` - Rabat
 
