@@ -4,7 +4,7 @@ Ce projet est realisé par le groupe `G5` du Bootcamp `YNOVxJOBINTECH MERN Stack
 
 - Saad Ouafir
 - Achraf Tabchi
-- Asma
+- Asma Hamma
 
 ## 🖥️ Node System Logger
 
