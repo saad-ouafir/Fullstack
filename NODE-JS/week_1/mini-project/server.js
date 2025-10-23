@@ -1,6 +1,6 @@
 import http from "node:http"; // n importiw module http bach ndir serveur
 import fs from "node:fs"; // n importiw module fs bach nkhdmo b fichier
-export const latestStats = {
+const latestStats = {
   freeMemory: 0,
   totalMemory: 0,
   freePercentage: 0,
