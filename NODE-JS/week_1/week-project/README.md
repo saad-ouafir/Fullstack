@@ -1,37 +1,348 @@
-## Root Directory Files:
+# Smart Inventory System
 
-- package.json: The Node.js project configuration file that contains project metadata, dependencies, and scripts.
-- README.md: Documentation file that likely contains project setup and usage instructions.
-- Data Directory (data):
-  - products.json: JSON file for storing product data/inventory information
-  - orders.json: JSON file for storing order information
-- Source Directory (src):
-  - server.js: The main entry point of the application that sets up and starts the HTTP server
-  - router.js: Handles route definitions and request routing for the application
-- Controllers Directory (controllers):
-  - productsController.js: Handles product-related request processing and business logic
-  - ordersController.js: Handles order-related request processing and business logic
-- Services Directory (services):
-  - productsService.js: Contains business logic for product operations (CRUD operations)
-  - ordersService.js: Contains business logic for order operations (CRUD operations)
-- Utils Directory (utils):
-  - logger.js: Utility for application logging
-  - parseQuery.js: Utility for parsing query parameters from requests
-  - sendJson.js: Utility for sending JSON responses with proper formatting
-    The project follows a common architectural pattern:
-  - The server.js initializes the application
-  - Requests are routed through router.js
-  - Controllers handle request/response logic
-  - Services contain business logic
-  - Utils provide shared functionality
-  - Data is stored in JSON files in the data directory
+A RESTful API service for managing products and orders with advanced filtering capabilities.
 
-## Role of each script file
+## 🚀 Features
 
-This structure suggests a RESTful API service that manages products and orders, with a clean separation of concerns:
+- **Product Management**: Select operations for products and orders
+- **Advanced Filtering**: Filter products by category, price range, stock status, and quantity ...
+- **Pagination**: Efficient data pagination for large datasets
+- **Order Management**: Handle order operations
+- **Health Monitoring**: API health check endpoints
 
-- Routing logic (router.js)
-- Request handling (controllers)
-- Business logic (services)
-- Data storage (JSON files)
-  U- tility functions (utils)
+## 📁 Project Structure
+
+```
+smartinventory/
+├── data/                         # Data storage
+│   ├── products.json             # Product inventory data
+│   └── orders.json               # Order data
+│
+├── src/                          # Source code
+│   ├── controllers/              # Request handlers
+│   │   ├── productsController.js # Product request logic
+│   │   └── ordersController.js   # Order request logic
+│   │
+│   ├── services/                 # Business logic layer
+│   │   ├── productsService.js    # Product business logic
+│   │   └── ordersService.js      # Order business logic
+│   │
+│   ├── utils/                    # Utility functions
+│   │   ├── logger.js             # Logging utilities (Events)
+│   │   ├── parseQuery.js         # Query parameter parsing
+│   │   └── sendJson.js           # JSON response helper
+│   │
+│   ├── router.js                 # Route definitions
+│   └── server.js                 # Application entry point
+│
+├── package.json                  # Project configuration
+└── README.md                     # Project documentation
+```
+
+## 🏗️ Architecture
+
+This project follows a **layered architecture** pattern:
+
+```
+┌─────────────────┐
+│   Controllers   │ ← Handle HTTP requests/responses
+├─────────────────┤
+│    Services     │ ← Business logic and data processing
+├─────────────────┤
+│     Utils       │ ← Shared utility functions
+├─────────────────┤
+│   Data Layer    │ ← JSON file storage
+└─────────────────┘
+```
+
+### Layer Responsibilities
+
+- **Controllers**: Handle HTTP requests, validate input, call services, format responses
+- **Services**: Contain business logic, data processing, and validation rules
+- **Utils**: Provide reusable functions for logging, parsing, and response formatting
+- **Data Layer**: Store and retrieve data from JSON files
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/saad-ouafir/Fullstack/tree/main/NODE-JS/week_1/week-project
+   cd "WEEK-PROJECT"
+   ```
+
+2. **Environment Setup**
+   Setup your `.env` file in the root directory:
+
+   ```env
+   API_PRODUCTS=/api/products
+   API_ORDERS=/api/orders
+   API_HEALTH=/api/health
+   PORT_APP=3000
+   ```
+
+3. **Start the server**
+
+   ```bash
+   npm start
+   ```
+
+The server will start on `http://localhost:3000`
+
+## 📚 API Documentation
+
+### Base URL
+
+```
+http://localhost:3000
+```
+
+### Endpoints
+
+#### 1. **Products API**
+
+**GET** `/api/products`
+
+Retrieve products with optional filtering and pagination.
+
+**Query Parameters:**
+
+- `category` (string): Filter by product category
+- `minPrice` (number): Minimum price filter
+- `maxPrice` (number): Maximum price filter
+- `inStock` (boolean): Filter by stock availability
+- `quantity` (number): Minimum quantity filter
+- `page` (number): Page number for pagination (by default is undefined)
+- `limit` (number): Items per page (default: 10)
+
+**Example Requests:**
+
+```bash
+# Get all products
+GET /api/products
+
+# Filter by category
+GET /api/products?category=Food
+
+# Price range filter
+GET /api/products?minPrice=100&maxPrice=1000
+
+# Stock availability
+GET /api/products?inStock=true
+
+# Pagination
+GET /api/products?page=2&limit=5
+
+# Combined filters
+GET /api/products?category=Food&minPrice=500&inStock=true&page=1&limit=10
+```
+
+**Response Format:**
+
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "grocery": "Product Name",
+      "category": "Food - Snacks",
+      "quantity": 63,
+      "price": 1126.08,
+      "inStock": false,
+      "description": "Product description"
+    }
+  ]
+}
+```
+
+#### 2. **Health Check**
+
+**GET** `/api/health`
+
+Check API health status.
+
+**Response:**
+
+```
+Health Check - OK
+```
+
+#### 3. **Orders API** (Coming Soon)
+
+**GET** `/api/orders`
+
+Order management endpoints (under development).
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env` file with the following variables:
+
+```env
+# API Endpoints
+API_PRODUCTS=/api/products
+API_ORDERS=/api/orders
+API_HEALTH=/api/health
+
+# Server Configuration
+PORT=3000
+NODE_ENV=development
+```
+
+### Data Structure
+
+#### Product Schema
+
+```json
+{
+  "id": "number",
+  "grocery": "string",
+  "category": "string",
+  "quantity": "number",
+  "price": "number",
+  "inStock": "boolean",
+  "description": "string"
+}
+```
+
+## 🚀 Usage Examples
+
+### Filtering Products
+
+```bash
+# Get food products under $1000
+curl "http://localhost:3000/api/products?category=Food&maxPrice=1000"
+
+# Get in-stock products with pagination
+curl "http://localhost:3000/api/products?inStock=true&page=1&limit=5"
+
+# Get products with minimum quantity of 50
+curl "http://localhost:3000/api/products?quantity=50"
+```
+
+### JavaScript/Node.js Client Example
+
+```javascript
+const fetch = require("node-fetch");
+
+async function getProducts(filters = {}) {
+  const params = new URLSearchParams(filters);
+  const response = await fetch(`http://localhost:3000/api/products?${params}`);
+  return await response.json();
+}
+
+// Usage examples
+getProducts({ category: "Food", inStock: true }).then((products) =>
+  console.log(products)
+);
+
+getProducts({ minPrice: 100, maxPrice: 500, page: 1, limit: 10 }).then(
+  (products) => console.log(products)
+);
+```
+
+## 🛡️ Error Handling
+
+The API includes comprehensive error handling:
+
+- **400 Bad Request**: Invalid query parameters
+- **404 Not Found**: Endpoint not found
+- **500 Internal Server Error**: Server-side errors
+
+**Error Response Format:**
+
+```json
+{
+  "error": "Error message description"
+}
+```
+
+## 🔄 Caching Strategy
+
+The application implements in-memory caching for products data:
+
+- **Cache Duration**: 5 minutes
+- **Cache Invalidation**: Automatic refresh after cache expiry
+- **Performance**: Reduces file I/O operations
+
+## 🧪 Testing
+
+### Manual Testing
+
+Test the API endpoints using curl or Postman:
+
+```bash
+# Test basic functionality
+curl http://localhost:3000/api/products
+
+# Test filtering
+curl "http://localhost:3000/api/products?category=Food&inStock=true"
+
+# Test pagination
+curl "http://localhost:3000/api/products?page=1&limit=5"
+```
+
+### Health Check
+
+```bash
+curl http://localhost:3000/api/health
+```
+
+## 🚀 Performance Optimizations
+
+1. **Data Caching**: In-memory caching reduces file I/O
+2. **Pagination**: Efficient data pagination for large datasets
+3. **Filtering**: Server-side filtering reduces data transfer
+4. **Error Handling**: Graceful error handling prevents crashes
+
+## 🔮 Future Enhancements
+
+- [ ] Database integration (MongoDB/PostgreSQL)
+- [ ] Authentication & Authorization
+- [ ] Rate limiting
+- [ ] API documentation with Swagger
+- [ ] Unit and integration tests
+- [ ] Docker containerization
+- [ ] Logging and monitoring
+- [ ] Order management features
+
+## 📝 Development Guidelines
+
+### Code Structure
+
+- Follow the layered architecture pattern
+- Keep controllers thin, services thick
+- Use proper error handling
+- Implement input validation
+
+### Adding New Features
+
+1. Add business logic in services
+2. Create controller methods
+3. Update router with new routes
+4. Add proper error handling
+5. Update documentation
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the ISC License.
+
+## 📞 Support
+
+For questions or issues, please create an issue in the repository or contact the development team.
