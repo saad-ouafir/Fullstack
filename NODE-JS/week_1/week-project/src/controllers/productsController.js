@@ -18,7 +18,7 @@ function getProductsController(req, res) {
     });
     sendJson(res, result, 200);
   } catch (error) {
-    console.error("Error in getProductsController");
+    console.error("Error in while finding the product");
     sendJson(res, { error: "Internal server error" }, 500);
   }
 }

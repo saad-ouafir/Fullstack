@@ -1,6 +1,5 @@
-import controllerMethods from "./controllers/productsController.js";
-
-import { parse } from "url";
+const controllerMethods = require("./controllers/productsController.js");
+const { parse } = require("url");
 process.loadEnvFile(".env");
 
 const PRODUCTS_API = process.env.API_PRODUCTS;
@@ -24,6 +23,7 @@ const routing = (req, resp) => {
       resp.end("Orders API - Coming Soon");
       break;
     case HEALTH_API:
+      resp.statusCode = 200;
       resp.end("Health Check - OK");
       break;
     default:
@@ -32,4 +32,4 @@ const routing = (req, resp) => {
   }
 };
 
-export default routing;
+module.exports = routing;
