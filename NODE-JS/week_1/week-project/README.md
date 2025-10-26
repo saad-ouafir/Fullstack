@@ -165,6 +165,57 @@ GET /api/products?category=Food&minPrice=500&inStock=true&page=1&limit=10
 #### 2. **Health Check**
 
 **GET** `/api/health`
+Retrieve orders with optional filtering and pagination.
+
+**Query Parameters:**
+
+- `orderNumber` (string): Filter by order number
+- `status` (string): filter by order status
+- `from` (date): date start  
+- `to` (date): date end
+- `page` (number): Page number for pagination 
+- `limit` (number): Items per page (default: 10)
+
+**Example Requests:**
+
+```bash
+# Get all orders
+GET /api/orders
+
+# Filter by status delivered
+GET /api/orders?status=delivered
+
+# filter order number 
+GET /api/orders?orderNumber=ORD-010
+
+# Pagination
+GET /api/orders?page=2&limit=5
+
+# Combined filters
+GET /api/orders?status=paid&from=2024-01-01&to=2024-12-31&limit=20
+```
+**Response Format:**
+
+```json
+   {
+    "data": [
+        {
+            "id": "6",
+            "orderNumber": "ORD-006",
+            "status": "delivered",
+            "from": "2025-09-08",
+            "to": "2025-09-13"
+        },
+        {
+            "id": "7",
+            "orderNumber": "ORD-007",
+            "status": "shipped",
+            "from": "2025-09-09",
+            "to": "2025-09-14"
+        }
+   ]
+}
+```
 
 Check API health status.
 
@@ -210,6 +261,17 @@ NODE_ENV=development
   "price": "number",
   "inStock": "boolean",
   "description": "string"
+}
+```
+#### Order Schema
+
+```json
+{
+   "id": "number",
+   "orderNumber": "string",
+   "status": "string",
+   "from": "date",
+   "to": "date"
 }
 ```
 
