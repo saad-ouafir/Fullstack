@@ -167,6 +167,18 @@ GET /api/products?category=Food&minPrice=500&inStock=true&page=1&limit=10
 **GET** `/api/health`
 Retrieve orders with optional filtering and pagination.
 
+Check API health status.
+
+**Response:**
+
+```
+Health Check - OK
+```
+
+#### 3. **Orders API** (Coming Soon)
+
+**GET** `/api/orders`
+
 **Query Parameters:**
 
 - `orderNumber` (string): Filter by order number
@@ -217,17 +229,6 @@ GET /api/orders?status=paid&from=2024-01-01&to=2024-12-31&limit=20
 }
 ```
 
-Check API health status.
-
-**Response:**
-
-```
-Health Check - OK
-```
-
-#### 3. **Orders API** (Coming Soon)
-
-**GET** `/api/orders`
 
 Order management endpoints (under development).
 
