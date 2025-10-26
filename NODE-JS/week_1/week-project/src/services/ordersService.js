@@ -47,7 +47,6 @@ function filterorders(params) {
     const statusOk = params.status ? order.status === params.status : true;
 
     return (
-      matchesCategory &&
       fromOk &&
       toOk &&
       statusOk 
