@@ -1,4 +1,5 @@
 const controllerMethods = require("./controllers/productsController.js");
+const controllerOrdersMethods = require("./controllers/ordersController.js");
 const { parse } = require("url");
 process.loadEnvFile(".env");
 
@@ -20,7 +21,7 @@ const routing = (req, resp) => {
       controllerMethods.getProductsController(req, resp);
       break;
     case ORDERS_API:
-      resp.end("Orders API - Coming Soon");
+      controllerOrdersMethods.getOrdersController(req, resp);
       break;
     case HEALTH_API:
       resp.statusCode = 200;
