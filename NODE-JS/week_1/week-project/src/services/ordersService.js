@@ -41,9 +41,6 @@ function getOrderByNumber(params) {
 
 function filterorders(params) {
   return orders.filter((order) => {
-    const matchesCategory =
-      !params.category ||
-      order.category.toLowerCase().includes(params.category.toLowerCase());
 
     const fromOk = params.from ? new Date(order.from) >= new Date(params.from) : true;
     const toOk = params.to ? new Date(order.to) <= new Date(params.to) : true;
