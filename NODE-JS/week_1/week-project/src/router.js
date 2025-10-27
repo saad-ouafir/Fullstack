@@ -1,5 +1,7 @@
 const controllerMethods = require("./controllers/productsController.js");
 const controllerOrdersMethods = require("./controllers/ordersController.js");
+const sendJson= require("./utils/sendJson.js");
+
 const { parse } = require("url");
 process.loadEnvFile(".env");
 
@@ -7,30 +9,30 @@ const PRODUCTS_API = process.env.API_PRODUCTS;
 const ORDERS_API = process.env.API_ORDERS;
 const HEALTH_API = process.env.API_HEALTH;
 
+const routes = {
+  [PRODUCTS_API]: controllerMethods.getProductsController,
+  [ORDERS_API]: controllerOrdersMethods.getOrdersController,
+  [HEALTH_API]: (req, resp) => {
+    return sendJson(resp,"Health Check - OK", 200);
+  },
+  "/": (req, resp) => {
+    return sendJson(resp, "WELCOME TO SMART INVENTORY SYSTEM !", 200);
+  },
+};
+
+
+const notFoundHandler = (req, resp) => {
+  return sendJson(resp, "Not Found" , 404);
+};
+
 const routing = (req, resp) => {
   const parsedUrl = parse(req.url, true);
-  const pathname = parsedUrl.pathname;
   req.query = parsedUrl.query;
-  console.log(req.query);
+  const { pathname } = parsedUrl;
 
-  switch (pathname) {
-    case "/":
-      resp.end("WELCOME TO SMART INVENTORY SYSTEM !");
-      break;
-    case PRODUCTS_API:
-      controllerMethods.getProductsController(req, resp);
-      break;
-    case ORDERS_API:
-      controllerOrdersMethods.getOrdersController(req, resp);
-      break;
-    case HEALTH_API:
-      resp.statusCode = 200;
-      resp.end("Health Check - OK");
-      break;
-    default:
-      resp.statusCode = 404;
-      resp.end("Not Found");
-  }
+  const handler = routes[pathname] || notFoundHandler;
+  handler(req, resp);
 };
+
 
 module.exports = routing;
