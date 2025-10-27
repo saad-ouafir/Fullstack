@@ -84,6 +84,11 @@ function getProductsService(params) {
   }
 }
 
+function getAllProducts() {
+  return products;
+}
+
 module.exports = {
   getProductsService,
+  getAllProducts,
 };
