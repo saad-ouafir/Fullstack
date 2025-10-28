@@ -32,7 +32,8 @@ function paginateResults(results, { page, limit }) {
 function getProductById(params) {
   if (isNaN(params.id)) return { data: [] };
   const id = parseData(params.id, "number");
-  return { data: products.filter((product) => product.id === id) };
+  const product = products.find((product) => product.id === id);
+  return product ? { data: [product] } : { data: [] };
 }
 
 function getProductBySku(params) {
@@ -41,46 +42,78 @@ function getProductBySku(params) {
 
 function filterProducts(params) {
   return products.filter((product) => {
+    const matchesQuery = !params.q || 
+      Object.values(product).some(val => 
+        String(val).toLowerCase().includes(params.q.toLowerCase())
+      );
     const matchesCategory =
       !params.category ||
       product.category.toLowerCase().includes(params.category.toLowerCase());
     const matchesMinPrice =
       params.minPrice === undefined ||
       isNaN(Number(params.minPrice)) ||
-      product.price >= parseData(params.minPrice, "number");
+      product.price >= Number(params.minPrice);
     const matchesMaxPrice =
       params.maxPrice === undefined ||
       isNaN(Number(params.maxPrice)) ||
-      product.price <= parseData(params.maxPrice, "number");
+      product.price <= Number(params.maxPrice);
     const matchesStock =
       params.inStock === undefined ||
-      product.inStock ===
-        (params.inStock === "true" ||
-          parseData(params.inStock, "boolean") === true);
-    const matchesQuantity =
-      params.quantity === undefined ||
-      isNaN(Number(params.quantity)) ||
-      product.quantity >= Number(params.quantity);
+      product.inStock === (params.inStock === "true");
     return (
+      matchesQuery &&
       matchesCategory &&
       matchesMinPrice &&
       matchesMaxPrice &&
-      matchesStock &&
-      matchesQuantity
+      matchesStock
     );
   });
 }
 
+function sortResults(results, sort, order) {
+  if (!sort) return results;
+  
+  const sortOrder = order?.toLowerCase() === 'desc' ? -1 : 1;
+  return [...results].sort((a, b) => {
+    if (a[sort] < b[sort]) return -1 * sortOrder;
+    if (a[sort] > b[sort]) return 1 * sortOrder;
+    return 0;
+  });
+}
+
+function validateParams(params) {
+  if (params.minPrice && params.maxPrice) {
+    if (Number(params.minPrice) > Number(params.maxPrice)) {
+      throw new Error('minPrice must be less than or equal to maxPrice');
+    }
+  }
+}
+
 function getProductsService(params) {
-  if (params.id !== undefined) {
-    return getProductById(params);
-  } else if (params.sku !== undefined) {
-    return getProductBySku(params);
-  } else {
-    const filtered = filterProducts(params);
-    const { page, limit } = parsePaginationParams(params);
-    const paginated = paginateResults(filtered, { page, limit });
-    return { data: paginated };
+  try {
+    validateParams(params);
+    
+    if (params.id !== undefined) {
+      return getProductById(params);
+    } else if (params.sku !== undefined) {
+      return getProductBySku(params);
+    } else {
+      const filtered = filterProducts(params);
+      const sorted = sortResults(filtered, params.sort, params.order);
+      const { page, limit } = parsePaginationParams(params);
+      const paginated = paginateResults(sorted, { page, limit });
+      const total = filtered.length;
+      const pages = limit ? Math.ceil(total / limit) : 1;
+      
+      return { 
+        data: paginated,
+        total,
+        page: page || 1,
+        pages
+      };
+    }
+  } catch (error) {
+    throw error;
   }
 }
 
