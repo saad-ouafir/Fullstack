@@ -42,8 +42,8 @@ function getOrderByNumber(params) {
 function filterorders(params) {
   return orders.filter((order) => {
 
-    const fromOk = params.from ? new Date(order.from) >= new Date(params.from) : true;
-    const toOk = params.to ? new Date(order.to) <= new Date(params.to) : true;
+    const fromOk = params.from ? new Date(order.date) >= new Date(params.from) : true;
+    const toOk = params.to ? new Date(order.date) <= new Date(params.to) : true;
     const statusOk = params.status ? order.status === params.status : true;
 
     return (
