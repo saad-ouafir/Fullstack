@@ -215,15 +215,13 @@ GET /api/orders?status=paid&from=2024-01-01&to=2024-12-31&limit=20
             "id": "6",
             "orderNumber": "ORD-006",
             "status": "delivered",
-            "from": "2025-09-08",
-            "to": "2025-09-13"
+            "date": "2025-09-08"
         },
         {
             "id": "7",
             "orderNumber": "ORD-007",
             "status": "shipped",
-            "from": "2025-09-09",
-            "to": "2025-09-14"
+            "date": "2025-09-09"
         }
    ]
 }
@@ -271,8 +269,7 @@ NODE_ENV=development
    "id": "number",
    "orderNumber": "string",
    "status": "string",
-   "from": "date",
-   "to": "date"
+   "date": "date"
 }
 ```
 
