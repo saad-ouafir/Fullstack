@@ -17,3 +17,11 @@ function updateCarController(req, res) {
 function deleteCarController(req, res) {
   // Implémentation vide
 }
+
+module.exports = {
+  getAllCarsController,
+  getCarByIdController,
+  createCarController,
+  updateCarController,
+  deleteCarController,
+};

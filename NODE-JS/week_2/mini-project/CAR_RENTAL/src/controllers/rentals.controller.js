@@ -17,3 +17,11 @@ function returnRentalController(req, res) {
 function cancelRentalController(req, res) {
   // Implémentation vide
 }
+
+module.exports = {
+  getAllRentalsController,
+  getRentalByIdController,
+  createRentalController,
+  returnRentalController,
+  cancelRentalController,
+};
