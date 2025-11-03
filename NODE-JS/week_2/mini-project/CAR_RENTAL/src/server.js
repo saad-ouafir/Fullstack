@@ -1,17 +1,19 @@
 const express = require("express");
 const app = express();
-const Logger = require("./middlewares/logger");
-require("dotenv").config();
+const path = require("path");
 
+require("dotenv").config();
 const APP_PORT = process.env.APP_PORT;
 const API_CARS_URL = process.env.API_CARS_URL;
 const API_RENTS_URL = process.env.API_RENTS_URL;
 
+const Logger = require("./middlewares/logger");
 Logger(app);
 
-router.get("/", (req, res) => {
-  res.status(200).json("Welcome to car rental API");
-});
+app.use(express.static("./public"));
+app.get("/", (req, res) =>
+  res.sendFile(path.join(__dirname, "public", "index.html"))
+);
 
 const globalCarRoutes = require("./routes/cars.routes");
 globalCarRoutes(express, app, API_CARS_URL);

@@ -1,53 +1,15 @@
-import {getAllCarsService,getCarByIdService,createCarService,updateCarService,deleteCarService} from '../services/car.service.js'
+const { log } = require("console");
+const {
+  getAllCarsService,
+  getCarByIdService,
+  createCarService,
+  updateCarService,
+  deleteCarService,
+} = require("../services/car.service");
 
 function getAllCarsController(req, res) {
-  let {page=1,limit=10,category,available,minpricePerDay,maxpricePerDay,q,sort} = req.query
-  page=parseInt(page)
-  limit=parseInt(limit)
-
-  if(isNaN(page) || page < 1){
-      page=1;
-  }
-  if(isNaN(limit) || limit < 1){
-      limit=10;
-  }
-  let getcars=getAllCarsService()
-  const allcategory=["eco","sedan","suv","van"]
-  if(category && allcategory.includes(category)){
-    getcars=getcars.filter(c=>c.category===category)
-  }
-  if(available!==undefined){
-    getcars=getcars.filter(c=>c.available===available)
-  }
-  const minPrice=parseFloat(minpricePerDay)
-  const maxPrixe=parseFloat(maxpricePerDay)
-  if(!isNaN(minPrice) && !isNaN(maxPrixe)){
-    if(minPrice>maxPrixe){
-      return res.status(400).json({error:"minpricePerDay doit être < à maxpricePerDay"});
-    }
-    getcars=getcars.filter(c=>c.pricePerDay <= maxPrixe && c.pricePerDay >= minPrice)
-  }else{
-    if(!isNaN(minPrice) && minPrice>0){
-      getcars=getcars.filter(c=>c.pricePerDay >= minPrice)
-    }
-    if(!isNaN(maxpricePerDay) &&maxpricePerDay>0){
-      getcars=getcars.filter(c=>c.pricePerDay <= maxPrixe)
-    }
-  }
-  if(q){
-    const lowerq=q.tolowerCase();
-    getcars=getcars.filter(c=>c.plate && c.plate.tolowerCase().includes(lowerq))
-  }
-  
-  const start=(page-1)*limit
-  const end=start+limit
-  res.json({
-      page,
-      limit,
-      total:getcars.length,
-      totalPages:Math.ceil(getcars.length/limit),
-      data:getcars.slice(start,end)
-  })
+  console.log(req.query);
+  res.status(200).json(getAllCarsService(req.query));
 }
 
 function getCarByIdController(req, res) {
