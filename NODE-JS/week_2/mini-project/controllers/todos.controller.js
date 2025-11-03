@@ -1,6 +1,9 @@
 const {
   getAllTodosService,
   getTodosByIdService,
+  createTodosService,
+  updateTodosService,
+  deleteTodosService,
 } = require("../services/todos.service");
 
 function getAllTodosController(req, res) {
@@ -11,12 +14,37 @@ function getAllTodosController(req, res) {
 function getTodosByIdController(req, res) {
   res.status(200);
   result = getTodosByIdService(req.params.id);
-  result === true
+  result !== false
     ? res.status(200).send(result)
     : res.status(404).json("Error, Todos Not Found !");
+}
+
+function createTodosCOntroller(req, res) {
+  if (createTodosService(req.body) === true) {
+    res.status(201).json("Todos Created Secussfully !");
+  }
+}
+
+function updateTodosController(req, res) {
+  if (updateTodosService(req.params.id, req.body) === true) {
+    res.status(200).json("Todos Updated Secussfully !");
+  } else {
+    res.status(404).json("Todos ID NOT FOUND !");
+  }
+}
+
+function deleteTodosController(req, res) {
+  if (deleteTodosService(req.params.id) === true) {
+    res.status(200).json("Todos Deleted Secussfully !");
+  } else {
+    res.status(404).json("Todos ID NOT FOUND !");
+  }
 }
 
 module.exports = {
   getAllTodosController,
   getTodosByIdController,
+  createTodosCOntroller,
+  updateTodosController,
+  deleteTodosController,
 };

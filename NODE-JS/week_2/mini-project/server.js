@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
+const Logger = require("./middlewares/logger");
 
+Logger(app);
 const todosGlobalRoutes = require("./routes/todos.routes");
 todosGlobalRoutes(express, app);
 
