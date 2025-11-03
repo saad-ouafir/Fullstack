@@ -17,9 +17,9 @@ function createTodosService(todos) {
   let data = [...JSON.parse(JSON_DATA)];
   todos.id = data.length + 1;
   todos.createdAt = new Date().toISOString();
-  todos.priority === null ? todos.priority : "medium";
+  todos.priority = todos.priority === "" ? "medium" : todos.priority;
   data.push(todos);
-  fs.writeFileSync(JSON.stringify(data));
+  fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
   return true;
 }
 
@@ -31,9 +31,8 @@ function updateTodosService(id, todos) {
     data[index].complete = todos.complete;
     data[index].priority = todos.priority || "medium";
     data[index].dueDate = todos.dueDate;
-    data[index].dueDate = todos.dueDate;
     data[index].updatedAt = new Date().toISOString();
-    fs.writeFileSync(JSON.stringify(data));
+    fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
     return true;
   } else {
     return false;
@@ -45,7 +44,7 @@ function deleteTodosService(id) {
   let new_data =
     data.filter((todo) => Number(todo.id) !== Number(id)) || undefined;
   if (new_data !== undefined) {
-    fs.writeFileSync(JSON.stringify(new_data));
+    fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(new_data));
     return true;
   } else {
     return false;
