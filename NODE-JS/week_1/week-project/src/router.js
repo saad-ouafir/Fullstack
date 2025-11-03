@@ -11,7 +11,7 @@ process.loadEnvFile(".env");
 const PRODUCTS_API = process.env.API_PRODUCTS;
 const ORDERS_API = process.env.API_ORDERS;
 const HEALTH_API = process.env.API_HEALTH;
-const EXPORT_API = process.env.API_EXPORT;
+const EXPORT_API = process.env.API_EXPORT || "/api/export.gz";
 
 const routes = [
   {

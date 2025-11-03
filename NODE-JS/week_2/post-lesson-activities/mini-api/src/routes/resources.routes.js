@@ -7,7 +7,12 @@ const {
   deleteResourceController,
 } = require("../controllers/resources.controller.js");
 
-function resourcesRoutes(app) {
+const validateResource = require("../middlewares/resources.validation.js");
+
+function resourcesRoutes(express, app) {
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+
   app.get(`${API_RESOURCES}`, (req, res) => {
     getResourcesController(res);
   });
@@ -16,13 +21,17 @@ function resourcesRoutes(app) {
     getResourceByIDController(req.params.id, res);
   });
 
-  app.post(`${API_RESOURCES}`, (req, res) => {
-    console.log(req.body);
-    addResourceController(req.body, res);
+  app.post("/api/resources", validateResource, (req, res) =>
+    addResourceController(req, res)
+  );
+
+  app.put(`${API_RESOURCES}/:id`, validateResource, (req, res) => {
+    updateResourceController(req, res);
   });
 
-  app.put(`${API_RESOURCES}/:id`, (req, res) => {});
-  app.delete(`${API_RESOURCES}`, (req, res) => {});
+  app.delete(`${API_RESOURCES}/:id`, (req, res) => {
+    deleteResourceController(req, res);
+  });
 }
 
 module.exports = resourcesRoutes;

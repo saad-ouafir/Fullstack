@@ -6,8 +6,6 @@ const {
   deleteResourceService,
 } = require("../services/resources.service.js");
 
-const validateResource = require("../middlewares/resources.validation.js");
-
 function setResult(result, res) {
   res.status(result.statusCode);
   res.send(result.data);
@@ -21,16 +19,16 @@ function getResourceByIDController(id, res) {
   setResult(getResourceByIDService(id), res);
 }
 
-function addResourceController(resource, resp) {
-  setResult(addResourceService(resource), resp);
+function addResourceController(req, res) {
+  setResult(addResourceService(req.body), res);
 }
 
-function updateResourceController(id, resource, resp) {
-  setResult(updateResourceService(id, resource), resp);
+function updateResourceController(req, res) {
+  setResult(updateResourceService(req.params.id, req.body), res);
 }
 
-function deleteResourceController(id, resp) {
-  setResult(deleteResourceService(id), resp);
+function deleteResourceController(req, resp) {
+  setResult(deleteResourceService(req.params.id), resp);
 }
 
 module.exports = {

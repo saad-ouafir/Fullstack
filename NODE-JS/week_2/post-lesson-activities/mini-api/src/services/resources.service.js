@@ -25,6 +25,7 @@ function getResourceByIDService(id) {
 
 function addResourceService(newResource) {
   const data = [...parsedData()];
+  newResource.id = Number(data.length + 1);
   data.push(newResource);
   fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
   return { statusCode: 201, data: "Resource Added Successfully" };
@@ -32,10 +33,12 @@ function addResourceService(newResource) {
 
 function updateResourceService(id, updated_data) {
   const data = [...parsedData()];
+  console.log(id);
   let index = data.findIndex((resource) => Number(resource.id) === Number(id));
 
   if (index !== -1) {
-    data[index] = { ...data[index], ...updated_data };
+    data[index].name = updated_data.name;
+    data[index].creation_date = updated_data.creation_date;
     fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
     return { statusCode: 200, data: "Resource Updated Successfully" };
   } else {
@@ -45,7 +48,9 @@ function updateResourceService(id, updated_data) {
 
 function deleteResourceService(id) {
   const data = [...parsedData()];
-  const filtered = data.filter((resource) => Number(resource.id) !== Number(id));
+  const filtered = data.filter(
+    (resource) => Number(resource.id) !== Number(id)
+  );
   if (data.length === filtered.length) {
     return { statusCode: 404, data: "Resource Not Found !" };
   }

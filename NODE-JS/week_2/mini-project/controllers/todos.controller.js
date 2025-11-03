@@ -6,6 +6,25 @@ const {
   deleteTodosService,
 } = require("../services/todos.service");
 
+function validateData(params, next) {
+  if (
+    !params.title ||
+    params.title === "" ||
+    params.complete === "" ||
+    params.priority === "" ||
+    params.dueDate === ""
+  ) {
+    res.status(err.status).json({
+      status: err.status,
+      message: err.message,
+      code: err.statusCode,
+      timestamp: new Date().toISOString(),
+    });
+  } else {
+    next();
+  }
+}
+
 function getAllTodosController(req, res) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.status(200).send(getAllTodosService());

@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Wild Rice Pilaf",
+    "category": "Food - Grains",
+    "price": 222.81
+  },
+  {
+    "id": 2,
+    "name": "Chili Lime Seasoning",
+    "category": "Food - Spices",
+    "price": 399.91
+  },
+  {
+    "id": 3,
+    "name": "Repair Tool Set for Home Improvement",
+    "category": "Tools",
+    "price": 128.28
+  },
+  {
+    "id": 4,
+    "name": "Honey Mustard Chicken Breasts",
+    "category": "Food - Meat",
+    "price": 218.29
+  },
+  {
+    "id": 5,
+    "name": "Wooden Children's Play Kitchen",
+    "category": "Toys",
+    "price": 460.64
+  },
+  {
+    "id": 6,
+    "name": "Smartphone Gimbal Stabilizer",
+    "category": "Photography",
+    "price": 121.64
+  },
+  {
+    "id": 7,
+    "name": "Cereal Dispenser with Portion Control",
+    "category": "Kitchen",
+    "price": 291.55
+  },
+  {
+    "id": 8,
+    "name": "Wooden Toy Train Set",
+    "category": "Toys",
+    "price": 356.91
+  },
+  {
+    "id": 9,
+    "name": "Bock Beer Mustard",
+    "category": "Food - Condiments",
+    "price": 425.62
+  },
+  {
+    "id": 10,
+    "name": "Inspirational Wall Art",
+    "category": "Home",
+    "price": 206.25
+  },
+  {
+    "id": 11,
+    "name": "Mini Projector for Smartphones",
+    "category": "Electronics",
+    "price": 167.95
+  },
+  {
+    "id": 12,
+    "name": "Cream Cheese",
+    "category": "Food - Dairy",
+    "price": 279.86
+  },
+  {
+    "id": 13,
+    "name": "Greek Feta Cheese",
+    "category": "Food - Dairy",
+    "price": 185.82
+  },
+  {
+    "id": 14,
+    "name": "Sesame Ginger Dressing",
+    "category": "Food - Condiments",
+    "price": 429.22
+  },
+  {
+    "id": 15,
+    "name": "Chicken Sausage",
+    "category": "Food - Meat",
+    "price": 142.45
+  },
+  {
+    "id": 16,
+    "name": "Vegetable Stir-Fry Kit",
+    "category": "Food - Produce",
+    "price": 191.01
+  },
+  {
+    "id": 17,
+    "name": "Sunglasses",
+    "category": "Accessories",
+    "price": 116.84
+  },
+  {
+    "id": 18,
+    "name": "Cranberry Citrus Sauce",
+    "category": "Food - Condiments",
+    "price": 170.6
+  },
+  {
+    "id": 19,
+    "name": "Almond Milk",
+    "category": "Food - Dairy",
+    "price": 101.14
+  },
+  {
+    "id": 20,
+    "name": "Organic Coconut Flour",
+    "category": "Food - Baking",
+    "price": 193.36
+  }
+]
