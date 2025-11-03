@@ -7,6 +7,7 @@ const {
 } = require("../services/todos.service");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 function getAllTodosController(req, res) {
   res.setHeader("Content-Type", "application/json; charset=utf-8");
