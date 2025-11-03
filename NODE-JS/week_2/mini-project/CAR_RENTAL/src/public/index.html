@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Car Rental Service</title>
+
+    <!-- Google Fonts and Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f3f4f6;
+        color: #333;
+        line-height: 1.5;
+      }
+
+      header {
+        background: linear-gradient(45deg, #ff6b6b, #ff4757);
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+
+      .cta-button {
+        background-color: #ffdd57;
+        padding: 15px 40px;
+        font-size: 1.1rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-button:hover {
+        background-color: #ffd700;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+      }
+
+      .car-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+
+      .car-card {
+        background-color: white;
+        border-radius: 10px;
+        width: 280px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .car-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .car-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .car-card .card-content {
+        padding: 20px;
+      }
+
+      .car-card h3 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .car-card p {
+        font-size: 1rem;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      .car-card .price {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #e74c3c;
+        margin-top: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive layout */
+      @media (max-width: 768px) {
+        .car-list {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-button {
+          padding: 12px 30px;
+        }
+
+        .car-card {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Luxury Car Rentals</h1>
+      <p>Drive Your Dream Car Today</p>
+      <a href="#rent" class="cta-button">Browse Our Cars</a>
+    </header>
+
+    <div class="container" id="rent">
+      <div class="car-list">
+        <!-- Car 1 -->
+        <div class="car-card">
+          <img
+            src="https://images.unsplash.com/photo-1586190841269-93c9a7e84e13?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDgxfHxjYXJ8ZW58MHx8fHwxNjA2MzYzOTM4&ixlib=rb-1.2.1&q=80&w=1080"
+            alt="Ferrari 488"
+          />
+          <div class="card-content">
+            <h3>Ferrari 488</h3>
+            <p>
+              Get ready for an unforgettable ride with this stunning Ferrari
+              488.
+            </p>
+            <div class="price">$499/day</div>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="car-card">
+          <img
+            src="https://images.unsplash.com/photo-1506748686215-cbcd0fd04b1b?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDIxfHxjYXJ8ZW58MHx8fHwxNjA2MzYzOTM4&ixlib=rb-1.2.1&q=80&w=1080"
+            alt="Lamborghini Huracán"
+          />
+          <div class="card-content">
+            <h3>Lamborghini Huracán</h3>
+            <p>
+              The Lamborghini Huracán delivers an experience you’ll never
+              forget.
+            </p>
+            <div class="price">$799/day</div>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="car-card">
+          <img
+            src="https://images.unsplash.com/photo-1604072134439-2e4380d5f52f?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDkwfHxjYXJ8ZW58MHx8fHwxNjA2MzYzOTM4&ixlib=rb-1.2.1&q=80&w=1080"
+            alt="BMW M4"
+          />
+          <div class="card-content">
+            <h3>BMW M4</h3>
+            <p>
+              Speed meets elegance with the BMW M4, perfect for any occasion.
+            </p>
+            <div class="price">$350/day</div>
+          </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="car-card">
+          <img
+            src="https://images.unsplash.com/photo-1506226104116-dc6f24b33a29?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDkyfHxjYXJ8ZW58MHx8fHwxNjA2MzYzOTM4&ixlib=rb-1.2.1&q=80&w=1080"
+            alt="Mercedes-Benz S-Class"
+          />
+          <div class="card-content">
+            <h3>Mercedes-Benz S-Class</h3>
+            <p>
+              Luxury and comfort combined. Experience the best with the S-Class.
+            </p>
+            <div class="price">$450/day</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Luxury Car Rentals. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
