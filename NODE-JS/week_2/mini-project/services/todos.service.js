@@ -35,7 +35,7 @@ function updateTodosService(id, todos) {
     fs.writeFileSync(JSON.stringify(data));
     return true;
   } else {
-    return true;
+    return false;
   }
 }
 
