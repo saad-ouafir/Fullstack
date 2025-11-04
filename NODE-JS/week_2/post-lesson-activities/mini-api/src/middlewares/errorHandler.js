@@ -1,29 +1,21 @@
-// function handleRoutingErrors(req, res, next) {
-//   const error = new Error("Not Found");
-//   error.status = 404;
-//   next(error);
-// }
+const errorHandler = (err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
+  const message = err.message || "Internal Server Error";
+  const timestamp = err.timestamp || new Date().toISOString();
 
-// function handleGlobalErrors(error, req, res, next) {
-//   res.status(error.status || 500);
-//   res.json({
-//     error: {
-//       message: error.message,
-//     },
-//   });
-// }
+  console.error("Error:", {
+    message: err.message,
+    statusCode,
+    stack: err.stack,
+    timestamp,
+  });
 
-// module.exports = { handleRoutingErrors, handleGlobalErrors };
+  res.status(statusCode).json({
+    status: "error",
+    message,
+    code: statusCode,
+    timestamp,
+  });
+};
 
-class AppError {
-  AppError(message, statusCode) {
-    return {
-      status: "error",
-      message: message,
-      code: statusCode,
-      timestamp: new Date().toISOString(),
-    };
-  }
-}
-
-module.exports = AppError;
+module.exports = errorHandler;

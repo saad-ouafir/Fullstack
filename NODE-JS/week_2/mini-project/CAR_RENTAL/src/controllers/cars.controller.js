@@ -30,7 +30,7 @@ function updateCarController(req, res) {
   if (updateCarService(req.params.id, req.body) === true) {
     res.status(200).json("car Updated Secussfully !");
   } else {
-    res.status(404).json("car  NOT FOUND !");
+    res.status(404).json("car NOT FOUND !");
   }
 }
 
@@ -38,7 +38,7 @@ function deleteCarController(req, res) {
   if (deleteCarService(req.params.id) === true) {
     res.status(200).json("car Deleted Secussfully !");
   } else {
-    res.status(404).json("car  NOT FOUND !");
+    res.status(404).json("car NOT FOUND !");
   }
 }
 

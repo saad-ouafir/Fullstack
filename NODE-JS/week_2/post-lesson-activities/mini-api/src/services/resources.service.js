@@ -2,37 +2,49 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const JSON_DATA_FILE = `${path.dirname(__dirname)}/data/resources.json`;
-
-function parsedData() {
-  const JSON_DATA = fs.readFileSync(JSON_DATA_FILE, "utf-8");
-  return JSON.parse(JSON_DATA);
-}
+const PARSED_DATA = JSON.parse(fs.readFileSync(JSON_DATA_FILE, "utf-8"));
 
 function getResourcesService() {
-  return { statusCode: 200, data: parsedData() };
+  return {
+    statusCode: 200,
+    data: PARSED_DATA,
+    error: false,
+  };
 }
 
 function getResourceByIDService(id) {
-  let result = parsedData().find(
+  let result = PARSED_DATA.find(
     (resource) => Number(resource.id) === Number(id)
   );
   if (result !== undefined) {
-    return { statusCode: 200, data: result };
+    return {
+      statusCode: 200,
+      data: result,
+      error: false,
+    };
   } else {
-    return { statusCode: 404, data: "Resource Not Found !" };
+    return {
+      statusCode: 404,
+      message: "Resource not found",
+      error: true,
+    };
   }
 }
 
 function addResourceService(newResource) {
-  const data = [...parsedData()];
+  const data = [...PARSED_DATA];
   newResource.id = Number(data.length + 1);
   data.push(newResource);
   fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
-  return { statusCode: 201, data: "Resource Added Successfully" };
+  return {
+    statusCode: 200,
+    data: "Resource Added Successfully",
+    error: false,
+  };
 }
 
 function updateResourceService(id, updated_data) {
-  const data = [...parsedData()];
+  const data = [...PARSED_DATA];
   console.log(id);
   let index = data.findIndex((resource) => Number(resource.id) === Number(id));
 
@@ -40,22 +52,38 @@ function updateResourceService(id, updated_data) {
     data[index].name = updated_data.name;
     data[index].creation_date = updated_data.creation_date;
     fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
-    return { statusCode: 200, data: "Resource Updated Successfully" };
+    return {
+      statusCode: 200,
+      data: "Resource Updated Successfully",
+      error: false,
+    };
   } else {
-    return { statusCode: 404, data: "Resource Not Found !" };
+    return {
+      statusCode: 404,
+      message: "Resource not found !",
+      error: true,
+    };
   }
 }
 
 function deleteResourceService(id) {
-  const data = [...parsedData()];
+  const data = [...PARSED_DATA];
   const filtered = data.filter(
     (resource) => Number(resource.id) !== Number(id)
   );
-  if (data.length === filtered.length) {
-    return { statusCode: 404, data: "Resource Not Found !" };
+  if (filtered === undefined) {
+    return {
+      statusCode: 404,
+      message: "Resource not found !",
+      error: true,
+    };
   }
   fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(filtered));
-  return { statusCode: 204, data: "Resource Deleted Successfully" };
+  return {
+    statusCode: 204,
+    data: { message: "Resource deleted successfully" },
+    error: false,
+  };
 }
 
 module.exports = {

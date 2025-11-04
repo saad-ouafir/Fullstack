@@ -1,122 +1,542 @@
 [
   {
     "id": 1,
-    "name": "Wild Rice Pilaf",
-    "category": "Food - Grains",
-    "price": 222.81
+    "name": "Dips and Spreads",
+    "category": "Food - Snacks",
+    "price": 2994.79
   },
   {
     "id": 2,
-    "name": "Chili Lime Seasoning",
-    "category": "Food - Spices",
-    "price": 399.91
+    "name": "Marinades",
+    "category": "Food - Marinades",
+    "price": 9852.93
   },
   {
     "id": 3,
-    "name": "Repair Tool Set for Home Improvement",
-    "category": "Tools",
-    "price": 128.28
+    "name": "Personal Care & Grooming",
+    "category": "Health",
+    "price": 4492.37
   },
-  {
-    "id": 4,
-    "name": "Honey Mustard Chicken Breasts",
-    "category": "Food - Meat",
-    "price": 218.29
-  },
-  {
-    "id": 5,
-    "name": "Wooden Children's Play Kitchen",
-    "category": "Toys",
-    "price": 460.64
-  },
-  {
-    "id": 6,
-    "name": "Smartphone Gimbal Stabilizer",
-    "category": "Photography",
-    "price": 121.64
-  },
+  { "id": 4, "name": "Lighting & Lamps", "category": "Home", "price": 5528.87 },
+  { "id": 5, "name": "Craft Supplies", "category": "Crafts", "price": 9651.47 },
+  { "id": 6, "name": "Puzzles", "category": "Toys", "price": 8500.3 },
   {
     "id": 7,
-    "name": "Cereal Dispenser with Portion Control",
-    "category": "Kitchen",
-    "price": 291.55
+    "name": "Outdoor Accessories",
+    "category": "Outdoor",
+    "price": 5705.17
   },
   {
     "id": 8,
-    "name": "Wooden Toy Train Set",
-    "category": "Toys",
-    "price": 356.91
+    "name": "Smoothies",
+    "category": "Food - Beverages",
+    "price": 2486.54
   },
   {
     "id": 9,
-    "name": "Bock Beer Mustard",
-    "category": "Food - Condiments",
-    "price": 425.62
+    "name": "Indoor Gardening Supplies",
+    "category": "Garden",
+    "price": 2770.05
   },
   {
     "id": 10,
-    "name": "Inspirational Wall Art",
-    "category": "Home",
-    "price": 206.25
+    "name": "Frozen Meals",
+    "category": "Food - Frozen Foods",
+    "price": 4832.91
   },
-  {
-    "id": 11,
-    "name": "Mini Projector for Smartphones",
-    "category": "Electronics",
-    "price": 167.95
-  },
+  { "id": 11, "name": "Breads", "category": "Food - Bakery", "price": 2659.39 },
   {
     "id": 12,
-    "name": "Cream Cheese",
-    "category": "Food - Dairy",
-    "price": 279.86
+    "name": "Seasonal Home Decor",
+    "category": "Home",
+    "price": 1204.72
   },
-  {
-    "id": 13,
-    "name": "Greek Feta Cheese",
-    "category": "Food - Dairy",
-    "price": 185.82
-  },
-  {
-    "id": 14,
-    "name": "Sesame Ginger Dressing",
-    "category": "Food - Condiments",
-    "price": 429.22
-  },
+  { "id": 13, "name": "Pet Accessories", "category": "Pets", "price": 6744.15 },
+  { "id": 14, "name": "Breads", "category": "Food - Bakery", "price": 9666.9 },
   {
     "id": 15,
-    "name": "Chicken Sausage",
-    "category": "Food - Meat",
-    "price": 142.45
+    "name": "Frozen Chicken Meals",
+    "category": "Food - Frozen Foods",
+    "price": 6575.93
   },
   {
     "id": 16,
-    "name": "Vegetable Stir-Fry Kit",
-    "category": "Food - Produce",
-    "price": 191.01
+    "name": "Baking Mixes",
+    "category": "Food - Desserts",
+    "price": 6998.35
   },
-  {
-    "id": 17,
-    "name": "Sunglasses",
-    "category": "Accessories",
-    "price": 116.84
-  },
+  { "id": 17, "name": "Pet Accessories", "category": "Pets", "price": 2459.36 },
   {
     "id": 18,
-    "name": "Cranberry Citrus Sauce",
-    "category": "Food - Condiments",
-    "price": 170.6
+    "name": "Frozen Vegetables",
+    "category": "Food - Frozen Foods",
+    "price": 4054.29
   },
   {
     "id": 19,
-    "name": "Almond Milk",
-    "category": "Food - Dairy",
-    "price": 101.14
+    "name": "Salsas & Dips",
+    "category": "Food - Condiments",
+    "price": 4625.81
   },
   {
     "id": 20,
-    "name": "Organic Coconut Flour",
+    "name": "Baking Accessories",
+    "category": "Kitchen",
+    "price": 2795.81
+  },
+  {
+    "id": 21,
+    "name": "Gardening Accessories",
+    "category": "Garden",
+    "price": 5862.37
+  },
+  {
+    "id": 22,
+    "name": "Sparkling Beverages",
+    "category": "Food - Beverages",
+    "price": 9014.83
+  },
+  {
+    "id": 23,
+    "name": "Camping Equipment",
+    "category": "Outdoor",
+    "price": 1691.32
+  },
+  {
+    "id": 24,
+    "name": "Mobile Accessories",
+    "category": "Electronics",
+    "price": 5375.84
+  },
+  {
+    "id": 25,
+    "name": "Kitchen Accessories",
+    "category": "Home",
+    "price": 7188.87
+  },
+  {
+    "id": 26,
+    "name": "Children's Educational Books",
+    "category": "Books",
+    "price": 5198.41
+  },
+  {
+    "id": 27,
+    "name": "Healthy Snacks",
+    "category": "Food - Snacks",
+    "price": 5649.99
+  },
+  {
+    "id": 28,
+    "name": "Pies & Quiches",
+    "category": "Food - Prepared Meals",
+    "price": 3225.73
+  },
+  { "id": 29, "name": "Mixes", "category": "Food - Baking", "price": 7794.95 },
+  {
+    "id": 30,
+    "name": "Cooking Appliances",
+    "category": "Kitchen",
+    "price": 8321.45
+  },
+  {
+    "id": 31,
+    "name": "Computer Accessories",
+    "category": "Electronics",
+    "price": 5091.56
+  },
+  {
+    "id": 32,
+    "name": "Kitchen Storage & Organization",
+    "category": "Kitchen",
+    "price": 6790.79
+  },
+  {
+    "id": 33,
+    "name": "Snacks",
+    "category": "Food - Vegetarian",
+    "price": 8716.32
+  },
+  {
+    "id": 34,
+    "name": "Specialty Rice",
+    "category": "Food - Grains",
+    "price": 4882.89
+  },
+  {
+    "id": 35,
+    "name": "Mobile Accessories",
+    "category": "Accessories",
+    "price": 4750.38
+  },
+  {
+    "id": 36,
+    "name": "Cooking Tools & Utensils",
+    "category": "Kitchen",
+    "price": 2879.97
+  },
+  {
+    "id": 37,
+    "name": "Vegetable Sides",
+    "category": "Food - Prepared Foods",
+    "price": 9586.68
+  },
+  {
+    "id": 38,
+    "name": "Outdoor Recreation",
+    "category": "Outdoor",
+    "price": 9658.44
+  },
+  { "id": 39, "name": "Pasta", "category": "Food - Pasta", "price": 4441.95 },
+  {
+    "id": 40,
+    "name": "Wireless Speakers",
+    "category": "Audio",
+    "price": 3425.14
+  },
+  {
+    "id": 41,
+    "name": "Oral Care & Hygiene",
+    "category": "Health",
+    "price": 8307.58
+  },
+  {
+    "id": 42,
+    "name": "Decorative Wall Art & Accessories",
+    "category": "Home",
+    "price": 8277.25
+  },
+  {
+    "id": 43,
+    "name": "Artisan Bread",
+    "category": "Food - Bakery",
+    "price": 3330.95
+  },
+  {
+    "id": 44,
+    "name": "Chocolate Snacks",
+    "category": "Food - Snacks",
+    "price": 2696.58
+  },
+  {
+    "id": 45,
+    "name": "Healthy Snacks",
+    "category": "Food - Snacks",
+    "price": 5131.09
+  },
+  {
+    "id": 46,
+    "name": "Camera Accessories",
+    "category": "Photography",
+    "price": 7810.05
+  },
+  { "id": 47, "name": "T-shirts", "category": "Clothing", "price": 9991.89 },
+  {
+    "id": 48,
+    "name": "Vegetable Snacks",
+    "category": "Food - Snacks",
+    "price": 8269.42
+  },
+  {
+    "id": 49,
+    "name": "Car Cleaning",
+    "category": "Automotive",
+    "price": 9768.65
+  },
+  {
+    "id": 50,
+    "name": "Baking Mixes",
+    "category": "Food - Desserts",
+    "price": 4227.54
+  },
+  {
+    "id": 51,
+    "name": "Nut-Based Snacks",
+    "category": "Food - Snacks",
+    "price": 3810.81
+  },
+  {
+    "id": 52,
+    "name": "Oral Care & Hygiene",
+    "category": "Health",
+    "price": 4074.72
+  },
+  {
+    "id": 53,
+    "name": "Strength Training Equipment",
+    "category": "Fitness",
+    "price": 2906.48
+  },
+  {
+    "id": 54,
+    "name": "Olive Products",
+    "category": "Food - Condiments",
+    "price": 7546.62
+  },
+  {
+    "id": 55,
+    "name": "Smartwatches",
+    "category": "Wearable Tech",
+    "price": 9259.67
+  },
+  {
+    "id": 56,
+    "name": "Pasta Alternatives",
+    "category": "Food - Vegetables",
+    "price": 1213.24
+  },
+  {
+    "id": 57,
+    "name": "Baking Ingredients",
     "category": "Food - Baking",
-    "price": 193.36
+    "price": 8171.98
+  },
+  {
+    "id": 58,
+    "name": "Cutting Boards & Utensils",
+    "category": "Kitchen",
+    "price": 9067.76
+  },
+  {
+    "id": 59,
+    "name": "Processed Meats",
+    "category": "Food - Meat",
+    "price": 3954.22
+  },
+  {
+    "id": 60,
+    "name": "Asian Sauces",
+    "category": "Food - Sauces",
+    "price": 4820.92
+  },
+  {
+    "id": 61,
+    "name": "Vegetarian Soups",
+    "category": "Food - Soups",
+    "price": 2373.4
+  },
+  {
+    "id": 62,
+    "name": "Mobile Accessories",
+    "category": "Accessories",
+    "price": 8766.53
+  },
+  {
+    "id": 63,
+    "name": "Home Fragrance & Accessories",
+    "category": "Home",
+    "price": 909.91
+  },
+  {
+    "id": 64,
+    "name": "Cookware Accessories",
+    "category": "Kitchen",
+    "price": 8027.23
+  },
+  {
+    "id": 65,
+    "name": "Power Accessories",
+    "category": "Accessories",
+    "price": 7408.18
+  },
+  {
+    "id": 66,
+    "name": "Dried Fruits",
+    "category": "Food - Snacks",
+    "price": 605.93
+  },
+  {
+    "id": 67,
+    "name": "Gardening Accessories",
+    "category": "Garden",
+    "price": 731.51
+  },
+  {
+    "id": 68,
+    "name": "Frozen Snacks",
+    "category": "Food - Frozen",
+    "price": 1056.02
+  },
+  {
+    "id": 69,
+    "name": "Gimbals & Stabilizers",
+    "category": "Photography",
+    "price": 416.56
+  },
+  {
+    "id": 70,
+    "name": "Pasta Sauces",
+    "category": "Food - Sauces",
+    "price": 561.5
+  },
+  {
+    "id": 71,
+    "name": "Cooking Appliances",
+    "category": "Kitchen",
+    "price": 771.71
+  },
+  {
+    "id": 72,
+    "name": "Breakfast Meats",
+    "category": "Food - Meats",
+    "price": 9206.37
+  },
+  {
+    "id": 73,
+    "name": "Grooming Supplies",
+    "category": "Pets",
+    "price": 9589.27
+  },
+  {
+    "id": 74,
+    "name": "Olive Products",
+    "category": "Food - Condiments",
+    "price": 8566.41
+  },
+  {
+    "id": 75,
+    "name": "Baking Mixes",
+    "category": "Food - Baking Goods",
+    "price": 9488.14
+  },
+  { "id": 76, "name": "Garden Tools", "category": "Garden", "price": 791.72 },
+  {
+    "id": 77,
+    "name": "Herb Blends",
+    "category": "Food - Spices",
+    "price": 7976.28
+  },
+  {
+    "id": 78,
+    "name": "Recovery Tools",
+    "category": "Fitness",
+    "price": 8283.22
+  },
+  {
+    "id": 79,
+    "name": "Instant Breakfast",
+    "category": "Food - Breakfast",
+    "price": 7852.89
+  },
+  {
+    "id": 80,
+    "name": "Outdoor Accessories",
+    "category": "Outdoor",
+    "price": 7705.96
+  },
+  {
+    "id": 81,
+    "name": "Vegetarian Meals",
+    "category": "Food - Prepared Foods",
+    "price": 7771.62
+  },
+  { "id": 82, "name": "Robotics Toys", "category": "Toys", "price": 8255.14 },
+  {
+    "id": 83,
+    "name": "Frozen Potato Products",
+    "category": "Food - Frozen Foods",
+    "price": 7833.79
+  },
+  {
+    "id": 84,
+    "name": "Nut-Based Snacks",
+    "category": "Food - Snacks",
+    "price": 157.01
+  },
+  {
+    "id": 85,
+    "name": "Gourmet Snacks",
+    "category": "Food - Snacks",
+    "price": 8427.25
+  },
+  {
+    "id": 86,
+    "name": "Hot Sauces",
+    "category": "Food - Condiments",
+    "price": 449.86
+  },
+  {
+    "id": 87,
+    "name": "Vegetarian Soups",
+    "category": "Food - Soups",
+    "price": 7185.18
+  },
+  {
+    "id": 88,
+    "name": "Sweaters",
+    "category": "Clothing - Tops",
+    "price": 479.65
+  },
+  {
+    "id": 89,
+    "name": "Travel Accessories",
+    "category": "Pets",
+    "price": 6329.15
+  },
+  {
+    "id": 90,
+    "name": "Dressing",
+    "category": "Food - Condiments",
+    "price": 5636.61
+  },
+  {
+    "id": 91,
+    "name": " smoothies",
+    "category": "Food - Beverages",
+    "price": 9643.89
+  },
+  {
+    "id": 92,
+    "name": "Decorative Wall Art & Accessories",
+    "category": "Home",
+    "price": 5205.91
+  },
+  {
+    "id": 93,
+    "name": "Educational Toys",
+    "category": "Toys",
+    "price": 5703.31
+  },
+  {
+    "id": 94,
+    "name": "Frozen Appetizers",
+    "category": "Food - Frozen Foods",
+    "price": 6233.16
+  },
+  {
+    "id": 95,
+    "name": "Shirts",
+    "category": "Clothing - Tops",
+    "price": 3661.4
+  },
+  {
+    "id": 96,
+    "name": "Fitness Accessories",
+    "category": "Fitness",
+    "price": 4052.57
+  },
+  {
+    "id": 97,
+    "name": "Pancake and Waffle Mixes",
+    "category": "Food - Breakfast",
+    "price": 5103.45
+  },
+  {
+    "id": 98,
+    "name": "Grooming Supplies",
+    "category": "Pets",
+    "price": 5482.75
+  },
+  {
+    "id": 99,
+    "name": "Digital Cameras",
+    "category": "Photography",
+    "price": 5224.57
+  },
+  {
+    "id": 100,
+    "name": "Italian Cuisine Meal Kits",
+    "category": "Food - Meal Kits",
+    "price": 8348.27
   }
 ]
