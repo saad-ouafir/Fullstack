@@ -6,6 +6,9 @@ const {
   cancelRentalController,
 } = require("../controllers/rentals.controller");
 
+const API_TOKEN = process.env.API_TOKEN;
+const auth = require("../middlewares/auth");
+
 function globalRentalsRoutes(express, app, route) {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
@@ -19,15 +22,15 @@ function globalRentalsRoutes(express, app, route) {
   });
 
   app.post(`${route}`, (req, res) => {
-    createRentalController(req, res);
+    auth(API_TOKEN, req, res, createRentalController);
   });
 
   app.put(`${route}/:id`, (req, res) => {
-    returnRentalController(req, res);
+    auth(API_TOKEN, req, res, returnRentalController);
   });
 
   app.delete(`${route}/:id`, (req, res) => {
-    cancelRentalController(req, res);
+    auth(API_TOKEN, req, res, cancelRentalController);
   });
 }
 

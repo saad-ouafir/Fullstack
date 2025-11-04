@@ -6,6 +6,9 @@ const {
   deleteCarController,
 } = require("../controllers/cars.controller");
 
+const API_TOKEN = process.env.API_TOKEN;
+const auth = require("../middlewares/auth");
+
 function globalCarRoutes(express, app, route) {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
@@ -22,17 +25,17 @@ function globalCarRoutes(express, app, route) {
 
   // Créer un véhicule
   app.post(`${route}`, (req, res) => {
-    createCarController(req, res);
+    auth(API_TOKEN, req, res, createCarController);
   });
 
   // Modifier un véhicule
   app.put(`${route}/:id`, (req, res) => {
-    updateCarController(req, res);
+    auth(API_TOKEN, req, res, updateCarController);
   });
 
   // Supprimer un véhicule
   app.delete(`${route}/:id`, (req, res) => {
-    deleteCarController(req, res);
+    auth(API_TOKEN, req, res, deleteCarController);
   });
 }
 

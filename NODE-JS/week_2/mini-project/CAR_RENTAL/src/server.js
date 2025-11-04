@@ -20,6 +20,9 @@ globalCarRoutes(express, app, API_CARS_URL);
 const globalRentalsRoutes = require("./routes/rentals.routes");
 globalRentalsRoutes(express, app, API_RENTS_URL);
 
-app.listen(3000, () =>
-  console.log("app is launched on  http://localhost:3000")
+const errorHandler = require("./middlewares/errorHandler");
+app.use(errorHandler);
+
+app.listen(APP_PORT, () =>
+  console.log(`app is launched on  http://localhost:${APP_PORT}`)
 );

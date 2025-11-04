@@ -6,11 +6,11 @@ const JSON_DATA = JSON.parse(fs.readFileSync(JSON_DATA_FILE, "utf-8"));
 
 function filterCars(cars, query) {
   const { category, available, minpricePerDay, maxpricePerDay, q } = query;
-  if (category !== undefined) {
+  if (category) {
     cars = cars.filter((c) => c.category === category);
   }
 
-  if (available !== undefined) {
+  if (available) {
     const isAvailable = available === "true" || available === true;
     cars = cars.filter((c) => c.available === isAvailable);
   }
@@ -36,7 +36,9 @@ function filterCars(cars, query) {
   if (q) {
     const lowerQ = q.toLowerCase();
     cars = cars.filter(
-      (c) => c.plate && c.plate.toLowerCase().includes(lowerQ)
+      (c) =>
+        (c.plate && c.plate.toLowerCase().includes(lowerQ)) ||
+        (c.model && c.model.toLowerCase().includes(lowerQ))
     );
   }
 
@@ -49,7 +51,7 @@ function paginateData(data, page, limit) {
   if (page && limit) {
     page = parseInt(page) || 0;
     limit = parseInt(limit) || 10;
-    start = page * 10;
+    start = page * limit;
     end = start + limit;
   }
   return data.slice(start, end);
@@ -69,6 +71,15 @@ function getCarByIdService(id) {
 
 function createCarService(carData) {
   let data = [...JSON_DATA];
+  
+  // Check for unique plate if provided
+  if (carData.plate) {
+    const plateExists = data.some((car) => car.plate === carData.plate);
+    if (plateExists) {
+      return { error: "plate already exists" };
+    }
+  }
+  
   carData.id = data.length + 1;
   carData.available = true;
   carData.createdAt = new Date().toISOString();
@@ -80,23 +91,50 @@ function createCarService(carData) {
 
 function updateCarService(id, carData) {
   let data = [...JSON_DATA];
-  let index = data.findIndex((carData) => Number(carData.id === Number(id)));
-  if (index !== -1) {
-    data[index].pricePerDay = parseFloat(carData.pricePerDay);
-    data[index].available = carData.available;
-    data[index].updatedAt = new Date().toISOString();
-    fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
-    return true;
-  } else {
+  let index = data.findIndex((car) => Number(car.id) === Number(id));
+  
+  if (index === -1) {
     return false;
   }
+  
+  // Check for unique plate if provided and changed
+  if (carData.plate && carData.plate !== data[index].plate) {
+    const plateExists = data.some(
+      (car, idx) => idx !== index && car.plate === carData.plate
+    );
+    if (plateExists) {
+      return { error: "plate already exists" };
+    }
+  }
+  
+  if (carData.pricePerDay !== undefined) {
+    data[index].pricePerDay = parseFloat(carData.pricePerDay);
+  }
+  if (carData.available !== undefined) {
+    data[index].available = carData.available;
+  }
+  if (carData.plate !== undefined) {
+    data[index].plate = carData.plate;
+  }
+  if (carData.brand !== undefined) {
+    data[index].brand = carData.brand;
+  }
+  if (carData.model !== undefined) {
+    data[index].model = carData.model;
+  }
+  if (carData.category !== undefined) {
+    data[index].category = carData.category;
+  }
+  
+  data[index].updatedAt = new Date().toISOString();
+  fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(data));
+  return true;
 }
 
 function deleteCarService(id) {
   let data = [...JSON_DATA];
-  let new_data =
-    data.filter((carData) => Number(carData.id) !== Number(id)) || undefined;
-  if (new_data !== undefined) {
+  let new_data = data.filter((carData) => Number(carData.id) !== Number(id));
+  if (new_data.length < data.length) {
     fs.writeFileSync(JSON_DATA_FILE, JSON.stringify(new_data));
     return true;
   } else {
