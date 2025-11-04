@@ -1,19 +1,12 @@
 function errorHandler(err, req, res, next) {
-  let params = { ...req.body };
-  if (
-    !params.title ||
-    params.title === undefined ||
-    params.complete === undefined ||
-    params.priority === undefined ||
-    params.dueDate === undefined
-  ) {
-    res.status(err.status).json({
-      status: err.status,
-      message: err.message,
-      code: err.statusCode,
-      timestamp: new Date().toISOString(),
-    });
-  } else {
-    next();
-  }
+  const status = err.statusCode || err.status || 500;
+  const message = err.message || "Internal Server Error";
+  res.status(status).json({
+    status: "error",
+    message,
+    code: status,
+    timestamp: new Date().toISOString(),
+  });
 }
+
+module.exports = errorHandler;

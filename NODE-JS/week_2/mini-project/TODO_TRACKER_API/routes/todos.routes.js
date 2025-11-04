@@ -1,41 +1,32 @@
+const express = require("express");
+const router = express.Router();
+
 const {
   getAllTodosController,
   getTodosByIdController,
-  createTodosCOntroller,
+  createTodosController,
   updateTodosController,
   deleteTodosController,
+  toggleTodoController,
 } = require("../controllers/todos.controller.js");
 
-function todosGlobalRoutes(express, app) {
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
+router.get("/api/todos", (req, res, next) =>
+  getAllTodosController(req, res, next)
+);
+router.get("/api/todos/:id", (req, res, next) =>
+  getTodosByIdController(req, res, next)
+);
+router.post("/api/todos", (req, res, next) =>
+  createTodosController(req, res, next)
+);
+router.patch("/api/todos/:id", (req, res, next) =>
+  updateTodosController(req, res, next)
+);
+router.delete("/api/todos/:id", (req, res, next) =>
+  deleteTodosController(req, res, next)
+);
+router.patch("/api/todos/:id/toggle", (req, res, next) =>
+  toggleTodoController(req, res, next)
+);
 
-  app.get("/", (req, res) => {
-    res.status(200);
-    res.send("Welcome to TODO TRACKER API !");
-  });
-
-  app.get("/api/todos", (req, res) => {
-    getAllTodosController(req, res);
-  });
-
-  app.get("/api/todos/:id", (req, res) => {
-    getTodosByIdController(req, res);
-  });
-
-  app.post("/api/todos", (req, res) => {
-    createTodosCOntroller(req, res);
-  });
-
-  app.patch("/api/todos/:id", (req, res) => {
-    updateTodosController(req, res);
-  });
-
-  app.delete("/api/todos/:id", (req, res) => {
-    deleteTodosController(req, res);
-  });
-
-  app.patch("/api/todos/:id/toggle", (req, res) => {});
-}
-
-module.exports = todosGlobalRoutes;
+module.exports = router;
