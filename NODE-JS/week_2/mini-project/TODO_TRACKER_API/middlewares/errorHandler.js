@@ -1,12 +1,15 @@
 function errorHandler(err, req, res, next) {
-  const status = err.statusCode || err.status || 500;
-  const message = err.message || "Internal Server Error";
-  res.status(status).json({
-    status: "error",
-    message,
-    code: status,
-    timestamp: new Date().toISOString(),
-  });
+  if (err) {
+    const statusCode = err.status || err.statusCode || 500;
+    res.status(statusCode).json({
+      status: "error",
+      message: err.message || "Internal Server Error",
+      code: statusCode,
+      timestamp: new Date().toISOString(),
+    });
+  } else {
+    next();
+  }
 }
 
 module.exports = errorHandler;

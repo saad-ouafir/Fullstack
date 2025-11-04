@@ -1,32 +1,58 @@
-const express = require("express");
-const router = express.Router();
-
 const {
   getAllTodosController,
   getTodosByIdController,
-  createTodosController,
+  createTodosCOntroller,
   updateTodosController,
   deleteTodosController,
   toggleTodoController,
 } = require("../controllers/todos.controller.js");
 
-router.get("/api/todos", (req, res, next) =>
-  getAllTodosController(req, res, next)
-);
-router.get("/api/todos/:id", (req, res, next) =>
-  getTodosByIdController(req, res, next)
-);
-router.post("/api/todos", (req, res, next) =>
-  createTodosController(req, res, next)
-);
-router.patch("/api/todos/:id", (req, res, next) =>
-  updateTodosController(req, res, next)
-);
-router.delete("/api/todos/:id", (req, res, next) =>
-  deleteTodosController(req, res, next)
-);
-router.patch("/api/todos/:id/toggle", (req, res, next) =>
-  toggleTodoController(req, res, next)
-);
+// const errorHandler = require("../middlewares/errorHandler");
 
-module.exports = router;
+function todosGlobalRoutes(express, app) {
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+
+  app.get("/", (req, res) => {
+    res.status(200);
+    res.send("Welcome to TODO TRACKER API !");
+  });
+
+  app.get("/api/todos", (req, res) => {
+    getAllTodosController(req, res);
+  });
+
+  app.get("/api/todos/:id", (req, res) => {
+    getTodosByIdController(req, res);
+  });
+
+  app.post("/api/todos", (req, res) => {
+    createTodosCOntroller(req, res);
+  });
+
+  app.patch("/api/todos/:id", (req, res) => {
+    updateTodosController(req, res);
+  });
+
+  app.delete("/api/todos/:id", (req, res) => {
+    deleteTodosController(req, res);
+  });
+
+  app.patch("/api/todos/:id/toggle", (req, res) => {
+    toggleTodoController(req, res);
+  });
+
+  // 404 handler for undefined routes
+  app.use((req, res) => {
+    res.status(404).json({
+      status: "error",
+      message: "Route not found",
+      code: 404,
+      timestamp: new Date().toISOString(),
+    });
+  });
+
+  // app.use(errorHandler);
+}
+
+module.exports = todosGlobalRoutes;

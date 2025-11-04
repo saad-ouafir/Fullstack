@@ -1,3 +1,7 @@
 const morgan = require("morgan");
 
-module.exports = morgan(":date[iso] :method :url -> :status :response-time ms");
+function Logger(app) {
+  app.use(morgan(":date[iso] :method :url -> :status :response-time ms"));
+}
+
+module.exports = Logger;

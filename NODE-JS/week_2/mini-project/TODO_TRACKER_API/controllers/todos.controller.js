@@ -7,157 +7,94 @@ const {
   toggleTodoService,
 } = require("../services/todos.service");
 
-const PRIORITIES = ["low", "medium", "high"];
-const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+function validateData(req, res, next) {
+  const priorities = ["low", "medium", "high"];
+  const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
 
-function validateCreate(body) {
-  const errors = [];
-  if (!body || typeof body.title !== "string" || body.title.trim() === "") {
-    errors.push("title is required and must be a non-empty string");
-  }
   if (
-    body.priority &&
-    !PRIORITIES.includes(String(body.priority).toLowerCase())
+    !req.title ||
+    req.title === "" ||
+    req.complete === "" ||
+    !dateRegex.test(req.dueDate)
   ) {
-    errors.push("priority must be one of low|medium|high");
-  }
-  if (
-    body.dueDate !== undefined &&
-    body.dueDate !== null &&
-    !DATE_RE.test(String(body.dueDate))
-  ) {
-    errors.push("dueDate must be in YYYY-MM-DD format or null");
-  }
-  if (body.completed !== undefined && typeof body.completed !== "boolean") {
-    errors.push("completed must be a boolean if provided");
-  }
-  return errors;
-}
-
-function validatePatch(body) {
-  const allowed = new Set(["title", "completed", "priority", "dueDate"]);
-  const keys = Object.keys(body || {});
-  const errors = [];
-  for (const k of keys) {
-    if (!allowed.has(k)) errors.push(`Unknown field: ${k}`);
-  }
-  if (
-    body.title !== undefined &&
-    (typeof body.title !== "string" || body.title.trim() === "")
-  ) {
-    errors.push("title must be a non-empty string");
-  }
-  if (
-    body.priority !== undefined &&
-    !PRIORITIES.includes(String(body.priority).toLowerCase())
-  ) {
-    errors.push("priority must be one of low|medium|high");
-  }
-  if (
-    body.dueDate !== undefined &&
-    body.dueDate !== null &&
-    !DATE_RE.test(String(body.dueDate))
-  ) {
-    errors.push("dueDate must be in YYYY-MM-DD format or null");
-  }
-  if (body.completed !== undefined && typeof body.completed !== "boolean") {
-    errors.push("completed must be a boolean if provided");
-  }
-  return errors;
-}
-
-async function getAllTodosController(req, res, next) {
-  try {
-    const result = await getAllTodosService(req.query);
-    res.status(200).json(result);
-  } catch (err) {
-    next(err);
-  }
-}
-
-async function getTodosByIdController(req, res, next) {
-  try {
-    const result = await getTodosByIdService(req.params.id);
-    if (!result) return res.status(404).json({ message: "Todo not found" });
-    res.status(200).json(result);
-  } catch (err) {
-    next(err);
-  }
-}
-
-async function createTodosController(req, res, next) {
-  try {
-    const errors = validateCreate(req.body);
-    if (errors.length) {
-      return res.status(400).json({
-        status: "error",
-        message: errors.join(", "),
-        code: 400,
-        timestamp: new Date().toISOString(),
-      });
+    if (!req.priority) {
+      req.priority = "medium";
+    } else if (req.priority !== req.priority.includes(priorities)) {
+      req.priority = "medium";
     }
-    const created = await createTodosService({
-      title: req.body.title.trim(),
-      completed: req.body.completed === true,
-      priority: req.body.priority
-        ? String(req.body.priority).toLowerCase()
-        : "medium",
-      dueDate: req.body.dueDate ?? null,
+    return res.status(404).json({
+      statusCode: 404,
+      status: "Error",
+      message: "Invalid or missing data!",
     });
-    res.status(201).json(created);
-  } catch (err) {
-    next(err);
+  } else {
+    next();
   }
 }
 
-async function updateTodosController(req, res, next) {
-  try {
-    const errors = validatePatch(req.body || {});
-    if (errors.length) {
-      return res.status(400).json({
-        status: "error",
-        message: errors.join(", "),
-        code: 400,
-        timestamp: new Date().toISOString(),
-      });
+function getAllTodosController(req, res) {
+  // res.setHeader("Content-Type", "application/json; charset=utf-8");
+  res.status(200).send(getAllTodosService(req.query));
+}
+
+function getTodosByIdController(req, res) {
+  const result = getTodosByIdService(req.params.id);
+  if (result !== false) {
+    res.status(200).send(result);
+  } else {
+    res.status(404).json({
+      status: "error",
+      message: "Todos ID NOT FOUND !",
+      code: 404,
+      timestamp: new Date().toISOString(),
+    });
+  }
+}
+
+function createTodosCOntroller(req, res) {
+  validateData(req.body, res, () => {
+    if (createTodosService(req.body) === true) {
+      res.status(201).json("Todos Created Secussfully !");
     }
-    const updated = await updateTodosService(req.params.id, {
-      ...req.body,
-      priority: req.body.priority
-        ? String(req.body.priority).toLowerCase()
-        : req.body.priority,
+  });
+}
+
+function updateTodosController(req, res) {
+  validateData(req.body, res, () => {
+    if (updateTodosService(req.params.id, req.body) === true) {
+      res.status(200).json("Todos Updated Secussfully !");
+    } else {
+      res.status(404).json("Todos ID NOT FOUND !");
+    }
+  });
+}
+
+function deleteTodosController(req, res) {
+  if (deleteTodosService(req.params.id) === true) {
+    res.status(200).json("Todos Deleted Secussfully !");
+  } else {
+    res.status(404).json("Todos ID NOT FOUND !");
+  }
+}
+
+function toggleTodoController(req, res) {
+  const result = toggleTodoService(req.params.id);
+  if (result !== false) {
+    res.status(200).json(result);
+  } else {
+    res.status(404).json({
+      status: "error",
+      message: "Todos ID NOT FOUND !",
+      code: 404,
+      timestamp: new Date().toISOString(),
     });
-    if (!updated) return res.status(404).json({ message: "Todo not found" });
-    res.status(200).json(updated);
-  } catch (err) {
-    next(err);
-  }
-}
-
-async function deleteTodosController(req, res, next) {
-  try {
-    const ok = await deleteTodosService(req.params.id);
-    if (!ok) return res.status(404).json({ message: "Todo not found" });
-    res.status(204).send();
-  } catch (err) {
-    next(err);
-  }
-}
-
-async function toggleTodoController(req, res, next) {
-  try {
-    const toggled = await toggleTodoService(req.params.id);
-    if (!toggled) return res.status(404).json({ message: "Todo not found" });
-    res.status(200).json(toggled);
-  } catch (err) {
-    next(err);
   }
 }
 
 module.exports = {
   getAllTodosController,
   getTodosByIdController,
-  createTodosController,
+  createTodosCOntroller,
   updateTodosController,
   deleteTodosController,
   toggleTodoController,
