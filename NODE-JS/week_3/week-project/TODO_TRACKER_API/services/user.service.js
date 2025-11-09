@@ -2,9 +2,7 @@ const User = require("../models/user.model");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-/**
- * Enregistrer un nouvel utilisateur
- */
+// Enregistrer un nouvel utilisateur
 async function register(data) {
   const { name, email, password, role } = data;
 
@@ -38,9 +36,7 @@ async function register(data) {
   };
 }
 
-/**
- * Connexion d'un utilisateur
- */
+// Connexion d'un utilisateur
 async function login(email, password) {
   // Trouver l'utilisateur par email
   const user = await User.findOne({ email });
@@ -72,9 +68,7 @@ async function login(email, password) {
   };
 }
 
-/**
- * Générer un token JWT
- */
+// Générer un token JWT
 function generateToken(user) {
   const payload = {
     id: user._id,
@@ -82,7 +76,7 @@ function generateToken(user) {
     role: user.role,
   };
 
-  const secret = process.env.JWT_SECRET || "your-secret-key-change-in-production";
+  const secret = process.env.JWT_SECRET;
   const options = {
     expiresIn: process.env.JWT_EXPIRES_IN || "24h",
   };
@@ -90,12 +84,10 @@ function generateToken(user) {
   return jwt.sign(payload, secret, options);
 }
 
-/**
- * Vérifier un token JWT
- */
+// Vérifier un token JWT
 function verifyToken(token) {
   try {
-    const secret = process.env.JWT_SECRET || "your-secret-key-change-in-production";
+    const secret = process.env.JWT_SECRET;
     return jwt.verify(token, secret);
   } catch (error) {
     const err = new Error("Token invalide ou expiré");
@@ -104,9 +96,7 @@ function verifyToken(token) {
   }
 }
 
-/**
- * Récupérer un utilisateur par ID
- */
+// Récupérer un utilisateur par ID
 async function getUserById(userId) {
   const user = await User.findById(userId).select("-password");
   if (!user) {

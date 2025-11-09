@@ -1,9 +1,7 @@
 const { verifyToken, getUserById } = require("../services/user.service");
 
-/**
- * Middleware d'authentification JWT
- * Vérifie le token et attache l'utilisateur à req.user
- */
+// Middleware d'authentification JWT
+// Vérifie le token et attache l'utilisateur à req.user
 async function authenticate(req, res, next) {
   try {
     // Récupérer le token depuis le header Authorization
@@ -46,9 +44,7 @@ async function authenticate(req, res, next) {
   }
 }
 
-/**
- * Middleware pour vérifier le rôle admin
- */
+// Middleware pour vérifier le rôle admin
 function requireAdmin(req, res, next) {
   if (!req.user) {
     return res.status(401).json({
@@ -71,10 +67,7 @@ function requireAdmin(req, res, next) {
   next();
 }
 
-/**
- * Middleware optionnel d'authentification
- * N'échoue pas si le token est absent, mais l'attache s'il est présent
- */
+// Middleware optionnel d'authentification
 async function optionalAuth(req, res, next) {
   try {
     const authHeader = req.headers.authorization;

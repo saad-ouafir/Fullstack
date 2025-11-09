@@ -1,8 +1,5 @@
 const { register, login } = require("../services/user.service");
 
-/**
- * Inscription d'un nouvel utilisateur
- */
 async function registerController(req, res, next) {
   try {
     const { name, email, password, role } = req.body;
@@ -39,9 +36,6 @@ async function registerController(req, res, next) {
   }
 }
 
-/**
- * Connexion d'un utilisateur
- */
 async function loginController(req, res, next) {
   try {
     const { email, password } = req.body;
@@ -69,9 +63,6 @@ async function loginController(req, res, next) {
   }
 }
 
-/**
- * Récupérer le profil de l'utilisateur connecté
- */
 async function getMeController(req, res, next) {
   try {
     res.status(200).json({

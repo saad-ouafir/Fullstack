@@ -1,14 +1,12 @@
-/**
- * Script pour créer un utilisateur administrateur
- * Usage: node scripts/createAdmin.js
- */
+// Script pour créer un utilisateur administrateur
 
 require("dotenv").config();
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const User = require("../models/user.model");
 
-const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017/todo-tracker";
+const MONGO_URL =
+  process.env.MONGO_URL || "mongodb://localhost:27017/todo-tracker";
 
 async function createAdmin() {
   try {

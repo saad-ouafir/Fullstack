@@ -7,9 +7,7 @@ const {
   MAX_LIMIT,
 } = require("../config/constants");
 
-/**
- * Construire les filtres MongoDB à partir des query params
- */
+// Construire les filtres MongoDB à partir des query params
 function buildMongoFilters(filters, userId, userRole) {
   const mongoFilters = {};
 
@@ -40,9 +38,7 @@ function buildMongoFilters(filters, userId, userRole) {
   return mongoFilters;
 }
 
-/**
- * Récupérer tous les todos avec filtres et pagination
- */
+// Récupérer tous les todos avec filtres et pagination
 async function getAllTodosService(filters, userId, userRole) {
   const page = parseInt(filters.page) || DEFAULT_PAGE;
   let limit = parseInt(filters.limit) || DEFAULT_LIMIT;
@@ -78,9 +74,7 @@ async function getAllTodosService(filters, userId, userRole) {
   };
 }
 
-/**
- * Récupérer un todo par ID
- */
+// Récupérer un todo par ID
 async function getTodosByIdService(id, userId, userRole) {
   const query = { _id: id };
 
@@ -93,9 +87,7 @@ async function getTodosByIdService(id, userId, userRole) {
   return todo;
 }
 
-/**
- * Créer un nouveau todo
- */
+// Créer un nouveau todo
 async function createTodosService(todoData, userId) {
   const newTodo = await Todo.create({
     title: todoData.title,
@@ -108,9 +100,7 @@ async function createTodosService(todoData, userId) {
   return await Todo.findById(newTodo._id).populate("user", "name email");
 }
 
-/**
- * Mettre à jour un todo
- */
+// Mettre à jour un todo
 async function updateTodosService(id, updateData, userId, userRole) {
   const query = { _id: id };
 
@@ -128,9 +118,7 @@ async function updateTodosService(id, updateData, userId, userRole) {
   return updatedTodo;
 }
 
-/**
- * Supprimer un todo
- */
+// Supprimer un todo
 async function deleteTodosService(id, userId, userRole) {
   const query = { _id: id };
 
@@ -143,9 +131,7 @@ async function deleteTodosService(id, userId, userRole) {
   return deletedTodo !== null;
 }
 
-/**
- * Basculer le statut completed d'un todo
- */
+// Basculer le statut completed d'un todo
 async function toggleTodoService(id, userId, userRole) {
   const query = { _id: id };
 
