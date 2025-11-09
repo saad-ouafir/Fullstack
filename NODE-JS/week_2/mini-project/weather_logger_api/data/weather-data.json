@@ -1,0 +1,7002 @@
+[
+  {
+    "id": 1,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-01T00:00:00Z",
+    "tempC": 32.0,
+    "humidity": 0.34,
+    "pressure": 995,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.6,
+      "deg": 318
+    }
+  },
+  {
+    "id": 2,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T01:00:00Z",
+    "tempC": 14.6,
+    "humidity": 0.79,
+    "pressure": 1036,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.6,
+      "deg": 106
+    }
+  },
+  {
+    "id": 3,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-01T02:00:00Z",
+    "tempC": 27.5,
+    "humidity": 0.46,
+    "pressure": 987,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.2,
+      "deg": 130
+    }
+  },
+  {
+    "id": 4,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T03:00:00Z",
+    "tempC": 21.1,
+    "humidity": 0.56,
+    "pressure": 983,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.0,
+      "deg": 157
+    }
+  },
+  {
+    "id": 5,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-01T04:00:00Z",
+    "tempC": 13.2,
+    "humidity": 0.48,
+    "pressure": 1023,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.3,
+      "deg": 71
+    }
+  },
+  {
+    "id": 6,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-01T05:00:00Z",
+    "tempC": 23.8,
+    "humidity": 0.54,
+    "pressure": 1004,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.9,
+      "deg": 285
+    }
+  },
+  {
+    "id": 7,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-01T06:00:00Z",
+    "tempC": 29.0,
+    "humidity": 0.74,
+    "pressure": 1037,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.0,
+      "deg": 132
+    }
+  },
+  {
+    "id": 8,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-01T07:00:00Z",
+    "tempC": 27.1,
+    "humidity": 0.83,
+    "pressure": 998,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.7,
+      "deg": 111
+    }
+  },
+  {
+    "id": 9,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-01T08:00:00Z",
+    "tempC": 32.0,
+    "humidity": 0.76,
+    "pressure": 1016,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.9,
+      "deg": 253
+    }
+  },
+  {
+    "id": 10,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T09:00:00Z",
+    "tempC": 28.0,
+    "humidity": 0.83,
+    "pressure": 1004,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.6,
+      "deg": 326
+    }
+  },
+  {
+    "id": 11,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T10:00:00Z",
+    "tempC": 18.7,
+    "humidity": 0.6,
+    "pressure": 1021,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.6,
+      "deg": 38
+    }
+  },
+  {
+    "id": 12,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-01T11:00:00Z",
+    "tempC": 30.0,
+    "humidity": 0.6,
+    "pressure": 1017,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.4,
+      "deg": 156
+    }
+  },
+  {
+    "id": 13,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T12:00:00Z",
+    "tempC": 28.1,
+    "humidity": 0.87,
+    "pressure": 990,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.9,
+      "deg": 58
+    }
+  },
+  {
+    "id": 14,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-01T13:00:00Z",
+    "tempC": 21.4,
+    "humidity": 0.32,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.8,
+      "deg": 7
+    }
+  },
+  {
+    "id": 15,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-01T14:00:00Z",
+    "tempC": 24.3,
+    "humidity": 0.55,
+    "pressure": 1000,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.1,
+      "deg": 283
+    }
+  },
+  {
+    "id": 16,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-01T15:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.54,
+    "pressure": 1040,
+    "conditions": "storm",
+    "wind": {
+      "speed": 6.1,
+      "deg": 279
+    }
+  },
+  {
+    "id": 17,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-01T16:00:00Z",
+    "tempC": 15.1,
+    "humidity": 0.48,
+    "pressure": 1007,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.9,
+      "deg": 254
+    }
+  },
+  {
+    "id": 18,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T17:00:00Z",
+    "tempC": 5.4,
+    "humidity": 0.61,
+    "pressure": 1015,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.1,
+      "deg": 82
+    }
+  },
+  {
+    "id": 19,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T18:00:00Z",
+    "tempC": 16.0,
+    "humidity": 0.75,
+    "pressure": 1001,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.7,
+      "deg": 251
+    }
+  },
+  {
+    "id": 20,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-01T19:00:00Z",
+    "tempC": 28.2,
+    "humidity": 0.44,
+    "pressure": 980,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.2,
+      "deg": 148
+    }
+  },
+  {
+    "id": 21,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-01T20:00:00Z",
+    "tempC": 27.0,
+    "humidity": 0.62,
+    "pressure": 1032,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.3,
+      "deg": 87
+    }
+  },
+  {
+    "id": 22,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-01T21:00:00Z",
+    "tempC": 16.4,
+    "humidity": 0.72,
+    "pressure": 1005,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.3,
+      "deg": 43
+    }
+  },
+  {
+    "id": 23,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-01T22:00:00Z",
+    "tempC": 15.0,
+    "humidity": 0.36,
+    "pressure": 986,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.5,
+      "deg": 236
+    }
+  },
+  {
+    "id": 24,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-01T23:00:00Z",
+    "tempC": 12.2,
+    "humidity": 0.48,
+    "pressure": 984,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.6,
+      "deg": 27
+    }
+  },
+  {
+    "id": 25,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-02T00:00:00Z",
+    "tempC": 34.5,
+    "humidity": 0.51,
+    "pressure": 1016,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.0,
+      "deg": 262
+    }
+  },
+  {
+    "id": 26,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-02T01:00:00Z",
+    "tempC": 15.6,
+    "humidity": 0.66,
+    "pressure": 1014,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 12.9,
+      "deg": 106
+    }
+  },
+  {
+    "id": 27,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T02:00:00Z",
+    "tempC": 7.3,
+    "humidity": 0.9,
+    "pressure": 1008,
+    "conditions": "snow",
+    "wind": {
+      "speed": 8.0,
+      "deg": 197
+    }
+  },
+  {
+    "id": 28,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T03:00:00Z",
+    "tempC": 9.6,
+    "humidity": 0.62,
+    "pressure": 980,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.1,
+      "deg": 80
+    }
+  },
+  {
+    "id": 29,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T04:00:00Z",
+    "tempC": 13.4,
+    "humidity": 0.61,
+    "pressure": 1025,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.8,
+      "deg": 328
+    }
+  },
+  {
+    "id": 30,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T05:00:00Z",
+    "tempC": 31.0,
+    "humidity": 0.8,
+    "pressure": 987,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.0,
+      "deg": 56
+    }
+  },
+  {
+    "id": 31,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-02T06:00:00Z",
+    "tempC": 34.6,
+    "humidity": 0.75,
+    "pressure": 1035,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.5,
+      "deg": 294
+    }
+  },
+  {
+    "id": 32,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-02T07:00:00Z",
+    "tempC": 22.3,
+    "humidity": 0.8,
+    "pressure": 1013,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.3,
+      "deg": 112
+    }
+  },
+  {
+    "id": 33,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-02T08:00:00Z",
+    "tempC": 24.6,
+    "humidity": 0.56,
+    "pressure": 1024,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.8,
+      "deg": 127
+    }
+  },
+  {
+    "id": 34,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-02T09:00:00Z",
+    "tempC": 27.3,
+    "humidity": 0.63,
+    "pressure": 1007,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.1,
+      "deg": 275
+    }
+  },
+  {
+    "id": 35,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-02T10:00:00Z",
+    "tempC": 18.6,
+    "humidity": 0.67,
+    "pressure": 1021,
+    "conditions": "clear",
+    "wind": {
+      "speed": 12.3,
+      "deg": 122
+    }
+  },
+  {
+    "id": 36,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T11:00:00Z",
+    "tempC": 30.6,
+    "humidity": 0.43,
+    "pressure": 1015,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.1,
+      "deg": 274
+    }
+  },
+  {
+    "id": 37,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-02T12:00:00Z",
+    "tempC": 21.8,
+    "humidity": 0.66,
+    "pressure": 1013,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.7,
+      "deg": 221
+    }
+  },
+  {
+    "id": 38,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T13:00:00Z",
+    "tempC": 9.0,
+    "humidity": 0.68,
+    "pressure": 1034,
+    "conditions": "storm",
+    "wind": {
+      "speed": 3.2,
+      "deg": 24
+    }
+  },
+  {
+    "id": 39,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-02T14:00:00Z",
+    "tempC": 25.1,
+    "humidity": 0.66,
+    "pressure": 1001,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.2,
+      "deg": 56
+    }
+  },
+  {
+    "id": 40,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-02T15:00:00Z",
+    "tempC": 23.1,
+    "humidity": 0.75,
+    "pressure": 1002,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.0,
+      "deg": 105
+    }
+  },
+  {
+    "id": 41,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-02T16:00:00Z",
+    "tempC": 19.1,
+    "humidity": 0.51,
+    "pressure": 980,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.8,
+      "deg": 354
+    }
+  },
+  {
+    "id": 42,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-02T17:00:00Z",
+    "tempC": 34.6,
+    "humidity": 0.39,
+    "pressure": 1031,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.3,
+      "deg": 8
+    }
+  },
+  {
+    "id": 43,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-02T18:00:00Z",
+    "tempC": 5.5,
+    "humidity": 0.44,
+    "pressure": 995,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.8,
+      "deg": 107
+    }
+  },
+  {
+    "id": 44,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-02T19:00:00Z",
+    "tempC": 18.3,
+    "humidity": 0.53,
+    "pressure": 1012,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 0.6,
+      "deg": 207
+    }
+  },
+  {
+    "id": 45,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-02T20:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.82,
+    "pressure": 984,
+    "conditions": "snow",
+    "wind": {
+      "speed": 3.4,
+      "deg": 231
+    }
+  },
+  {
+    "id": 46,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-02T21:00:00Z",
+    "tempC": 7.2,
+    "humidity": 0.47,
+    "pressure": 1000,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.7,
+      "deg": 110
+    }
+  },
+  {
+    "id": 47,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-02T22:00:00Z",
+    "tempC": 27.1,
+    "humidity": 0.49,
+    "pressure": 1000,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.1,
+      "deg": 295
+    }
+  },
+  {
+    "id": 48,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-02T23:00:00Z",
+    "tempC": 10.4,
+    "humidity": 0.5,
+    "pressure": 980,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.0,
+      "deg": 320
+    }
+  },
+  {
+    "id": 49,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-03T00:00:00Z",
+    "tempC": 21.4,
+    "humidity": 0.69,
+    "pressure": 1040,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.0,
+      "deg": 182
+    }
+  },
+  {
+    "id": 50,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-03T01:00:00Z",
+    "tempC": 32.3,
+    "humidity": 0.75,
+    "pressure": 1037,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.7,
+      "deg": 111
+    }
+  },
+  {
+    "id": 51,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-03T02:00:00Z",
+    "tempC": 28.6,
+    "humidity": 0.59,
+    "pressure": 984,
+    "conditions": "storm",
+    "wind": {
+      "speed": 10.3,
+      "deg": 66
+    }
+  },
+  {
+    "id": 52,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-03T03:00:00Z",
+    "tempC": 8.3,
+    "humidity": 0.54,
+    "pressure": 1014,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.9,
+      "deg": 78
+    }
+  },
+  {
+    "id": 53,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-03T04:00:00Z",
+    "tempC": 9.3,
+    "humidity": 0.36,
+    "pressure": 997,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.7,
+      "deg": 177
+    }
+  },
+  {
+    "id": 54,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-03T05:00:00Z",
+    "tempC": 9.1,
+    "humidity": 0.35,
+    "pressure": 1010,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.3,
+      "deg": 302
+    }
+  },
+  {
+    "id": 55,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-03T06:00:00Z",
+    "tempC": 25.4,
+    "humidity": 0.35,
+    "pressure": 1020,
+    "conditions": "storm",
+    "wind": {
+      "speed": 2.6,
+      "deg": 211
+    }
+  },
+  {
+    "id": 56,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-03T07:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.34,
+    "pressure": 1024,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.4,
+      "deg": 241
+    }
+  },
+  {
+    "id": 57,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-03T08:00:00Z",
+    "tempC": 16.8,
+    "humidity": 0.34,
+    "pressure": 1011,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.6,
+      "deg": 114
+    }
+  },
+  {
+    "id": 58,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-03T09:00:00Z",
+    "tempC": 7.6,
+    "humidity": 0.84,
+    "pressure": 1029,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.8,
+      "deg": 135
+    }
+  },
+  {
+    "id": 59,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-03T10:00:00Z",
+    "tempC": 29.2,
+    "humidity": 0.62,
+    "pressure": 1008,
+    "conditions": "rain",
+    "wind": {
+      "speed": 12.4,
+      "deg": 280
+    }
+  },
+  {
+    "id": 60,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-03T11:00:00Z",
+    "tempC": 10.2,
+    "humidity": 0.67,
+    "pressure": 1033,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.7,
+      "deg": 299
+    }
+  },
+  {
+    "id": 61,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-03T12:00:00Z",
+    "tempC": 7.0,
+    "humidity": 0.36,
+    "pressure": 988,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.6,
+      "deg": 340
+    }
+  },
+  {
+    "id": 62,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-03T13:00:00Z",
+    "tempC": 12.7,
+    "humidity": 0.49,
+    "pressure": 988,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.7,
+      "deg": 128
+    }
+  },
+  {
+    "id": 63,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-03T14:00:00Z",
+    "tempC": 5.1,
+    "humidity": 0.41,
+    "pressure": 1030,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.4,
+      "deg": 150
+    }
+  },
+  {
+    "id": 64,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-03T15:00:00Z",
+    "tempC": 23.1,
+    "humidity": 0.74,
+    "pressure": 984,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.0,
+      "deg": 160
+    }
+  },
+  {
+    "id": 65,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-03T16:00:00Z",
+    "tempC": 31.9,
+    "humidity": 0.71,
+    "pressure": 1002,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.5,
+      "deg": 182
+    }
+  },
+  {
+    "id": 66,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-03T17:00:00Z",
+    "tempC": 25.3,
+    "humidity": 0.67,
+    "pressure": 985,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.9,
+      "deg": 128
+    }
+  },
+  {
+    "id": 67,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-03T18:00:00Z",
+    "tempC": 15.8,
+    "humidity": 0.81,
+    "pressure": 1040,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.9,
+      "deg": 154
+    }
+  },
+  {
+    "id": 68,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-03T19:00:00Z",
+    "tempC": 12.4,
+    "humidity": 0.76,
+    "pressure": 1015,
+    "conditions": "rain",
+    "wind": {
+      "speed": 0.9,
+      "deg": 66
+    }
+  },
+  {
+    "id": 69,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-03T20:00:00Z",
+    "tempC": 25.8,
+    "humidity": 0.33,
+    "pressure": 995,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 8.9,
+      "deg": 88
+    }
+  },
+  {
+    "id": 70,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-03T21:00:00Z",
+    "tempC": 24.3,
+    "humidity": 0.77,
+    "pressure": 1019,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.3,
+      "deg": 320
+    }
+  },
+  {
+    "id": 71,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-03T22:00:00Z",
+    "tempC": 17.1,
+    "humidity": 0.74,
+    "pressure": 988,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.4,
+      "deg": 42
+    }
+  },
+  {
+    "id": 72,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-03T23:00:00Z",
+    "tempC": 14.1,
+    "humidity": 0.47,
+    "pressure": 1035,
+    "conditions": "clear",
+    "wind": {
+      "speed": 10.2,
+      "deg": 347
+    }
+  },
+  {
+    "id": 73,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T00:00:00Z",
+    "tempC": 8.3,
+    "humidity": 0.7,
+    "pressure": 1033,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.0,
+      "deg": 313
+    }
+  },
+  {
+    "id": 74,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T01:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.84,
+    "pressure": 1003,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.6,
+      "deg": 36
+    }
+  },
+  {
+    "id": 75,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-04T02:00:00Z",
+    "tempC": 11.2,
+    "humidity": 0.51,
+    "pressure": 1005,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.5,
+      "deg": 301
+    }
+  },
+  {
+    "id": 76,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T03:00:00Z",
+    "tempC": 16.0,
+    "humidity": 0.73,
+    "pressure": 1007,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.1,
+      "deg": 72
+    }
+  },
+  {
+    "id": 77,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T04:00:00Z",
+    "tempC": 29.3,
+    "humidity": 0.49,
+    "pressure": 1016,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.7,
+      "deg": 317
+    }
+  },
+  {
+    "id": 78,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T05:00:00Z",
+    "tempC": 25.1,
+    "humidity": 0.5,
+    "pressure": 987,
+    "conditions": "snow",
+    "wind": {
+      "speed": 0.6,
+      "deg": 171
+    }
+  },
+  {
+    "id": 79,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T06:00:00Z",
+    "tempC": 21.1,
+    "humidity": 0.36,
+    "pressure": 1027,
+    "conditions": "rain",
+    "wind": {
+      "speed": 7.0,
+      "deg": 335
+    }
+  },
+  {
+    "id": 80,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-04T07:00:00Z",
+    "tempC": 8.3,
+    "humidity": 0.83,
+    "pressure": 1005,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.9,
+      "deg": 329
+    }
+  },
+  {
+    "id": 81,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T08:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.46,
+    "pressure": 1007,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 8.8,
+      "deg": 297
+    }
+  },
+  {
+    "id": 82,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-04T09:00:00Z",
+    "tempC": 31.9,
+    "humidity": 0.71,
+    "pressure": 998,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.7,
+      "deg": 32
+    }
+  },
+  {
+    "id": 83,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-04T10:00:00Z",
+    "tempC": 10.7,
+    "humidity": 0.84,
+    "pressure": 986,
+    "conditions": "storm",
+    "wind": {
+      "speed": 3.6,
+      "deg": 40
+    }
+  },
+  {
+    "id": 84,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T11:00:00Z",
+    "tempC": 29.2,
+    "humidity": 0.53,
+    "pressure": 997,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.2,
+      "deg": 172
+    }
+  },
+  {
+    "id": 85,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-04T12:00:00Z",
+    "tempC": 22.9,
+    "humidity": 0.68,
+    "pressure": 1026,
+    "conditions": "rain",
+    "wind": {
+      "speed": 15.0,
+      "deg": 138
+    }
+  },
+  {
+    "id": 86,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T13:00:00Z",
+    "tempC": 8.0,
+    "humidity": 0.31,
+    "pressure": 984,
+    "conditions": "clear",
+    "wind": {
+      "speed": 0.6,
+      "deg": 334
+    }
+  },
+  {
+    "id": 87,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T14:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.69,
+    "pressure": 1003,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.1,
+      "deg": 83
+    }
+  },
+  {
+    "id": 88,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-04T15:00:00Z",
+    "tempC": 15.7,
+    "humidity": 0.49,
+    "pressure": 1038,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.6,
+      "deg": 136
+    }
+  },
+  {
+    "id": 89,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-04T16:00:00Z",
+    "tempC": 29.2,
+    "humidity": 0.89,
+    "pressure": 1036,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.4,
+      "deg": 234
+    }
+  },
+  {
+    "id": 90,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-04T17:00:00Z",
+    "tempC": 5.3,
+    "humidity": 0.89,
+    "pressure": 1032,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.3,
+      "deg": 34
+    }
+  },
+  {
+    "id": 91,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-04T18:00:00Z",
+    "tempC": 21.5,
+    "humidity": 0.75,
+    "pressure": 1007,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.1,
+      "deg": 282
+    }
+  },
+  {
+    "id": 92,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-04T19:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.84,
+    "pressure": 1030,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.9,
+      "deg": 220
+    }
+  },
+  {
+    "id": 93,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T20:00:00Z",
+    "tempC": 19.0,
+    "humidity": 0.33,
+    "pressure": 988,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.6,
+      "deg": 281
+    }
+  },
+  {
+    "id": 94,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-04T21:00:00Z",
+    "tempC": 31.9,
+    "humidity": 0.84,
+    "pressure": 1040,
+    "conditions": "rain",
+    "wind": {
+      "speed": 7.4,
+      "deg": 201
+    }
+  },
+  {
+    "id": 95,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T22:00:00Z",
+    "tempC": 15.2,
+    "humidity": 0.58,
+    "pressure": 1016,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.2,
+      "deg": 4
+    }
+  },
+  {
+    "id": 96,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-04T23:00:00Z",
+    "tempC": 5.2,
+    "humidity": 0.85,
+    "pressure": 980,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.6,
+      "deg": 122
+    }
+  },
+  {
+    "id": 97,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T00:00:00Z",
+    "tempC": 14.2,
+    "humidity": 0.33,
+    "pressure": 997,
+    "conditions": "rain",
+    "wind": {
+      "speed": 12.2,
+      "deg": 115
+    }
+  },
+  {
+    "id": 98,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-05T01:00:00Z",
+    "tempC": 19.5,
+    "humidity": 0.66,
+    "pressure": 1001,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 10.1,
+      "deg": 242
+    }
+  },
+  {
+    "id": 99,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-05T02:00:00Z",
+    "tempC": 5.3,
+    "humidity": 0.43,
+    "pressure": 1034,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.0,
+      "deg": 139
+    }
+  },
+  {
+    "id": 100,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-05T03:00:00Z",
+    "tempC": 31.7,
+    "humidity": 0.38,
+    "pressure": 1036,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.7,
+      "deg": 187
+    }
+  },
+  {
+    "id": 101,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-05T04:00:00Z",
+    "tempC": 7.2,
+    "humidity": 0.4,
+    "pressure": 1012,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.1,
+      "deg": 156
+    }
+  },
+  {
+    "id": 102,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-05T05:00:00Z",
+    "tempC": 14.5,
+    "humidity": 0.89,
+    "pressure": 1017,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.4,
+      "deg": 135
+    }
+  },
+  {
+    "id": 103,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T06:00:00Z",
+    "tempC": 16.6,
+    "humidity": 0.51,
+    "pressure": 1031,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.0,
+      "deg": 229
+    }
+  },
+  {
+    "id": 104,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-05T07:00:00Z",
+    "tempC": 15.3,
+    "humidity": 0.61,
+    "pressure": 1028,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.1,
+      "deg": 56
+    }
+  },
+  {
+    "id": 105,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T08:00:00Z",
+    "tempC": 12.4,
+    "humidity": 0.88,
+    "pressure": 1011,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.6,
+      "deg": 76
+    }
+  },
+  {
+    "id": 106,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-05T09:00:00Z",
+    "tempC": 6.7,
+    "humidity": 0.82,
+    "pressure": 1027,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.0,
+      "deg": 329
+    }
+  },
+  {
+    "id": 107,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-05T10:00:00Z",
+    "tempC": 7.0,
+    "humidity": 0.64,
+    "pressure": 993,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.5,
+      "deg": 84
+    }
+  },
+  {
+    "id": 108,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-05T11:00:00Z",
+    "tempC": 17.8,
+    "humidity": 0.66,
+    "pressure": 996,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.9,
+      "deg": 268
+    }
+  },
+  {
+    "id": 109,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T12:00:00Z",
+    "tempC": 29.7,
+    "humidity": 0.78,
+    "pressure": 985,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.7,
+      "deg": 73
+    }
+  },
+  {
+    "id": 110,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-05T13:00:00Z",
+    "tempC": 6.9,
+    "humidity": 0.67,
+    "pressure": 1001,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.1,
+      "deg": 165
+    }
+  },
+  {
+    "id": 111,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-05T14:00:00Z",
+    "tempC": 6.3,
+    "humidity": 0.82,
+    "pressure": 998,
+    "conditions": "rain",
+    "wind": {
+      "speed": 1.7,
+      "deg": 78
+    }
+  },
+  {
+    "id": 112,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T15:00:00Z",
+    "tempC": 15.6,
+    "humidity": 0.68,
+    "pressure": 1009,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.6,
+      "deg": 128
+    }
+  },
+  {
+    "id": 113,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-05T16:00:00Z",
+    "tempC": 12.2,
+    "humidity": 0.78,
+    "pressure": 1034,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.2,
+      "deg": 6
+    }
+  },
+  {
+    "id": 114,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-05T17:00:00Z",
+    "tempC": 5.0,
+    "humidity": 0.75,
+    "pressure": 1025,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 10.6,
+      "deg": 261
+    }
+  },
+  {
+    "id": 115,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T18:00:00Z",
+    "tempC": 12.4,
+    "humidity": 0.57,
+    "pressure": 984,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.4,
+      "deg": 108
+    }
+  },
+  {
+    "id": 116,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-05T19:00:00Z",
+    "tempC": 14.1,
+    "humidity": 0.57,
+    "pressure": 1022,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.8,
+      "deg": 190
+    }
+  },
+  {
+    "id": 117,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-05T20:00:00Z",
+    "tempC": 11.5,
+    "humidity": 0.42,
+    "pressure": 990,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.6,
+      "deg": 232
+    }
+  },
+  {
+    "id": 118,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-05T21:00:00Z",
+    "tempC": 32.9,
+    "humidity": 0.5,
+    "pressure": 998,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.4,
+      "deg": 157
+    }
+  },
+  {
+    "id": 119,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-05T22:00:00Z",
+    "tempC": 8.5,
+    "humidity": 0.72,
+    "pressure": 1016,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.4,
+      "deg": 50
+    }
+  },
+  {
+    "id": 120,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-05T23:00:00Z",
+    "tempC": 32.5,
+    "humidity": 0.38,
+    "pressure": 991,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.7,
+      "deg": 192
+    }
+  },
+  {
+    "id": 121,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-06T00:00:00Z",
+    "tempC": 21.5,
+    "humidity": 0.59,
+    "pressure": 1033,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.2,
+      "deg": 42
+    }
+  },
+  {
+    "id": 122,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-06T01:00:00Z",
+    "tempC": 28.4,
+    "humidity": 0.72,
+    "pressure": 1004,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.9,
+      "deg": 20
+    }
+  },
+  {
+    "id": 123,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T02:00:00Z",
+    "tempC": 12.2,
+    "humidity": 0.4,
+    "pressure": 1005,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.5,
+      "deg": 218
+    }
+  },
+  {
+    "id": 124,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-06T03:00:00Z",
+    "tempC": 24.2,
+    "humidity": 0.7,
+    "pressure": 1040,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.9,
+      "deg": 337
+    }
+  },
+  {
+    "id": 125,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-06T04:00:00Z",
+    "tempC": 15.1,
+    "humidity": 0.31,
+    "pressure": 1008,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.3,
+      "deg": 167
+    }
+  },
+  {
+    "id": 126,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-06T05:00:00Z",
+    "tempC": 9.4,
+    "humidity": 0.45,
+    "pressure": 1022,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.7,
+      "deg": 81
+    }
+  },
+  {
+    "id": 127,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-06T06:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.38,
+    "pressure": 1019,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.0,
+      "deg": 328
+    }
+  },
+  {
+    "id": 128,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T07:00:00Z",
+    "tempC": 24.5,
+    "humidity": 0.65,
+    "pressure": 1024,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.4,
+      "deg": 127
+    }
+  },
+  {
+    "id": 129,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-06T08:00:00Z",
+    "tempC": 6.0,
+    "humidity": 0.51,
+    "pressure": 1002,
+    "conditions": "clear",
+    "wind": {
+      "speed": 1.8,
+      "deg": 238
+    }
+  },
+  {
+    "id": 130,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-06T09:00:00Z",
+    "tempC": 13.6,
+    "humidity": 0.56,
+    "pressure": 983,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.8,
+      "deg": 291
+    }
+  },
+  {
+    "id": 131,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T10:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.7,
+    "pressure": 1014,
+    "conditions": "snow",
+    "wind": {
+      "speed": 3.7,
+      "deg": 27
+    }
+  },
+  {
+    "id": 132,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T11:00:00Z",
+    "tempC": 20.3,
+    "humidity": 0.48,
+    "pressure": 996,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.4,
+      "deg": 71
+    }
+  },
+  {
+    "id": 133,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T12:00:00Z",
+    "tempC": 5.6,
+    "humidity": 0.67,
+    "pressure": 992,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.1,
+      "deg": 172
+    }
+  },
+  {
+    "id": 134,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-06T13:00:00Z",
+    "tempC": 27.5,
+    "humidity": 0.7,
+    "pressure": 988,
+    "conditions": "storm",
+    "wind": {
+      "speed": 2.4,
+      "deg": 175
+    }
+  },
+  {
+    "id": 135,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T14:00:00Z",
+    "tempC": 14.9,
+    "humidity": 0.63,
+    "pressure": 999,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.2,
+      "deg": 287
+    }
+  },
+  {
+    "id": 136,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T15:00:00Z",
+    "tempC": 22.9,
+    "humidity": 0.55,
+    "pressure": 990,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.0,
+      "deg": 259
+    }
+  },
+  {
+    "id": 137,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T16:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.3,
+    "pressure": 993,
+    "conditions": "clear",
+    "wind": {
+      "speed": 1.8,
+      "deg": 352
+    }
+  },
+  {
+    "id": 138,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T17:00:00Z",
+    "tempC": 10.1,
+    "humidity": 0.53,
+    "pressure": 1017,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.2,
+      "deg": 186
+    }
+  },
+  {
+    "id": 139,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-06T18:00:00Z",
+    "tempC": 21.2,
+    "humidity": 0.8,
+    "pressure": 997,
+    "conditions": "clear",
+    "wind": {
+      "speed": 6.2,
+      "deg": 265
+    }
+  },
+  {
+    "id": 140,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T19:00:00Z",
+    "tempC": 31.8,
+    "humidity": 0.85,
+    "pressure": 1006,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.6,
+      "deg": 256
+    }
+  },
+  {
+    "id": 141,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-06T20:00:00Z",
+    "tempC": 34.6,
+    "humidity": 0.31,
+    "pressure": 987,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.0,
+      "deg": 343
+    }
+  },
+  {
+    "id": 142,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-06T21:00:00Z",
+    "tempC": 18.4,
+    "humidity": 0.52,
+    "pressure": 1016,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.4,
+      "deg": 350
+    }
+  },
+  {
+    "id": 143,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-06T22:00:00Z",
+    "tempC": 21.6,
+    "humidity": 0.78,
+    "pressure": 1010,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.5,
+      "deg": 314
+    }
+  },
+  {
+    "id": 144,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-06T23:00:00Z",
+    "tempC": 10.8,
+    "humidity": 0.79,
+    "pressure": 998,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.1,
+      "deg": 150
+    }
+  },
+  {
+    "id": 145,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-07T00:00:00Z",
+    "tempC": 12.2,
+    "humidity": 0.62,
+    "pressure": 1027,
+    "conditions": "clear",
+    "wind": {
+      "speed": 7.7,
+      "deg": 155
+    }
+  },
+  {
+    "id": 146,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-07T01:00:00Z",
+    "tempC": 19.8,
+    "humidity": 0.65,
+    "pressure": 1013,
+    "conditions": "clear",
+    "wind": {
+      "speed": 1.3,
+      "deg": 342
+    }
+  },
+  {
+    "id": 147,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-07T02:00:00Z",
+    "tempC": 29.4,
+    "humidity": 0.68,
+    "pressure": 994,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.5,
+      "deg": 283
+    }
+  },
+  {
+    "id": 148,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-07T03:00:00Z",
+    "tempC": 25.7,
+    "humidity": 0.73,
+    "pressure": 1038,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.5,
+      "deg": 109
+    }
+  },
+  {
+    "id": 149,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-07T04:00:00Z",
+    "tempC": 33.5,
+    "humidity": 0.6,
+    "pressure": 1029,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.4,
+      "deg": 147
+    }
+  },
+  {
+    "id": 150,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-07T05:00:00Z",
+    "tempC": 14.6,
+    "humidity": 0.72,
+    "pressure": 992,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.5,
+      "deg": 263
+    }
+  },
+  {
+    "id": 151,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-07T06:00:00Z",
+    "tempC": 19.8,
+    "humidity": 0.82,
+    "pressure": 1015,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.3,
+      "deg": 147
+    }
+  },
+  {
+    "id": 152,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-07T07:00:00Z",
+    "tempC": 17.8,
+    "humidity": 0.4,
+    "pressure": 1037,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.5,
+      "deg": 28
+    }
+  },
+  {
+    "id": 153,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-07T08:00:00Z",
+    "tempC": 23.9,
+    "humidity": 0.67,
+    "pressure": 1026,
+    "conditions": "rain",
+    "wind": {
+      "speed": 12.6,
+      "deg": 291
+    }
+  },
+  {
+    "id": 154,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-07T09:00:00Z",
+    "tempC": 5.7,
+    "humidity": 0.33,
+    "pressure": 999,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 12.1,
+      "deg": 133
+    }
+  },
+  {
+    "id": 155,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-07T10:00:00Z",
+    "tempC": 9.7,
+    "humidity": 0.6,
+    "pressure": 1012,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.7,
+      "deg": 221
+    }
+  },
+  {
+    "id": 156,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-07T11:00:00Z",
+    "tempC": 21.9,
+    "humidity": 0.68,
+    "pressure": 1039,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.8,
+      "deg": 100
+    }
+  },
+  {
+    "id": 157,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-07T12:00:00Z",
+    "tempC": 8.7,
+    "humidity": 0.55,
+    "pressure": 1000,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.6,
+      "deg": 142
+    }
+  },
+  {
+    "id": 158,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-07T13:00:00Z",
+    "tempC": 32.2,
+    "humidity": 0.68,
+    "pressure": 980,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.5,
+      "deg": 215
+    }
+  },
+  {
+    "id": 159,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-07T14:00:00Z",
+    "tempC": 17.1,
+    "humidity": 0.53,
+    "pressure": 1015,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 8.1,
+      "deg": 47
+    }
+  },
+  {
+    "id": 160,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-07T15:00:00Z",
+    "tempC": 16.2,
+    "humidity": 0.58,
+    "pressure": 1035,
+    "conditions": "clear",
+    "wind": {
+      "speed": 7.4,
+      "deg": 208
+    }
+  },
+  {
+    "id": 161,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-07T16:00:00Z",
+    "tempC": 8.6,
+    "humidity": 0.8,
+    "pressure": 994,
+    "conditions": "rain",
+    "wind": {
+      "speed": 0.6,
+      "deg": 170
+    }
+  },
+  {
+    "id": 162,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-07T17:00:00Z",
+    "tempC": 30.3,
+    "humidity": 0.39,
+    "pressure": 998,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.9,
+      "deg": 150
+    }
+  },
+  {
+    "id": 163,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-07T18:00:00Z",
+    "tempC": 22.1,
+    "humidity": 0.38,
+    "pressure": 1039,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.4,
+      "deg": 267
+    }
+  },
+  {
+    "id": 164,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-07T19:00:00Z",
+    "tempC": 13.8,
+    "humidity": 0.55,
+    "pressure": 1033,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.1,
+      "deg": 333
+    }
+  },
+  {
+    "id": 165,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-07T20:00:00Z",
+    "tempC": 8.1,
+    "humidity": 0.63,
+    "pressure": 1019,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.0,
+      "deg": 233
+    }
+  },
+  {
+    "id": 166,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-07T21:00:00Z",
+    "tempC": 17.7,
+    "humidity": 0.78,
+    "pressure": 1008,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.1,
+      "deg": 151
+    }
+  },
+  {
+    "id": 167,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-07T22:00:00Z",
+    "tempC": 14.2,
+    "humidity": 0.64,
+    "pressure": 1018,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.0,
+      "deg": 136
+    }
+  },
+  {
+    "id": 168,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-07T23:00:00Z",
+    "tempC": 11.7,
+    "humidity": 0.31,
+    "pressure": 1022,
+    "conditions": "rain",
+    "wind": {
+      "speed": 7.2,
+      "deg": 72
+    }
+  },
+  {
+    "id": 169,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-08T00:00:00Z",
+    "tempC": 31.8,
+    "humidity": 0.81,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.8,
+      "deg": 241
+    }
+  },
+  {
+    "id": 170,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T01:00:00Z",
+    "tempC": 20.0,
+    "humidity": 0.32,
+    "pressure": 1002,
+    "conditions": "snow",
+    "wind": {
+      "speed": 0.9,
+      "deg": 60
+    }
+  },
+  {
+    "id": 171,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T02:00:00Z",
+    "tempC": 32.3,
+    "humidity": 0.68,
+    "pressure": 1016,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.0,
+      "deg": 289
+    }
+  },
+  {
+    "id": 172,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-08T03:00:00Z",
+    "tempC": 26.6,
+    "humidity": 0.46,
+    "pressure": 1031,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.4,
+      "deg": 136
+    }
+  },
+  {
+    "id": 173,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T04:00:00Z",
+    "tempC": 9.4,
+    "humidity": 0.82,
+    "pressure": 1002,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.1,
+      "deg": 324
+    }
+  },
+  {
+    "id": 174,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T05:00:00Z",
+    "tempC": 19.8,
+    "humidity": 0.45,
+    "pressure": 980,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.6,
+      "deg": 67
+    }
+  },
+  {
+    "id": 175,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-08T06:00:00Z",
+    "tempC": 29.3,
+    "humidity": 0.33,
+    "pressure": 989,
+    "conditions": "clear",
+    "wind": {
+      "speed": 0.5,
+      "deg": 163
+    }
+  },
+  {
+    "id": 176,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T07:00:00Z",
+    "tempC": 9.7,
+    "humidity": 0.87,
+    "pressure": 992,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.0,
+      "deg": 19
+    }
+  },
+  {
+    "id": 177,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-08T08:00:00Z",
+    "tempC": 27.2,
+    "humidity": 0.7,
+    "pressure": 981,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.2,
+      "deg": 256
+    }
+  },
+  {
+    "id": 178,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-08T09:00:00Z",
+    "tempC": 27.4,
+    "humidity": 0.57,
+    "pressure": 1031,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.1,
+      "deg": 269
+    }
+  },
+  {
+    "id": 179,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T10:00:00Z",
+    "tempC": 26.2,
+    "humidity": 0.68,
+    "pressure": 982,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.5,
+      "deg": 93
+    }
+  },
+  {
+    "id": 180,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-08T11:00:00Z",
+    "tempC": 16.9,
+    "humidity": 0.66,
+    "pressure": 1030,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.9,
+      "deg": 322
+    }
+  },
+  {
+    "id": 181,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-08T12:00:00Z",
+    "tempC": 17.0,
+    "humidity": 0.9,
+    "pressure": 1003,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.9,
+      "deg": 175
+    }
+  },
+  {
+    "id": 182,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T13:00:00Z",
+    "tempC": 12.8,
+    "humidity": 0.85,
+    "pressure": 986,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.4,
+      "deg": 255
+    }
+  },
+  {
+    "id": 183,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-08T14:00:00Z",
+    "tempC": 25.2,
+    "humidity": 0.32,
+    "pressure": 1016,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.6,
+      "deg": 121
+    }
+  },
+  {
+    "id": 184,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T15:00:00Z",
+    "tempC": 8.4,
+    "humidity": 0.52,
+    "pressure": 1001,
+    "conditions": "storm",
+    "wind": {
+      "speed": 3.3,
+      "deg": 312
+    }
+  },
+  {
+    "id": 185,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T16:00:00Z",
+    "tempC": 10.0,
+    "humidity": 0.81,
+    "pressure": 1028,
+    "conditions": "rain",
+    "wind": {
+      "speed": 12.4,
+      "deg": 60
+    }
+  },
+  {
+    "id": 186,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T17:00:00Z",
+    "tempC": 7.8,
+    "humidity": 0.82,
+    "pressure": 1007,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.1,
+      "deg": 242
+    }
+  },
+  {
+    "id": 187,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T18:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.44,
+    "pressure": 1012,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.5,
+      "deg": 330
+    }
+  },
+  {
+    "id": 188,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-08T19:00:00Z",
+    "tempC": 34.9,
+    "humidity": 0.68,
+    "pressure": 1036,
+    "conditions": "clear",
+    "wind": {
+      "speed": 7.5,
+      "deg": 301
+    }
+  },
+  {
+    "id": 189,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-08T20:00:00Z",
+    "tempC": 7.8,
+    "humidity": 0.61,
+    "pressure": 1018,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.4,
+      "deg": 32
+    }
+  },
+  {
+    "id": 190,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T21:00:00Z",
+    "tempC": 5.5,
+    "humidity": 0.47,
+    "pressure": 985,
+    "conditions": "storm",
+    "wind": {
+      "speed": 10.8,
+      "deg": 298
+    }
+  },
+  {
+    "id": 191,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-08T22:00:00Z",
+    "tempC": 12.1,
+    "humidity": 0.37,
+    "pressure": 1024,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.8,
+      "deg": 178
+    }
+  },
+  {
+    "id": 192,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-08T23:00:00Z",
+    "tempC": 25.4,
+    "humidity": 0.66,
+    "pressure": 988,
+    "conditions": "storm",
+    "wind": {
+      "speed": 10.0,
+      "deg": 116
+    }
+  },
+  {
+    "id": 193,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-09T00:00:00Z",
+    "tempC": 26.2,
+    "humidity": 0.37,
+    "pressure": 984,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.4,
+      "deg": 94
+    }
+  },
+  {
+    "id": 194,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-09T01:00:00Z",
+    "tempC": 11.3,
+    "humidity": 0.74,
+    "pressure": 1029,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 10.3,
+      "deg": 95
+    }
+  },
+  {
+    "id": 195,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-09T02:00:00Z",
+    "tempC": 17.9,
+    "humidity": 0.38,
+    "pressure": 986,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.9,
+      "deg": 289
+    }
+  },
+  {
+    "id": 196,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T03:00:00Z",
+    "tempC": 8.0,
+    "humidity": 0.63,
+    "pressure": 981,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.7,
+      "deg": 211
+    }
+  },
+  {
+    "id": 197,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-09T04:00:00Z",
+    "tempC": 29.0,
+    "humidity": 0.47,
+    "pressure": 996,
+    "conditions": "clear",
+    "wind": {
+      "speed": 6.1,
+      "deg": 352
+    }
+  },
+  {
+    "id": 198,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T05:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.43,
+    "pressure": 1040,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.9,
+      "deg": 24
+    }
+  },
+  {
+    "id": 199,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-09T06:00:00Z",
+    "tempC": 8.1,
+    "humidity": 0.78,
+    "pressure": 1028,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.2,
+      "deg": 160
+    }
+  },
+  {
+    "id": 200,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T07:00:00Z",
+    "tempC": 24.0,
+    "humidity": 0.35,
+    "pressure": 1012,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 9.0,
+      "deg": 332
+    }
+  },
+  {
+    "id": 201,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-09T08:00:00Z",
+    "tempC": 18.1,
+    "humidity": 0.43,
+    "pressure": 1031,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.5,
+      "deg": 181
+    }
+  },
+  {
+    "id": 202,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T09:00:00Z",
+    "tempC": 25.6,
+    "humidity": 0.84,
+    "pressure": 1015,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.7,
+      "deg": 97
+    }
+  },
+  {
+    "id": 203,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-09T10:00:00Z",
+    "tempC": 33.5,
+    "humidity": 0.59,
+    "pressure": 1034,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.4,
+      "deg": 103
+    }
+  },
+  {
+    "id": 204,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-09T11:00:00Z",
+    "tempC": 23.0,
+    "humidity": 0.6,
+    "pressure": 1012,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.8,
+      "deg": 325
+    }
+  },
+  {
+    "id": 205,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T12:00:00Z",
+    "tempC": 29.8,
+    "humidity": 0.6,
+    "pressure": 1003,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.1,
+      "deg": 188
+    }
+  },
+  {
+    "id": 206,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-09T13:00:00Z",
+    "tempC": 20.9,
+    "humidity": 0.37,
+    "pressure": 981,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.5,
+      "deg": 226
+    }
+  },
+  {
+    "id": 207,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-09T14:00:00Z",
+    "tempC": 27.9,
+    "humidity": 0.62,
+    "pressure": 1024,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.8,
+      "deg": 359
+    }
+  },
+  {
+    "id": 208,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-09T15:00:00Z",
+    "tempC": 26.9,
+    "humidity": 0.81,
+    "pressure": 1018,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.1,
+      "deg": 229
+    }
+  },
+  {
+    "id": 209,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-09T16:00:00Z",
+    "tempC": 9.1,
+    "humidity": 0.72,
+    "pressure": 1005,
+    "conditions": "clear",
+    "wind": {
+      "speed": 2.8,
+      "deg": 162
+    }
+  },
+  {
+    "id": 210,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T17:00:00Z",
+    "tempC": 6.2,
+    "humidity": 0.57,
+    "pressure": 1026,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.8,
+      "deg": 37
+    }
+  },
+  {
+    "id": 211,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-09T18:00:00Z",
+    "tempC": 12.1,
+    "humidity": 0.5,
+    "pressure": 996,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.3,
+      "deg": 109
+    }
+  },
+  {
+    "id": 212,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-09T19:00:00Z",
+    "tempC": 20.4,
+    "humidity": 0.37,
+    "pressure": 1004,
+    "conditions": "snow",
+    "wind": {
+      "speed": 8.2,
+      "deg": 281
+    }
+  },
+  {
+    "id": 213,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-09T20:00:00Z",
+    "tempC": 30.2,
+    "humidity": 0.62,
+    "pressure": 1031,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.5,
+      "deg": 174
+    }
+  },
+  {
+    "id": 214,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T21:00:00Z",
+    "tempC": 34.1,
+    "humidity": 0.7,
+    "pressure": 1005,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 0.6,
+      "deg": 242
+    }
+  },
+  {
+    "id": 215,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-09T22:00:00Z",
+    "tempC": 34.9,
+    "humidity": 0.33,
+    "pressure": 1022,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.0,
+      "deg": 335
+    }
+  },
+  {
+    "id": 216,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-09T23:00:00Z",
+    "tempC": 19.2,
+    "humidity": 0.76,
+    "pressure": 989,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.6,
+      "deg": 216
+    }
+  },
+  {
+    "id": 217,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T00:00:00Z",
+    "tempC": 13.7,
+    "humidity": 0.53,
+    "pressure": 1016,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.5,
+      "deg": 289
+    }
+  },
+  {
+    "id": 218,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-10T01:00:00Z",
+    "tempC": 12.7,
+    "humidity": 0.56,
+    "pressure": 1029,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.4,
+      "deg": 164
+    }
+  },
+  {
+    "id": 219,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-10T02:00:00Z",
+    "tempC": 29.0,
+    "humidity": 0.85,
+    "pressure": 1037,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.0,
+      "deg": 42
+    }
+  },
+  {
+    "id": 220,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-10T03:00:00Z",
+    "tempC": 14.1,
+    "humidity": 0.36,
+    "pressure": 1023,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.3,
+      "deg": 123
+    }
+  },
+  {
+    "id": 221,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-10T04:00:00Z",
+    "tempC": 16.2,
+    "humidity": 0.74,
+    "pressure": 998,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.3,
+      "deg": 226
+    }
+  },
+  {
+    "id": 222,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T05:00:00Z",
+    "tempC": 22.5,
+    "humidity": 0.6,
+    "pressure": 1020,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.0,
+      "deg": 154
+    }
+  },
+  {
+    "id": 223,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-10T06:00:00Z",
+    "tempC": 7.5,
+    "humidity": 0.33,
+    "pressure": 996,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.4,
+      "deg": 76
+    }
+  },
+  {
+    "id": 224,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-10T07:00:00Z",
+    "tempC": 6.5,
+    "humidity": 0.61,
+    "pressure": 1023,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 2.6,
+      "deg": 233
+    }
+  },
+  {
+    "id": 225,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-10T08:00:00Z",
+    "tempC": 34.3,
+    "humidity": 0.58,
+    "pressure": 1004,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.4,
+      "deg": 5
+    }
+  },
+  {
+    "id": 226,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-10T09:00:00Z",
+    "tempC": 15.4,
+    "humidity": 0.82,
+    "pressure": 1035,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.0,
+      "deg": 166
+    }
+  },
+  {
+    "id": 227,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-10T10:00:00Z",
+    "tempC": 16.8,
+    "humidity": 0.71,
+    "pressure": 1029,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.8,
+      "deg": 125
+    }
+  },
+  {
+    "id": 228,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-10T11:00:00Z",
+    "tempC": 24.0,
+    "humidity": 0.79,
+    "pressure": 1034,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.4,
+      "deg": 239
+    }
+  },
+  {
+    "id": 229,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-10T12:00:00Z",
+    "tempC": 18.3,
+    "humidity": 0.76,
+    "pressure": 981,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.3,
+      "deg": 63
+    }
+  },
+  {
+    "id": 230,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-10T13:00:00Z",
+    "tempC": 14.8,
+    "humidity": 0.61,
+    "pressure": 1014,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.4,
+      "deg": 280
+    }
+  },
+  {
+    "id": 231,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T14:00:00Z",
+    "tempC": 7.0,
+    "humidity": 0.6,
+    "pressure": 1013,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.1,
+      "deg": 135
+    }
+  },
+  {
+    "id": 232,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-10T15:00:00Z",
+    "tempC": 20.7,
+    "humidity": 0.41,
+    "pressure": 1018,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.0,
+      "deg": 345
+    }
+  },
+  {
+    "id": 233,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-10T16:00:00Z",
+    "tempC": 7.2,
+    "humidity": 0.89,
+    "pressure": 984,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.7,
+      "deg": 104
+    }
+  },
+  {
+    "id": 234,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T17:00:00Z",
+    "tempC": 12.3,
+    "humidity": 0.35,
+    "pressure": 1028,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.5,
+      "deg": 292
+    }
+  },
+  {
+    "id": 235,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T18:00:00Z",
+    "tempC": 26.7,
+    "humidity": 0.74,
+    "pressure": 1007,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.9,
+      "deg": 4
+    }
+  },
+  {
+    "id": 236,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-10T19:00:00Z",
+    "tempC": 5.5,
+    "humidity": 0.89,
+    "pressure": 1017,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 10.7,
+      "deg": 276
+    }
+  },
+  {
+    "id": 237,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-10T20:00:00Z",
+    "tempC": 20.7,
+    "humidity": 0.65,
+    "pressure": 1040,
+    "conditions": "storm",
+    "wind": {
+      "speed": 2.2,
+      "deg": 306
+    }
+  },
+  {
+    "id": 238,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-10T21:00:00Z",
+    "tempC": 28.4,
+    "humidity": 0.51,
+    "pressure": 1033,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.3,
+      "deg": 216
+    }
+  },
+  {
+    "id": 239,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-10T22:00:00Z",
+    "tempC": 26.9,
+    "humidity": 0.89,
+    "pressure": 1033,
+    "conditions": "clear",
+    "wind": {
+      "speed": 6.1,
+      "deg": 14
+    }
+  },
+  {
+    "id": 240,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-10T23:00:00Z",
+    "tempC": 7.4,
+    "humidity": 0.86,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.7,
+      "deg": 130
+    }
+  },
+  {
+    "id": 241,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T00:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.71,
+    "pressure": 1033,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.9,
+      "deg": 317
+    }
+  },
+  {
+    "id": 242,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-11T01:00:00Z",
+    "tempC": 11.5,
+    "humidity": 0.9,
+    "pressure": 981,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.1,
+      "deg": 84
+    }
+  },
+  {
+    "id": 243,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-11T02:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.41,
+    "pressure": 1023,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.3,
+      "deg": 24
+    }
+  },
+  {
+    "id": 244,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-11T03:00:00Z",
+    "tempC": 15.9,
+    "humidity": 0.62,
+    "pressure": 982,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.9,
+      "deg": 261
+    }
+  },
+  {
+    "id": 245,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T04:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.72,
+    "pressure": 1032,
+    "conditions": "clear",
+    "wind": {
+      "speed": 10.0,
+      "deg": 338
+    }
+  },
+  {
+    "id": 246,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-11T05:00:00Z",
+    "tempC": 6.6,
+    "humidity": 0.32,
+    "pressure": 991,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.3,
+      "deg": 112
+    }
+  },
+  {
+    "id": 247,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-11T06:00:00Z",
+    "tempC": 6.8,
+    "humidity": 0.86,
+    "pressure": 984,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.8,
+      "deg": 169
+    }
+  },
+  {
+    "id": 248,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-11T07:00:00Z",
+    "tempC": 19.7,
+    "humidity": 0.37,
+    "pressure": 1012,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.0,
+      "deg": 355
+    }
+  },
+  {
+    "id": 249,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T08:00:00Z",
+    "tempC": 10.2,
+    "humidity": 0.8,
+    "pressure": 991,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.8,
+      "deg": 59
+    }
+  },
+  {
+    "id": 250,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T09:00:00Z",
+    "tempC": 23.0,
+    "humidity": 0.8,
+    "pressure": 995,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.9,
+      "deg": 246
+    }
+  },
+  {
+    "id": 251,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T10:00:00Z",
+    "tempC": 19.0,
+    "humidity": 0.8,
+    "pressure": 986,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.5,
+      "deg": 71
+    }
+  },
+  {
+    "id": 252,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T11:00:00Z",
+    "tempC": 16.1,
+    "humidity": 0.48,
+    "pressure": 983,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.7,
+      "deg": 91
+    }
+  },
+  {
+    "id": 253,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-11T12:00:00Z",
+    "tempC": 34.3,
+    "humidity": 0.71,
+    "pressure": 1007,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.4,
+      "deg": 33
+    }
+  },
+  {
+    "id": 254,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-11T13:00:00Z",
+    "tempC": 20.1,
+    "humidity": 0.53,
+    "pressure": 983,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.9,
+      "deg": 205
+    }
+  },
+  {
+    "id": 255,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-11T14:00:00Z",
+    "tempC": 27.8,
+    "humidity": 0.59,
+    "pressure": 1001,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.4,
+      "deg": 95
+    }
+  },
+  {
+    "id": 256,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-11T15:00:00Z",
+    "tempC": 24.6,
+    "humidity": 0.65,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.6,
+      "deg": 224
+    }
+  },
+  {
+    "id": 257,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-11T16:00:00Z",
+    "tempC": 29.2,
+    "humidity": 0.59,
+    "pressure": 986,
+    "conditions": "rain",
+    "wind": {
+      "speed": 12.2,
+      "deg": 166
+    }
+  },
+  {
+    "id": 258,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-11T17:00:00Z",
+    "tempC": 27.0,
+    "humidity": 0.67,
+    "pressure": 1002,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.7,
+      "deg": 138
+    }
+  },
+  {
+    "id": 259,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-11T18:00:00Z",
+    "tempC": 25.8,
+    "humidity": 0.33,
+    "pressure": 1040,
+    "conditions": "snow",
+    "wind": {
+      "speed": 0.6,
+      "deg": 216
+    }
+  },
+  {
+    "id": 260,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-11T19:00:00Z",
+    "tempC": 10.8,
+    "humidity": 0.35,
+    "pressure": 1015,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 0.7,
+      "deg": 326
+    }
+  },
+  {
+    "id": 261,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-11T20:00:00Z",
+    "tempC": 21.5,
+    "humidity": 0.86,
+    "pressure": 1028,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.0,
+      "deg": 38
+    }
+  },
+  {
+    "id": 262,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-11T21:00:00Z",
+    "tempC": 15.3,
+    "humidity": 0.71,
+    "pressure": 1008,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.4,
+      "deg": 147
+    }
+  },
+  {
+    "id": 263,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-11T22:00:00Z",
+    "tempC": 33.6,
+    "humidity": 0.8,
+    "pressure": 1029,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.2,
+      "deg": 94
+    }
+  },
+  {
+    "id": 264,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-11T23:00:00Z",
+    "tempC": 7.1,
+    "humidity": 0.64,
+    "pressure": 984,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.1,
+      "deg": 292
+    }
+  },
+  {
+    "id": 265,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T00:00:00Z",
+    "tempC": 26.5,
+    "humidity": 0.81,
+    "pressure": 1009,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.8,
+      "deg": 41
+    }
+  },
+  {
+    "id": 266,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-12T01:00:00Z",
+    "tempC": 34.8,
+    "humidity": 0.56,
+    "pressure": 1021,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.3,
+      "deg": 24
+    }
+  },
+  {
+    "id": 267,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T02:00:00Z",
+    "tempC": 13.6,
+    "humidity": 0.52,
+    "pressure": 1020,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.4,
+      "deg": 141
+    }
+  },
+  {
+    "id": 268,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T03:00:00Z",
+    "tempC": 7.1,
+    "humidity": 0.85,
+    "pressure": 986,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.6,
+      "deg": 313
+    }
+  },
+  {
+    "id": 269,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T04:00:00Z",
+    "tempC": 24.2,
+    "humidity": 0.51,
+    "pressure": 997,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.0,
+      "deg": 185
+    }
+  },
+  {
+    "id": 270,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-12T05:00:00Z",
+    "tempC": 8.1,
+    "humidity": 0.64,
+    "pressure": 1029,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.8,
+      "deg": 184
+    }
+  },
+  {
+    "id": 271,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-12T06:00:00Z",
+    "tempC": 9.3,
+    "humidity": 0.32,
+    "pressure": 986,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.1,
+      "deg": 55
+    }
+  },
+  {
+    "id": 272,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-12T07:00:00Z",
+    "tempC": 32.9,
+    "humidity": 0.86,
+    "pressure": 992,
+    "conditions": "clear",
+    "wind": {
+      "speed": 12.4,
+      "deg": 117
+    }
+  },
+  {
+    "id": 273,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-12T08:00:00Z",
+    "tempC": 28.7,
+    "humidity": 0.37,
+    "pressure": 993,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.1,
+      "deg": 32
+    }
+  },
+  {
+    "id": 274,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-12T09:00:00Z",
+    "tempC": 18.1,
+    "humidity": 0.89,
+    "pressure": 1020,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.7,
+      "deg": 21
+    }
+  },
+  {
+    "id": 275,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-12T10:00:00Z",
+    "tempC": 18.4,
+    "humidity": 0.59,
+    "pressure": 1029,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.5,
+      "deg": 148
+    }
+  },
+  {
+    "id": 276,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-12T11:00:00Z",
+    "tempC": 34.8,
+    "humidity": 0.36,
+    "pressure": 1012,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.4,
+      "deg": 233
+    }
+  },
+  {
+    "id": 277,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-12T12:00:00Z",
+    "tempC": 25.5,
+    "humidity": 0.83,
+    "pressure": 1026,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.9,
+      "deg": 87
+    }
+  },
+  {
+    "id": 278,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-12T13:00:00Z",
+    "tempC": 26.9,
+    "humidity": 0.43,
+    "pressure": 1019,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.7,
+      "deg": 356
+    }
+  },
+  {
+    "id": 279,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T14:00:00Z",
+    "tempC": 22.3,
+    "humidity": 0.83,
+    "pressure": 1009,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.5,
+      "deg": 142
+    }
+  },
+  {
+    "id": 280,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-12T15:00:00Z",
+    "tempC": 23.1,
+    "humidity": 0.35,
+    "pressure": 1009,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.3,
+      "deg": 196
+    }
+  },
+  {
+    "id": 281,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-12T16:00:00Z",
+    "tempC": 35.0,
+    "humidity": 0.56,
+    "pressure": 1021,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.0,
+      "deg": 207
+    }
+  },
+  {
+    "id": 282,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-12T17:00:00Z",
+    "tempC": 10.3,
+    "humidity": 0.73,
+    "pressure": 985,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.5,
+      "deg": 281
+    }
+  },
+  {
+    "id": 283,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-12T18:00:00Z",
+    "tempC": 31.8,
+    "humidity": 0.7,
+    "pressure": 985,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.3,
+      "deg": 43
+    }
+  },
+  {
+    "id": 284,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-12T19:00:00Z",
+    "tempC": 18.3,
+    "humidity": 0.85,
+    "pressure": 1029,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.2,
+      "deg": 355
+    }
+  },
+  {
+    "id": 285,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-12T20:00:00Z",
+    "tempC": 8.9,
+    "humidity": 0.5,
+    "pressure": 1015,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 8.2,
+      "deg": 108
+    }
+  },
+  {
+    "id": 286,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-12T21:00:00Z",
+    "tempC": 5.7,
+    "humidity": 0.89,
+    "pressure": 1006,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.0,
+      "deg": 88
+    }
+  },
+  {
+    "id": 287,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-12T22:00:00Z",
+    "tempC": 22.3,
+    "humidity": 0.38,
+    "pressure": 1037,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.5,
+      "deg": 129
+    }
+  },
+  {
+    "id": 288,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-12T23:00:00Z",
+    "tempC": 21.7,
+    "humidity": 0.68,
+    "pressure": 983,
+    "conditions": "snow",
+    "wind": {
+      "speed": 3.3,
+      "deg": 143
+    }
+  },
+  {
+    "id": 289,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-13T00:00:00Z",
+    "tempC": 6.1,
+    "humidity": 0.43,
+    "pressure": 1016,
+    "conditions": "rain",
+    "wind": {
+      "speed": 7.1,
+      "deg": 175
+    }
+  },
+  {
+    "id": 290,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-13T01:00:00Z",
+    "tempC": 33.6,
+    "humidity": 0.47,
+    "pressure": 1037,
+    "conditions": "storm",
+    "wind": {
+      "speed": 10.0,
+      "deg": 9
+    }
+  },
+  {
+    "id": 291,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-13T02:00:00Z",
+    "tempC": 21.6,
+    "humidity": 0.63,
+    "pressure": 1012,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.4,
+      "deg": 106
+    }
+  },
+  {
+    "id": 292,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-13T03:00:00Z",
+    "tempC": 20.8,
+    "humidity": 0.32,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.7,
+      "deg": 188
+    }
+  },
+  {
+    "id": 293,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-13T04:00:00Z",
+    "tempC": 20.4,
+    "humidity": 0.34,
+    "pressure": 995,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.1,
+      "deg": 301
+    }
+  },
+  {
+    "id": 294,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-13T05:00:00Z",
+    "tempC": 12.3,
+    "humidity": 0.43,
+    "pressure": 989,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.7,
+      "deg": 13
+    }
+  },
+  {
+    "id": 295,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-13T06:00:00Z",
+    "tempC": 23.7,
+    "humidity": 0.83,
+    "pressure": 1032,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.0,
+      "deg": 138
+    }
+  },
+  {
+    "id": 296,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-13T07:00:00Z",
+    "tempC": 16.7,
+    "humidity": 0.61,
+    "pressure": 1024,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.8,
+      "deg": 242
+    }
+  },
+  {
+    "id": 297,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-13T08:00:00Z",
+    "tempC": 28.7,
+    "humidity": 0.61,
+    "pressure": 999,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.9,
+      "deg": 346
+    }
+  },
+  {
+    "id": 298,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-13T09:00:00Z",
+    "tempC": 12.9,
+    "humidity": 0.63,
+    "pressure": 993,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.3,
+      "deg": 356
+    }
+  },
+  {
+    "id": 299,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-13T10:00:00Z",
+    "tempC": 12.4,
+    "humidity": 0.75,
+    "pressure": 1039,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.2,
+      "deg": 346
+    }
+  },
+  {
+    "id": 300,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-13T11:00:00Z",
+    "tempC": 33.5,
+    "humidity": 0.51,
+    "pressure": 1002,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 3.7,
+      "deg": 87
+    }
+  },
+  {
+    "id": 301,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-13T12:00:00Z",
+    "tempC": 34.0,
+    "humidity": 0.78,
+    "pressure": 1023,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.4,
+      "deg": 222
+    }
+  },
+  {
+    "id": 302,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-13T13:00:00Z",
+    "tempC": 16.0,
+    "humidity": 0.38,
+    "pressure": 997,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.9,
+      "deg": 259
+    }
+  },
+  {
+    "id": 303,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-13T14:00:00Z",
+    "tempC": 33.1,
+    "humidity": 0.3,
+    "pressure": 982,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.8,
+      "deg": 229
+    }
+  },
+  {
+    "id": 304,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-13T15:00:00Z",
+    "tempC": 31.5,
+    "humidity": 0.41,
+    "pressure": 993,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.1,
+      "deg": 285
+    }
+  },
+  {
+    "id": 305,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-13T16:00:00Z",
+    "tempC": 24.8,
+    "humidity": 0.7,
+    "pressure": 1008,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.2,
+      "deg": 206
+    }
+  },
+  {
+    "id": 306,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-13T17:00:00Z",
+    "tempC": 31.6,
+    "humidity": 0.7,
+    "pressure": 997,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.1,
+      "deg": 58
+    }
+  },
+  {
+    "id": 307,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-13T18:00:00Z",
+    "tempC": 16.2,
+    "humidity": 0.5,
+    "pressure": 1019,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.3,
+      "deg": 138
+    }
+  },
+  {
+    "id": 308,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-13T19:00:00Z",
+    "tempC": 21.5,
+    "humidity": 0.86,
+    "pressure": 981,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.5,
+      "deg": 155
+    }
+  },
+  {
+    "id": 309,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-13T20:00:00Z",
+    "tempC": 24.0,
+    "humidity": 0.49,
+    "pressure": 982,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.8,
+      "deg": 138
+    }
+  },
+  {
+    "id": 310,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-13T21:00:00Z",
+    "tempC": 7.2,
+    "humidity": 0.6,
+    "pressure": 1015,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.2,
+      "deg": 76
+    }
+  },
+  {
+    "id": 311,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-13T22:00:00Z",
+    "tempC": 21.2,
+    "humidity": 0.62,
+    "pressure": 1022,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.0,
+      "deg": 59
+    }
+  },
+  {
+    "id": 312,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-13T23:00:00Z",
+    "tempC": 24.1,
+    "humidity": 0.79,
+    "pressure": 990,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.9,
+      "deg": 123
+    }
+  },
+  {
+    "id": 313,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-14T00:00:00Z",
+    "tempC": 24.1,
+    "humidity": 0.8,
+    "pressure": 1024,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.2,
+      "deg": 26
+    }
+  },
+  {
+    "id": 314,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T01:00:00Z",
+    "tempC": 32.7,
+    "humidity": 0.43,
+    "pressure": 1031,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.3,
+      "deg": 62
+    }
+  },
+  {
+    "id": 315,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T02:00:00Z",
+    "tempC": 16.8,
+    "humidity": 0.87,
+    "pressure": 984,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.9,
+      "deg": 143
+    }
+  },
+  {
+    "id": 316,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-14T03:00:00Z",
+    "tempC": 34.0,
+    "humidity": 0.3,
+    "pressure": 997,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.1,
+      "deg": 338
+    }
+  },
+  {
+    "id": 317,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-14T04:00:00Z",
+    "tempC": 12.9,
+    "humidity": 0.62,
+    "pressure": 1023,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.7,
+      "deg": 190
+    }
+  },
+  {
+    "id": 318,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-14T05:00:00Z",
+    "tempC": 11.3,
+    "humidity": 0.77,
+    "pressure": 1017,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 2.5,
+      "deg": 138
+    }
+  },
+  {
+    "id": 319,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-14T06:00:00Z",
+    "tempC": 27.5,
+    "humidity": 0.9,
+    "pressure": 984,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.2,
+      "deg": 58
+    }
+  },
+  {
+    "id": 320,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T07:00:00Z",
+    "tempC": 24.5,
+    "humidity": 0.64,
+    "pressure": 1006,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.3,
+      "deg": 346
+    }
+  },
+  {
+    "id": 321,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-14T08:00:00Z",
+    "tempC": 12.0,
+    "humidity": 0.49,
+    "pressure": 1016,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.7,
+      "deg": 51
+    }
+  },
+  {
+    "id": 322,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-14T09:00:00Z",
+    "tempC": 10.9,
+    "humidity": 0.39,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.8,
+      "deg": 353
+    }
+  },
+  {
+    "id": 323,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-14T10:00:00Z",
+    "tempC": 34.4,
+    "humidity": 0.34,
+    "pressure": 1029,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.2,
+      "deg": 103
+    }
+  },
+  {
+    "id": 324,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T11:00:00Z",
+    "tempC": 18.0,
+    "humidity": 0.53,
+    "pressure": 1012,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.7,
+      "deg": 154
+    }
+  },
+  {
+    "id": 325,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-14T12:00:00Z",
+    "tempC": 18.3,
+    "humidity": 0.8,
+    "pressure": 1030,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.2,
+      "deg": 57
+    }
+  },
+  {
+    "id": 326,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-14T13:00:00Z",
+    "tempC": 25.1,
+    "humidity": 0.32,
+    "pressure": 1035,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.8,
+      "deg": 124
+    }
+  },
+  {
+    "id": 327,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T14:00:00Z",
+    "tempC": 21.6,
+    "humidity": 0.48,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.3,
+      "deg": 121
+    }
+  },
+  {
+    "id": 328,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T15:00:00Z",
+    "tempC": 34.5,
+    "humidity": 0.36,
+    "pressure": 1001,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.2,
+      "deg": 6
+    }
+  },
+  {
+    "id": 329,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-14T16:00:00Z",
+    "tempC": 28.6,
+    "humidity": 0.88,
+    "pressure": 991,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.5,
+      "deg": 55
+    }
+  },
+  {
+    "id": 330,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-14T17:00:00Z",
+    "tempC": 22.6,
+    "humidity": 0.49,
+    "pressure": 1010,
+    "conditions": "storm",
+    "wind": {
+      "speed": 3.4,
+      "deg": 106
+    }
+  },
+  {
+    "id": 331,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-14T18:00:00Z",
+    "tempC": 15.1,
+    "humidity": 0.75,
+    "pressure": 1003,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.1,
+      "deg": 41
+    }
+  },
+  {
+    "id": 332,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T19:00:00Z",
+    "tempC": 13.1,
+    "humidity": 0.36,
+    "pressure": 1029,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.5,
+      "deg": 73
+    }
+  },
+  {
+    "id": 333,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-14T20:00:00Z",
+    "tempC": 20.3,
+    "humidity": 0.78,
+    "pressure": 1005,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 9.6,
+      "deg": 336
+    }
+  },
+  {
+    "id": 334,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T21:00:00Z",
+    "tempC": 33.2,
+    "humidity": 0.34,
+    "pressure": 1010,
+    "conditions": "rain",
+    "wind": {
+      "speed": 0.9,
+      "deg": 54
+    }
+  },
+  {
+    "id": 335,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-14T22:00:00Z",
+    "tempC": 32.4,
+    "humidity": 0.84,
+    "pressure": 1039,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.0,
+      "deg": 315
+    }
+  },
+  {
+    "id": 336,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-14T23:00:00Z",
+    "tempC": 32.3,
+    "humidity": 0.32,
+    "pressure": 1024,
+    "conditions": "clear",
+    "wind": {
+      "speed": 7.1,
+      "deg": 79
+    }
+  },
+  {
+    "id": 337,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-15T00:00:00Z",
+    "tempC": 25.3,
+    "humidity": 0.45,
+    "pressure": 982,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.7,
+      "deg": 316
+    }
+  },
+  {
+    "id": 338,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-15T01:00:00Z",
+    "tempC": 15.5,
+    "humidity": 0.63,
+    "pressure": 1008,
+    "conditions": "snow",
+    "wind": {
+      "speed": 5.3,
+      "deg": 237
+    }
+  },
+  {
+    "id": 339,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-15T02:00:00Z",
+    "tempC": 13.6,
+    "humidity": 0.32,
+    "pressure": 1014,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.2,
+      "deg": 223
+    }
+  },
+  {
+    "id": 340,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T03:00:00Z",
+    "tempC": 11.8,
+    "humidity": 0.69,
+    "pressure": 981,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 12.2,
+      "deg": 346
+    }
+  },
+  {
+    "id": 341,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-15T04:00:00Z",
+    "tempC": 12.3,
+    "humidity": 0.41,
+    "pressure": 980,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.0,
+      "deg": 174
+    }
+  },
+  {
+    "id": 342,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-15T05:00:00Z",
+    "tempC": 23.2,
+    "humidity": 0.88,
+    "pressure": 996,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.5,
+      "deg": 327
+    }
+  },
+  {
+    "id": 343,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-15T06:00:00Z",
+    "tempC": 19.0,
+    "humidity": 0.74,
+    "pressure": 997,
+    "conditions": "snow",
+    "wind": {
+      "speed": 11.2,
+      "deg": 43
+    }
+  },
+  {
+    "id": 344,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-15T07:00:00Z",
+    "tempC": 18.8,
+    "humidity": 0.9,
+    "pressure": 1018,
+    "conditions": "snow",
+    "wind": {
+      "speed": 10.6,
+      "deg": 258
+    }
+  },
+  {
+    "id": 345,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-15T08:00:00Z",
+    "tempC": 32.4,
+    "humidity": 0.63,
+    "pressure": 993,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.3,
+      "deg": 356
+    }
+  },
+  {
+    "id": 346,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-15T09:00:00Z",
+    "tempC": 20.0,
+    "humidity": 0.78,
+    "pressure": 1038,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.6,
+      "deg": 292
+    }
+  },
+  {
+    "id": 347,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-15T10:00:00Z",
+    "tempC": 25.3,
+    "humidity": 0.84,
+    "pressure": 1016,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.6,
+      "deg": 254
+    }
+  },
+  {
+    "id": 348,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-15T11:00:00Z",
+    "tempC": 34.2,
+    "humidity": 0.4,
+    "pressure": 1012,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.5,
+      "deg": 224
+    }
+  },
+  {
+    "id": 349,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-15T12:00:00Z",
+    "tempC": 33.4,
+    "humidity": 0.7,
+    "pressure": 1034,
+    "conditions": "clear",
+    "wind": {
+      "speed": 4.6,
+      "deg": 298
+    }
+  },
+  {
+    "id": 350,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T13:00:00Z",
+    "tempC": 26.8,
+    "humidity": 0.89,
+    "pressure": 980,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 0.7,
+      "deg": 202
+    }
+  },
+  {
+    "id": 351,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-15T14:00:00Z",
+    "tempC": 31.7,
+    "humidity": 0.45,
+    "pressure": 1018,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.7,
+      "deg": 97
+    }
+  },
+  {
+    "id": 352,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T15:00:00Z",
+    "tempC": 16.9,
+    "humidity": 0.87,
+    "pressure": 982,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.6,
+      "deg": 307
+    }
+  },
+  {
+    "id": 353,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-15T16:00:00Z",
+    "tempC": 29.2,
+    "humidity": 0.4,
+    "pressure": 992,
+    "conditions": "clear",
+    "wind": {
+      "speed": 6.7,
+      "deg": 106
+    }
+  },
+  {
+    "id": 354,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T17:00:00Z",
+    "tempC": 17.3,
+    "humidity": 0.64,
+    "pressure": 1033,
+    "conditions": "rain",
+    "wind": {
+      "speed": 1.9,
+      "deg": 213
+    }
+  },
+  {
+    "id": 355,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-15T18:00:00Z",
+    "tempC": 9.1,
+    "humidity": 0.55,
+    "pressure": 995,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.5,
+      "deg": 61
+    }
+  },
+  {
+    "id": 356,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T19:00:00Z",
+    "tempC": 33.7,
+    "humidity": 0.81,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.7,
+      "deg": 315
+    }
+  },
+  {
+    "id": 357,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-15T20:00:00Z",
+    "tempC": 23.8,
+    "humidity": 0.44,
+    "pressure": 1036,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.5,
+      "deg": 73
+    }
+  },
+  {
+    "id": 358,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T21:00:00Z",
+    "tempC": 6.3,
+    "humidity": 0.31,
+    "pressure": 1019,
+    "conditions": "rain",
+    "wind": {
+      "speed": 2.3,
+      "deg": 259
+    }
+  },
+  {
+    "id": 359,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-15T22:00:00Z",
+    "tempC": 14.8,
+    "humidity": 0.41,
+    "pressure": 990,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.1,
+      "deg": 37
+    }
+  },
+  {
+    "id": 360,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-15T23:00:00Z",
+    "tempC": 15.7,
+    "humidity": 0.84,
+    "pressure": 989,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.9,
+      "deg": 294
+    }
+  },
+  {
+    "id": 361,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-16T00:00:00Z",
+    "tempC": 27.4,
+    "humidity": 0.36,
+    "pressure": 1008,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.1,
+      "deg": 231
+    }
+  },
+  {
+    "id": 362,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-16T01:00:00Z",
+    "tempC": 20.6,
+    "humidity": 0.32,
+    "pressure": 1027,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.5,
+      "deg": 218
+    }
+  },
+  {
+    "id": 363,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-16T02:00:00Z",
+    "tempC": 22.0,
+    "humidity": 0.9,
+    "pressure": 984,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.9,
+      "deg": 227
+    }
+  },
+  {
+    "id": 364,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-16T03:00:00Z",
+    "tempC": 9.0,
+    "humidity": 0.54,
+    "pressure": 1027,
+    "conditions": "rain",
+    "wind": {
+      "speed": 1.1,
+      "deg": 29
+    }
+  },
+  {
+    "id": 365,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T04:00:00Z",
+    "tempC": 26.9,
+    "humidity": 0.54,
+    "pressure": 1039,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.3,
+      "deg": 178
+    }
+  },
+  {
+    "id": 366,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-16T05:00:00Z",
+    "tempC": 16.5,
+    "humidity": 0.48,
+    "pressure": 1039,
+    "conditions": "rain",
+    "wind": {
+      "speed": 10.0,
+      "deg": 45
+    }
+  },
+  {
+    "id": 367,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T06:00:00Z",
+    "tempC": 31.4,
+    "humidity": 0.58,
+    "pressure": 1007,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.1,
+      "deg": 139
+    }
+  },
+  {
+    "id": 368,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-16T07:00:00Z",
+    "tempC": 8.3,
+    "humidity": 0.61,
+    "pressure": 994,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.3,
+      "deg": 92
+    }
+  },
+  {
+    "id": 369,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-16T08:00:00Z",
+    "tempC": 29.4,
+    "humidity": 0.36,
+    "pressure": 1020,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.8,
+      "deg": 16
+    }
+  },
+  {
+    "id": 370,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-16T09:00:00Z",
+    "tempC": 9.5,
+    "humidity": 0.34,
+    "pressure": 990,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.6,
+      "deg": 45
+    }
+  },
+  {
+    "id": 371,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-16T10:00:00Z",
+    "tempC": 33.6,
+    "humidity": 0.84,
+    "pressure": 984,
+    "conditions": "clear",
+    "wind": {
+      "speed": 7.0,
+      "deg": 108
+    }
+  },
+  {
+    "id": 372,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-16T11:00:00Z",
+    "tempC": 30.4,
+    "humidity": 0.56,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.8,
+      "deg": 161
+    }
+  },
+  {
+    "id": 373,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T12:00:00Z",
+    "tempC": 34.0,
+    "humidity": 0.6,
+    "pressure": 993,
+    "conditions": "rain",
+    "wind": {
+      "speed": 7.0,
+      "deg": 100
+    }
+  },
+  {
+    "id": 374,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-16T13:00:00Z",
+    "tempC": 20.3,
+    "humidity": 0.59,
+    "pressure": 1040,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.7,
+      "deg": 141
+    }
+  },
+  {
+    "id": 375,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-16T14:00:00Z",
+    "tempC": 31.3,
+    "humidity": 0.63,
+    "pressure": 997,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.0,
+      "deg": 265
+    }
+  },
+  {
+    "id": 376,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T15:00:00Z",
+    "tempC": 6.1,
+    "humidity": 0.38,
+    "pressure": 996,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.1,
+      "deg": 352
+    }
+  },
+  {
+    "id": 377,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-16T16:00:00Z",
+    "tempC": 26.1,
+    "humidity": 0.89,
+    "pressure": 1009,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.7,
+      "deg": 77
+    }
+  },
+  {
+    "id": 378,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-16T17:00:00Z",
+    "tempC": 16.2,
+    "humidity": 0.62,
+    "pressure": 1036,
+    "conditions": "clear",
+    "wind": {
+      "speed": 0.7,
+      "deg": 216
+    }
+  },
+  {
+    "id": 379,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-16T18:00:00Z",
+    "tempC": 27.0,
+    "humidity": 0.38,
+    "pressure": 1009,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.5,
+      "deg": 343
+    }
+  },
+  {
+    "id": 380,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T19:00:00Z",
+    "tempC": 14.1,
+    "humidity": 0.46,
+    "pressure": 1006,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.0,
+      "deg": 330
+    }
+  },
+  {
+    "id": 381,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-16T20:00:00Z",
+    "tempC": 33.7,
+    "humidity": 0.85,
+    "pressure": 1038,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.7,
+      "deg": 166
+    }
+  },
+  {
+    "id": 382,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-16T21:00:00Z",
+    "tempC": 9.4,
+    "humidity": 0.59,
+    "pressure": 1005,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.9,
+      "deg": 325
+    }
+  },
+  {
+    "id": 383,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-16T22:00:00Z",
+    "tempC": 12.3,
+    "humidity": 0.87,
+    "pressure": 1019,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.4,
+      "deg": 254
+    }
+  },
+  {
+    "id": 384,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-16T23:00:00Z",
+    "tempC": 32.8,
+    "humidity": 0.51,
+    "pressure": 1006,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.0,
+      "deg": 235
+    }
+  },
+  {
+    "id": 385,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T00:00:00Z",
+    "tempC": 34.6,
+    "humidity": 0.45,
+    "pressure": 981,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.3,
+      "deg": 91
+    }
+  },
+  {
+    "id": 386,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-17T01:00:00Z",
+    "tempC": 28.3,
+    "humidity": 0.61,
+    "pressure": 1003,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.5,
+      "deg": 279
+    }
+  },
+  {
+    "id": 387,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T02:00:00Z",
+    "tempC": 10.3,
+    "humidity": 0.77,
+    "pressure": 982,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.1,
+      "deg": 17
+    }
+  },
+  {
+    "id": 388,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-17T03:00:00Z",
+    "tempC": 11.7,
+    "humidity": 0.81,
+    "pressure": 1036,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.9,
+      "deg": 88
+    }
+  },
+  {
+    "id": 389,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T04:00:00Z",
+    "tempC": 15.1,
+    "humidity": 0.75,
+    "pressure": 1039,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.0,
+      "deg": 60
+    }
+  },
+  {
+    "id": 390,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-17T05:00:00Z",
+    "tempC": 29.5,
+    "humidity": 0.72,
+    "pressure": 1023,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.3,
+      "deg": 167
+    }
+  },
+  {
+    "id": 391,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T06:00:00Z",
+    "tempC": 9.6,
+    "humidity": 0.39,
+    "pressure": 1031,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 6.6,
+      "deg": 267
+    }
+  },
+  {
+    "id": 392,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T07:00:00Z",
+    "tempC": 5.3,
+    "humidity": 0.69,
+    "pressure": 996,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.8,
+      "deg": 16
+    }
+  },
+  {
+    "id": 393,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-17T08:00:00Z",
+    "tempC": 9.2,
+    "humidity": 0.33,
+    "pressure": 1003,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 2.6,
+      "deg": 257
+    }
+  },
+  {
+    "id": 394,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-17T09:00:00Z",
+    "tempC": 8.5,
+    "humidity": 0.64,
+    "pressure": 1006,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.5,
+      "deg": 287
+    }
+  },
+  {
+    "id": 395,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-17T10:00:00Z",
+    "tempC": 13.3,
+    "humidity": 0.56,
+    "pressure": 1027,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.3,
+      "deg": 184
+    }
+  },
+  {
+    "id": 396,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-17T11:00:00Z",
+    "tempC": 17.1,
+    "humidity": 0.66,
+    "pressure": 1021,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.8,
+      "deg": 20
+    }
+  },
+  {
+    "id": 397,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-17T12:00:00Z",
+    "tempC": 6.0,
+    "humidity": 0.45,
+    "pressure": 1006,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.7,
+      "deg": 167
+    }
+  },
+  {
+    "id": 398,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-17T13:00:00Z",
+    "tempC": 9.9,
+    "humidity": 0.31,
+    "pressure": 984,
+    "conditions": "storm",
+    "wind": {
+      "speed": 9.7,
+      "deg": 311
+    }
+  },
+  {
+    "id": 399,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-17T14:00:00Z",
+    "tempC": 11.6,
+    "humidity": 0.5,
+    "pressure": 1016,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.7,
+      "deg": 185
+    }
+  },
+  {
+    "id": 400,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-17T15:00:00Z",
+    "tempC": 32.5,
+    "humidity": 0.77,
+    "pressure": 995,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.5,
+      "deg": 14
+    }
+  },
+  {
+    "id": 401,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-17T16:00:00Z",
+    "tempC": 22.8,
+    "humidity": 0.43,
+    "pressure": 1011,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.5,
+      "deg": 78
+    }
+  },
+  {
+    "id": 402,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T17:00:00Z",
+    "tempC": 15.1,
+    "humidity": 0.56,
+    "pressure": 1005,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 5.3,
+      "deg": 100
+    }
+  },
+  {
+    "id": 403,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-17T18:00:00Z",
+    "tempC": 19.8,
+    "humidity": 0.82,
+    "pressure": 1014,
+    "conditions": "clear",
+    "wind": {
+      "speed": 9.4,
+      "deg": 246
+    }
+  },
+  {
+    "id": 404,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T19:00:00Z",
+    "tempC": 34.5,
+    "humidity": 0.68,
+    "pressure": 985,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.0,
+      "deg": 338
+    }
+  },
+  {
+    "id": 405,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-17T20:00:00Z",
+    "tempC": 10.9,
+    "humidity": 0.83,
+    "pressure": 1009,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.1,
+      "deg": 278
+    }
+  },
+  {
+    "id": 406,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T21:00:00Z",
+    "tempC": 19.0,
+    "humidity": 0.72,
+    "pressure": 987,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.2,
+      "deg": 333
+    }
+  },
+  {
+    "id": 407,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-17T22:00:00Z",
+    "tempC": 11.2,
+    "humidity": 0.34,
+    "pressure": 987,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.2,
+      "deg": 114
+    }
+  },
+  {
+    "id": 408,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-17T23:00:00Z",
+    "tempC": 22.1,
+    "humidity": 0.62,
+    "pressure": 997,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.2,
+      "deg": 2
+    }
+  },
+  {
+    "id": 409,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-18T00:00:00Z",
+    "tempC": 33.9,
+    "humidity": 0.78,
+    "pressure": 1020,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.8,
+      "deg": 274
+    }
+  },
+  {
+    "id": 410,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-18T01:00:00Z",
+    "tempC": 20.3,
+    "humidity": 0.65,
+    "pressure": 995,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.7,
+      "deg": 2
+    }
+  },
+  {
+    "id": 411,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-18T02:00:00Z",
+    "tempC": 34.7,
+    "humidity": 0.52,
+    "pressure": 1029,
+    "conditions": "rain",
+    "wind": {
+      "speed": 10.4,
+      "deg": 269
+    }
+  },
+  {
+    "id": 412,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-18T03:00:00Z",
+    "tempC": 17.3,
+    "humidity": 0.41,
+    "pressure": 1020,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.1,
+      "deg": 87
+    }
+  },
+  {
+    "id": 413,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-18T04:00:00Z",
+    "tempC": 9.8,
+    "humidity": 0.69,
+    "pressure": 1027,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.5,
+      "deg": 360
+    }
+  },
+  {
+    "id": 414,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-18T05:00:00Z",
+    "tempC": 20.2,
+    "humidity": 0.47,
+    "pressure": 1008,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.4,
+      "deg": 90
+    }
+  },
+  {
+    "id": 415,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-18T06:00:00Z",
+    "tempC": 22.6,
+    "humidity": 0.49,
+    "pressure": 1032,
+    "conditions": "clear",
+    "wind": {
+      "speed": 11.0,
+      "deg": 313
+    }
+  },
+  {
+    "id": 416,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-18T07:00:00Z",
+    "tempC": 32.4,
+    "humidity": 0.45,
+    "pressure": 1015,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.5,
+      "deg": 85
+    }
+  },
+  {
+    "id": 417,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-18T08:00:00Z",
+    "tempC": 30.6,
+    "humidity": 0.78,
+    "pressure": 980,
+    "conditions": "snow",
+    "wind": {
+      "speed": 14.8,
+      "deg": 64
+    }
+  },
+  {
+    "id": 418,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-18T09:00:00Z",
+    "tempC": 30.1,
+    "humidity": 0.53,
+    "pressure": 1040,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.7,
+      "deg": 54
+    }
+  },
+  {
+    "id": 419,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-18T10:00:00Z",
+    "tempC": 18.0,
+    "humidity": 0.4,
+    "pressure": 1011,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.3,
+      "deg": 172
+    }
+  },
+  {
+    "id": 420,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-18T11:00:00Z",
+    "tempC": 18.0,
+    "humidity": 0.46,
+    "pressure": 1016,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 9.5,
+      "deg": 307
+    }
+  },
+  {
+    "id": 421,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-18T12:00:00Z",
+    "tempC": 15.4,
+    "humidity": 0.42,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 1.2,
+      "deg": 299
+    }
+  },
+  {
+    "id": 422,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-18T13:00:00Z",
+    "tempC": 10.8,
+    "humidity": 0.9,
+    "pressure": 1016,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.5,
+      "deg": 277
+    }
+  },
+  {
+    "id": 423,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-18T14:00:00Z",
+    "tempC": 28.1,
+    "humidity": 0.51,
+    "pressure": 1010,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.8,
+      "deg": 184
+    }
+  },
+  {
+    "id": 424,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-18T15:00:00Z",
+    "tempC": 31.4,
+    "humidity": 0.53,
+    "pressure": 1026,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.5,
+      "deg": 166
+    }
+  },
+  {
+    "id": 425,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-18T16:00:00Z",
+    "tempC": 23.6,
+    "humidity": 0.69,
+    "pressure": 1019,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.6,
+      "deg": 216
+    }
+  },
+  {
+    "id": 426,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-18T17:00:00Z",
+    "tempC": 28.4,
+    "humidity": 0.44,
+    "pressure": 1021,
+    "conditions": "snow",
+    "wind": {
+      "speed": 9.2,
+      "deg": 48
+    }
+  },
+  {
+    "id": 427,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-18T18:00:00Z",
+    "tempC": 9.2,
+    "humidity": 0.77,
+    "pressure": 1032,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.0,
+      "deg": 228
+    }
+  },
+  {
+    "id": 428,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-18T19:00:00Z",
+    "tempC": 30.0,
+    "humidity": 0.31,
+    "pressure": 1004,
+    "conditions": "clear",
+    "wind": {
+      "speed": 3.3,
+      "deg": 358
+    }
+  },
+  {
+    "id": 429,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-18T20:00:00Z",
+    "tempC": 11.1,
+    "humidity": 0.81,
+    "pressure": 1015,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.6,
+      "deg": 2
+    }
+  },
+  {
+    "id": 430,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-18T21:00:00Z",
+    "tempC": 5.1,
+    "humidity": 0.61,
+    "pressure": 1001,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 7.0,
+      "deg": 46
+    }
+  },
+  {
+    "id": 431,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-18T22:00:00Z",
+    "tempC": 24.4,
+    "humidity": 0.56,
+    "pressure": 1014,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.5,
+      "deg": 359
+    }
+  },
+  {
+    "id": 432,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-18T23:00:00Z",
+    "tempC": 28.5,
+    "humidity": 0.9,
+    "pressure": 995,
+    "conditions": "storm",
+    "wind": {
+      "speed": 6.4,
+      "deg": 9
+    }
+  },
+  {
+    "id": 433,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-19T00:00:00Z",
+    "tempC": 10.4,
+    "humidity": 0.32,
+    "pressure": 990,
+    "conditions": "rain",
+    "wind": {
+      "speed": 4.4,
+      "deg": 0
+    }
+  },
+  {
+    "id": 434,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-19T01:00:00Z",
+    "tempC": 32.1,
+    "humidity": 0.7,
+    "pressure": 985,
+    "conditions": "snow",
+    "wind": {
+      "speed": 12.9,
+      "deg": 11
+    }
+  },
+  {
+    "id": 435,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-19T02:00:00Z",
+    "tempC": 34.0,
+    "humidity": 0.83,
+    "pressure": 1039,
+    "conditions": "clear",
+    "wind": {
+      "speed": 10.3,
+      "deg": 310
+    }
+  },
+  {
+    "id": 436,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-19T03:00:00Z",
+    "tempC": 25.7,
+    "humidity": 0.48,
+    "pressure": 1038,
+    "conditions": "snow",
+    "wind": {
+      "speed": 2.7,
+      "deg": 226
+    }
+  },
+  {
+    "id": 437,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-19T04:00:00Z",
+    "tempC": 15.5,
+    "humidity": 0.7,
+    "pressure": 1028,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.9,
+      "deg": 219
+    }
+  },
+  {
+    "id": 438,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-19T05:00:00Z",
+    "tempC": 19.5,
+    "humidity": 0.61,
+    "pressure": 991,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.1,
+      "deg": 347
+    }
+  },
+  {
+    "id": 439,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-19T06:00:00Z",
+    "tempC": 30.3,
+    "humidity": 0.31,
+    "pressure": 991,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.9,
+      "deg": 219
+    }
+  },
+  {
+    "id": 440,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T07:00:00Z",
+    "tempC": 25.7,
+    "humidity": 0.72,
+    "pressure": 1004,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.8,
+      "deg": 163
+    }
+  },
+  {
+    "id": 441,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T08:00:00Z",
+    "tempC": 30.5,
+    "humidity": 0.45,
+    "pressure": 990,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 4.7,
+      "deg": 235
+    }
+  },
+  {
+    "id": 442,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T09:00:00Z",
+    "tempC": 34.1,
+    "humidity": 0.59,
+    "pressure": 984,
+    "conditions": "storm",
+    "wind": {
+      "speed": 11.9,
+      "deg": 246
+    }
+  },
+  {
+    "id": 443,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-19T10:00:00Z",
+    "tempC": 17.2,
+    "humidity": 0.81,
+    "pressure": 1021,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.2,
+      "deg": 340
+    }
+  },
+  {
+    "id": 444,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-19T11:00:00Z",
+    "tempC": 26.9,
+    "humidity": 0.52,
+    "pressure": 1012,
+    "conditions": "snow",
+    "wind": {
+      "speed": 13.3,
+      "deg": 16
+    }
+  },
+  {
+    "id": 445,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-19T12:00:00Z",
+    "tempC": 11.9,
+    "humidity": 0.9,
+    "pressure": 1025,
+    "conditions": "clear",
+    "wind": {
+      "speed": 5.4,
+      "deg": 305
+    }
+  },
+  {
+    "id": 446,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-19T13:00:00Z",
+    "tempC": 14.5,
+    "humidity": 0.59,
+    "pressure": 1028,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.6,
+      "deg": 60
+    }
+  },
+  {
+    "id": 447,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-19T14:00:00Z",
+    "tempC": 21.1,
+    "humidity": 0.63,
+    "pressure": 1039,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 9.9,
+      "deg": 335
+    }
+  },
+  {
+    "id": 448,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-19T15:00:00Z",
+    "tempC": 11.6,
+    "humidity": 0.37,
+    "pressure": 1012,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 9.6,
+      "deg": 9
+    }
+  },
+  {
+    "id": 449,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-19T16:00:00Z",
+    "tempC": 34.0,
+    "humidity": 0.3,
+    "pressure": 1038,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.1,
+      "deg": 158
+    }
+  },
+  {
+    "id": 450,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T17:00:00Z",
+    "tempC": 11.0,
+    "humidity": 0.46,
+    "pressure": 1030,
+    "conditions": "clear",
+    "wind": {
+      "speed": 14.8,
+      "deg": 359
+    }
+  },
+  {
+    "id": 451,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-19T18:00:00Z",
+    "tempC": 32.5,
+    "humidity": 0.33,
+    "pressure": 1006,
+    "conditions": "storm",
+    "wind": {
+      "speed": 6.3,
+      "deg": 239
+    }
+  },
+  {
+    "id": 452,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-19T19:00:00Z",
+    "tempC": 34.2,
+    "humidity": 0.41,
+    "pressure": 1006,
+    "conditions": "storm",
+    "wind": {
+      "speed": 3.4,
+      "deg": 157
+    }
+  },
+  {
+    "id": 453,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T20:00:00Z",
+    "tempC": 15.2,
+    "humidity": 0.81,
+    "pressure": 1038,
+    "conditions": "snow",
+    "wind": {
+      "speed": 1.9,
+      "deg": 242
+    }
+  },
+  {
+    "id": 454,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-19T21:00:00Z",
+    "tempC": 27.2,
+    "humidity": 0.79,
+    "pressure": 1000,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.8,
+      "deg": 158
+    }
+  },
+  {
+    "id": 455,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-19T22:00:00Z",
+    "tempC": 23.2,
+    "humidity": 0.79,
+    "pressure": 1005,
+    "conditions": "clear",
+    "wind": {
+      "speed": 1.7,
+      "deg": 359
+    }
+  },
+  {
+    "id": 456,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-19T23:00:00Z",
+    "tempC": 10.1,
+    "humidity": 0.44,
+    "pressure": 1025,
+    "conditions": "clear",
+    "wind": {
+      "speed": 6.9,
+      "deg": 232
+    }
+  },
+  {
+    "id": 457,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T00:00:00Z",
+    "tempC": 17.8,
+    "humidity": 0.46,
+    "pressure": 1025,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.5,
+      "deg": 109
+    }
+  },
+  {
+    "id": 458,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-20T01:00:00Z",
+    "tempC": 13.2,
+    "humidity": 0.37,
+    "pressure": 1019,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.0,
+      "deg": 115
+    }
+  },
+  {
+    "id": 459,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-20T02:00:00Z",
+    "tempC": 5.2,
+    "humidity": 0.84,
+    "pressure": 1001,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.4,
+      "deg": 133
+    }
+  },
+  {
+    "id": 460,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-20T03:00:00Z",
+    "tempC": 19.6,
+    "humidity": 0.38,
+    "pressure": 981,
+    "conditions": "storm",
+    "wind": {
+      "speed": 10.2,
+      "deg": 322
+    }
+  },
+  {
+    "id": 461,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-20T04:00:00Z",
+    "tempC": 17.1,
+    "humidity": 0.59,
+    "pressure": 1026,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 8.6,
+      "deg": 222
+    }
+  },
+  {
+    "id": 462,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T05:00:00Z",
+    "tempC": 9.4,
+    "humidity": 0.73,
+    "pressure": 1013,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.5,
+      "deg": 157
+    }
+  },
+  {
+    "id": 463,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T06:00:00Z",
+    "tempC": 19.5,
+    "humidity": 0.39,
+    "pressure": 1025,
+    "conditions": "snow",
+    "wind": {
+      "speed": 4.0,
+      "deg": 180
+    }
+  },
+  {
+    "id": 464,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-20T07:00:00Z",
+    "tempC": 9.0,
+    "humidity": 0.48,
+    "pressure": 1025,
+    "conditions": "storm",
+    "wind": {
+      "speed": 12.0,
+      "deg": 134
+    }
+  },
+  {
+    "id": 465,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T08:00:00Z",
+    "tempC": 24.7,
+    "humidity": 0.6,
+    "pressure": 1008,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 0.7,
+      "deg": 253
+    }
+  },
+  {
+    "id": 466,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-20T09:00:00Z",
+    "tempC": 9.9,
+    "humidity": 0.32,
+    "pressure": 1015,
+    "conditions": "rain",
+    "wind": {
+      "speed": 8.5,
+      "deg": 300
+    }
+  },
+  {
+    "id": 467,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-20T10:00:00Z",
+    "tempC": 33.2,
+    "humidity": 0.6,
+    "pressure": 1018,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 14.4,
+      "deg": 52
+    }
+  },
+  {
+    "id": 468,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T11:00:00Z",
+    "tempC": 11.4,
+    "humidity": 0.44,
+    "pressure": 999,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 15.0,
+      "deg": 32
+    }
+  },
+  {
+    "id": 469,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-20T12:00:00Z",
+    "tempC": 5.2,
+    "humidity": 0.6,
+    "pressure": 1017,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.9,
+      "deg": 293
+    }
+  },
+  {
+    "id": 470,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-20T13:00:00Z",
+    "tempC": 7.1,
+    "humidity": 0.51,
+    "pressure": 1039,
+    "conditions": "rain",
+    "wind": {
+      "speed": 13.0,
+      "deg": 248
+    }
+  },
+  {
+    "id": 471,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-20T14:00:00Z",
+    "tempC": 16.3,
+    "humidity": 0.74,
+    "pressure": 993,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.5,
+      "deg": 8
+    }
+  },
+  {
+    "id": 472,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T15:00:00Z",
+    "tempC": 11.2,
+    "humidity": 0.81,
+    "pressure": 1009,
+    "conditions": "storm",
+    "wind": {
+      "speed": 7.7,
+      "deg": 279
+    }
+  },
+  {
+    "id": 473,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-20T16:00:00Z",
+    "tempC": 14.0,
+    "humidity": 0.74,
+    "pressure": 1003,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.3,
+      "deg": 217
+    }
+  },
+  {
+    "id": 474,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-20T17:00:00Z",
+    "tempC": 7.6,
+    "humidity": 0.88,
+    "pressure": 1001,
+    "conditions": "snow",
+    "wind": {
+      "speed": 15.0,
+      "deg": 119
+    }
+  },
+  {
+    "id": 475,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-20T18:00:00Z",
+    "tempC": 17.0,
+    "humidity": 0.55,
+    "pressure": 1014,
+    "conditions": "clear",
+    "wind": {
+      "speed": 0.9,
+      "deg": 57
+    }
+  },
+  {
+    "id": 476,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T19:00:00Z",
+    "tempC": 10.5,
+    "humidity": 0.68,
+    "pressure": 993,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.3,
+      "deg": 61
+    }
+  },
+  {
+    "id": 477,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-20T20:00:00Z",
+    "tempC": 28.0,
+    "humidity": 0.84,
+    "pressure": 1010,
+    "conditions": "storm",
+    "wind": {
+      "speed": 5.9,
+      "deg": 67
+    }
+  },
+  {
+    "id": 478,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-20T21:00:00Z",
+    "tempC": 31.9,
+    "humidity": 0.62,
+    "pressure": 1026,
+    "conditions": "storm",
+    "wind": {
+      "speed": 4.5,
+      "deg": 331
+    }
+  },
+  {
+    "id": 479,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-20T22:00:00Z",
+    "tempC": 8.2,
+    "humidity": 0.4,
+    "pressure": 1024,
+    "conditions": "rain",
+    "wind": {
+      "speed": 3.9,
+      "deg": 281
+    }
+  },
+  {
+    "id": 480,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-20T23:00:00Z",
+    "tempC": 14.4,
+    "humidity": 0.64,
+    "pressure": 981,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 13.4,
+      "deg": 255
+    }
+  },
+  {
+    "id": 481,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T00:00:00Z",
+    "tempC": 13.6,
+    "humidity": 0.79,
+    "pressure": 1038,
+    "conditions": "clear",
+    "wind": {
+      "speed": 12.2,
+      "deg": 152
+    }
+  },
+  {
+    "id": 482,
+    "city": "London",
+    "country": "UK",
+    "timestamp": "2025-10-21T01:00:00Z",
+    "tempC": 17.9,
+    "humidity": 0.83,
+    "pressure": 1031,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 11.7,
+      "deg": 4
+    }
+  },
+  {
+    "id": 483,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-21T02:00:00Z",
+    "tempC": 26.3,
+    "humidity": 0.77,
+    "pressure": 1025,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.3,
+      "deg": 327
+    }
+  },
+  {
+    "id": 484,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-21T03:00:00Z",
+    "tempC": 29.8,
+    "humidity": 0.82,
+    "pressure": 984,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.7,
+      "deg": 57
+    }
+  },
+  {
+    "id": 485,
+    "city": "Paris",
+    "country": "France",
+    "timestamp": "2025-10-21T04:00:00Z",
+    "tempC": 32.9,
+    "humidity": 0.4,
+    "pressure": 1021,
+    "conditions": "snow",
+    "wind": {
+      "speed": 7.8,
+      "deg": 305
+    }
+  },
+  {
+    "id": 486,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T05:00:00Z",
+    "tempC": 20.6,
+    "humidity": 0.89,
+    "pressure": 1022,
+    "conditions": "snow",
+    "wind": {
+      "speed": 6.2,
+      "deg": 218
+    }
+  },
+  {
+    "id": 487,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-21T06:00:00Z",
+    "tempC": 22.0,
+    "humidity": 0.56,
+    "pressure": 1012,
+    "conditions": "storm",
+    "wind": {
+      "speed": 8.3,
+      "deg": 158
+    }
+  },
+  {
+    "id": 488,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-21T07:00:00Z",
+    "tempC": 29.1,
+    "humidity": 0.84,
+    "pressure": 1013,
+    "conditions": "clear",
+    "wind": {
+      "speed": 12.9,
+      "deg": 181
+    }
+  },
+  {
+    "id": 489,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T08:00:00Z",
+    "tempC": 24.3,
+    "humidity": 0.31,
+    "pressure": 1005,
+    "conditions": "rain",
+    "wind": {
+      "speed": 11.7,
+      "deg": 269
+    }
+  },
+  {
+    "id": 490,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-21T09:00:00Z",
+    "tempC": 5.0,
+    "humidity": 0.3,
+    "pressure": 1022,
+    "conditions": "clear",
+    "wind": {
+      "speed": 8.8,
+      "deg": 37
+    }
+  },
+  {
+    "id": 491,
+    "city": "Madrid",
+    "country": "Spain",
+    "timestamp": "2025-10-21T10:00:00Z",
+    "tempC": 12.0,
+    "humidity": 0.75,
+    "pressure": 995,
+    "conditions": "storm",
+    "wind": {
+      "speed": 1.5,
+      "deg": 93
+    }
+  },
+  {
+    "id": 492,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-21T11:00:00Z",
+    "tempC": 9.3,
+    "humidity": 0.55,
+    "pressure": 1029,
+    "conditions": "clouds",
+    "wind": {
+      "speed": 2.7,
+      "deg": 322
+    }
+  },
+  {
+    "id": 493,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T12:00:00Z",
+    "tempC": 28.6,
+    "humidity": 0.86,
+    "pressure": 992,
+    "conditions": "storm",
+    "wind": {
+      "speed": 13.7,
+      "deg": 124
+    }
+  },
+  {
+    "id": 494,
+    "city": "Tokyo",
+    "country": "Japan",
+    "timestamp": "2025-10-21T13:00:00Z",
+    "tempC": 32.7,
+    "humidity": 0.8,
+    "pressure": 1018,
+    "conditions": "snow",
+    "wind": {
+      "speed": 8.7,
+      "deg": 321
+    }
+  },
+  {
+    "id": 495,
+    "city": "Rabat",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T14:00:00Z",
+    "tempC": 24.4,
+    "humidity": 0.64,
+    "pressure": 1010,
+    "conditions": "rain",
+    "wind": {
+      "speed": 9.3,
+      "deg": 306
+    }
+  },
+  {
+    "id": 496,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T15:00:00Z",
+    "tempC": 13.6,
+    "humidity": 0.62,
+    "pressure": 984,
+    "conditions": "rain",
+    "wind": {
+      "speed": 6.9,
+      "deg": 253
+    }
+  },
+  {
+    "id": 497,
+    "city": "New York",
+    "country": "USA",
+    "timestamp": "2025-10-21T16:00:00Z",
+    "tempC": 22.4,
+    "humidity": 0.59,
+    "pressure": 1007,
+    "conditions": "clear",
+    "wind": {
+      "speed": 13.2,
+      "deg": 147
+    }
+  },
+  {
+    "id": 498,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T17:00:00Z",
+    "tempC": 16.8,
+    "humidity": 0.48,
+    "pressure": 1014,
+    "conditions": "rain",
+    "wind": {
+      "speed": 14.0,
+      "deg": 176
+    }
+  },
+  {
+    "id": 499,
+    "city": "Casablanca",
+    "country": "Morocco",
+    "timestamp": "2025-10-21T18:00:00Z",
+    "tempC": 11.2,
+    "humidity": 0.6,
+    "pressure": 1004,
+    "conditions": "storm",
+    "wind": {
+      "speed": 14.5,
+      "deg": 273
+    }
+  },
+  {
+    "id": 500,
+    "city": "Berlin",
+    "country": "Germany",
+    "timestamp": "2025-10-21T19:00:00Z",
+    "tempC": 33.2,
+    "humidity": 0.7,
+    "pressure": 1023,
+    "conditions": "rain",
+    "wind": {
+      "speed": 5.3,
+      "deg": 254
+    }
+  }
+]
