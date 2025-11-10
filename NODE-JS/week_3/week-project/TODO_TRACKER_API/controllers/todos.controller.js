@@ -85,15 +85,21 @@ async function getTodosByIdController(req, res, next) {
 
 async function createTodosController(req, res, next) {
   try {
-    validateData(req.body, res, async () => {
-      const newTodo = await createTodosService(req.body, req.user.id);
+    const newTodo = await createTodosService(req.body, req.user.id);
       res.status(201).json({
         status: "success",
         message: "Todo created successfully",
         data: newTodo,
       });
-    });
   } catch (error) {
+    if (error.code === 11000) { 
+      return res.status(400).json({
+        status: "error",
+        message: "Chaque utilisateur doit avoir des titres de tâches uniques.",
+        code: 400,
+        timestamp: new Date().toISOString(),
+      });
+    }
     next(error);
   }
 }
@@ -139,6 +145,14 @@ async function updateTodosController(req, res, next) {
       });
     }
   } catch (error) {
+    if (error.code === 11000) { 
+      return res.status(400).json({
+        status: "error",
+        message: "Chaque utilisateur doit avoir des titres de tâches uniques.",
+        code: 400,
+        timestamp: new Date().toISOString(),
+      });
+    }
     next(error);
   }
 }
