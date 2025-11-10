@@ -33,5 +33,6 @@ const todoSchema = new mongoose.Schema(
 
 todoSchema.index({ user: 1, completed: 1 });
 todoSchema.index({ user: 1, priority: 1 });
+todoSchema.index({title: 1, user: 1},{unique: true});
 
 module.exports = mongoose.model("Todo", todoSchema);
