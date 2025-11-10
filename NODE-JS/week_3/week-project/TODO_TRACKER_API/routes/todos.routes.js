@@ -8,7 +8,7 @@ const {
   toggleTodoController,
 } = require("../controllers/todos.controller.js");
 const { authenticate } = require("../middlewares/auth");
-
+const {validateTodo,validateTodoPatch} = require ("../middlewares/validation.middleware.js");
 const router = express.Router();
 
 // Appliquer l'authentification à toutes les routes todos
@@ -21,10 +21,10 @@ router.get("/", getAllTodosController);
 router.get("/:id", getTodosByIdController);
 
 // POST /api/todos - Create a new todo
-router.post("/", createTodosController);
+router.post("/", validateTodo,createTodosController);
 
 // PATCH /api/todos/:id - Update a todo
-router.patch("/:id", updateTodosController);
+router.patch("/:id",validateTodoPatch, updateTodosController);
 
 // PATCH /api/todos/:id/toggle - Toggle todo completion status
 router.patch("/:id/toggle", toggleTodoController);
