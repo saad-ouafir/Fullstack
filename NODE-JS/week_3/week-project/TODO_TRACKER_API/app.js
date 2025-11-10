@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
 
+const helmet=require("helmet");
+const cors=require("cors");
+const rateLimit=require("express-rate-limit");
+
 const Logger = require("./middlewares/logger");
 const errorHandler = require("./middlewares/errorHandler");
 
@@ -8,11 +12,26 @@ const todosRouter = require("./routes/todos.routes");
 const authRouter = require("./routes/auth.routes");
 const config = require("./config/config");
 
+//sécurité API
+app.use(helmet());
+app.use(cors({
+    origin:["http://localhost:3000"],
+    methods:["GET", "POST", "PUT", "DELETE"],
+    credentials:true
+}));
+const limiter=rateLimit({windowMs: 15 *60 *1000, max: 100});
+app.use(limiter);
+
+
+
+
 const connectToDB = require("./config/database");
 const MONGO_URL = config.MONGO_URL;
 connectToDB(MONGO_URL);
 
-Logger(app);
+
+
+app.use(Logger());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -39,7 +58,7 @@ app.use((req, res) => {
   });
 });
 
-app.use(Logger);
+
 app.use(errorHandler);
 
 module.exports = app;
