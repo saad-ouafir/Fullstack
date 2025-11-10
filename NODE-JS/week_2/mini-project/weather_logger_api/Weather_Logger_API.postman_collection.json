@@ -1,0 +1,969 @@
+{
+  "info": {
+    "name": "Weather Logger API",
+    "description": "Complete collection for testing Weather Logger API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Get Health Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            },
+            "description": "Check if the API server is running"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Weather Observations",
+      "item": [
+        {
+          "name": "Get All Weather Observations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Get paginated list of weather observations"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by City",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?city=Casablanca&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Casablanca"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Filter weather observations by city"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by Country",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?country=Morocco&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "country",
+                  "value": "Morocco"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Filter weather observations by country"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by Date Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Filter weather observations by date range"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by Conditions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?conditions=rain,snow&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "conditions",
+                  "value": "rain,snow"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Filter weather observations by weather conditions (comma-separated)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by Temperature Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?minTemp=15&maxTemp=30&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "minTemp",
+                  "value": "15"
+                },
+                {
+                  "key": "maxTemp",
+                  "value": "30"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Filter weather observations by temperature range (Celsius)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather with Sorting",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?sort=tempC:desc,humidity:asc&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "sort",
+                  "value": "tempC:desc,humidity:asc"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Sort weather observations by multiple fields"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather in Imperial Units",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?units=imperial&page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "units",
+                  "value": "imperial"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Get weather observations with temperature in Fahrenheit"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather Combined Filters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?city=Casablanca&from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z&conditions=rain&minTemp=10&maxTemp=25&sort=timestamp:desc&page=1&limit=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Casablanca"
+                },
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                },
+                {
+                  "key": "conditions",
+                  "value": "rain"
+                },
+                {
+                  "key": "minTemp",
+                  "value": "10"
+                },
+                {
+                  "key": "maxTemp",
+                  "value": "25"
+                },
+                {
+                  "key": "sort",
+                  "value": "timestamp:desc"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "5"
+                }
+              ]
+            },
+            "description": "Combine multiple filters for advanced queries"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather", "1"]
+            },
+            "description": "Get a specific weather observation by ID"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Weather by ID (Imperial)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather/1?units=imperial",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather", "1"],
+              "query": [
+                {
+                  "key": "units",
+                  "value": "imperial"
+                }
+              ]
+            },
+            "description": "Get weather observation by ID with imperial units"
+          },
+          "response": []
+        },
+        {
+          "name": "Stream Weather Observations (NDJSON)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather/stream",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather", "stream"]
+            },
+            "description": "Stream all observations as newline-delimited JSON"
+          },
+          "response": []
+        },
+        {
+          "name": "Stream Weather by City",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather/stream?city=Tokyo",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather", "stream"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Tokyo"
+                }
+              ]
+            },
+            "description": "Stream filtered observations as NDJSON"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Statistics & Analytics",
+      "item": [
+        {
+          "name": "Get City Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/city?city=Casablanca",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "city"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Casablanca"
+                }
+              ]
+            },
+            "description": "Get aggregated statistics for a specific city"
+          },
+          "response": []
+        },
+        {
+          "name": "Get City Stats with Date Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/city?city=Paris&from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "city"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Paris"
+                },
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                }
+              ]
+            },
+            "description": "Get city statistics for a specific date range"
+          },
+          "response": []
+        },
+        {
+          "name": "Get City Stats (Imperial)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/city?city=New York&units=imperial",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "city"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "New York"
+                },
+                {
+                  "key": "units",
+                  "value": "imperial"
+                }
+              ]
+            },
+            "description": "Get city statistics in imperial units"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities Ranking by Avg Temp",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=temp.avg&top=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "temp.avg"
+                },
+                {
+                  "key": "top",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Rank cities by average temperature (top 10)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities Ranking by Max Temp",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=temp.max&top=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "temp.max"
+                },
+                {
+                  "key": "top",
+                  "value": "5"
+                }
+              ]
+            },
+            "description": "Rank cities by maximum temperature (top 5)"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities Ranking by Min Temp",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=temp.min&top=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "temp.min"
+                },
+                {
+                  "key": "top",
+                  "value": "5"
+                }
+              ]
+            },
+            "description": "Rank cities by minimum temperature"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities Ranking by Observations Count",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=count&top=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "count"
+                },
+                {
+                  "key": "top",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Rank cities by number of observations"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cities Ranking with Date Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=temp.avg&top=5&from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "temp.avg"
+                },
+                {
+                  "key": "top",
+                  "value": "5"
+                },
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                }
+              ]
+            },
+            "description": "Rank cities for a specific date range"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Global Summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/summary",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "summary"]
+            },
+            "description": "Get overall statistics summary across all observations"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Summary with Date Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/summary?from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "summary"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                }
+              ]
+            },
+            "description": "Get summary statistics for a specific date range"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Summary (Imperial)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/summary?units=imperial",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "summary"],
+              "query": [
+                {
+                  "key": "units",
+                  "value": "imperial"
+                }
+              ]
+            },
+            "description": "Get global summary in imperial units"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Daily Statistics",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/daily?city=Tokyo",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "daily"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Tokyo"
+                }
+              ]
+            },
+            "description": "Get daily aggregated statistics for a city"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Daily Stats with Date Range",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/daily?city=London&from=2025-10-01T00:00:00Z&to=2025-10-15T23:59:59Z",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "daily"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "London"
+                },
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-15T23:59:59Z"
+                }
+              ]
+            },
+            "description": "Get daily statistics for a specific date range"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Daily Stats (Imperial)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/daily?city=Berlin&units=imperial",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "daily"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Berlin"
+                },
+                {
+                  "key": "units",
+                  "value": "imperial"
+                }
+              ]
+            },
+            "description": "Get daily statistics in imperial units"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "item": [
+        {
+          "name": "Export All Data (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"]
+            },
+            "description": "Export all weather data as compressed GZIP file with HMAC signature"
+          },
+          "response": []
+        },
+        {
+          "name": "Export by City (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz?city=Paris",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "Paris"
+                }
+              ]
+            },
+            "description": "Export filtered data by city as GZIP"
+          },
+          "response": []
+        },
+        {
+          "name": "Export by Country (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz?country=Japan",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"],
+              "query": [
+                {
+                  "key": "country",
+                  "value": "Japan"
+                }
+              ]
+            },
+            "description": "Export filtered data by country as GZIP"
+          },
+          "response": []
+        },
+        {
+          "name": "Export with Date Range (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz?from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"],
+              "query": [
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                }
+              ]
+            },
+            "description": "Export data for a specific date range as GZIP"
+          },
+          "response": []
+        },
+        {
+          "name": "Export by Conditions (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz?conditions=rain,snow",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"],
+              "query": [
+                {
+                  "key": "conditions",
+                  "value": "rain,snow"
+                }
+              ]
+            },
+            "description": "Export data filtered by weather conditions as GZIP"
+          },
+          "response": []
+        },
+        {
+          "name": "Export with Multiple Filters (GZIP)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export.gz?city=London&from=2025-10-01T00:00:00Z&to=2025-10-31T23:59:59Z&conditions=rain",
+              "host": ["{{baseUrl}}"],
+              "path": ["export.gz"],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "London"
+                },
+                {
+                  "key": "from",
+                  "value": "2025-10-01T00:00:00Z"
+                },
+                {
+                  "key": "to",
+                  "value": "2025-10-31T23:59:59Z"
+                },
+                {
+                  "key": "conditions",
+                  "value": "rain"
+                }
+              ]
+            },
+            "description": "Export with combined filters as GZIP"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Error Cases",
+      "item": [
+        {
+          "name": "404 - Route Not Found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/invalid-route",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "invalid-route"]
+            },
+            "description": "Test 404 error response"
+          },
+          "response": []
+        },
+        {
+          "name": "400 - Invalid Pagination",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?page=0&limit=1000",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "1000"
+                }
+              ]
+            },
+            "description": "Test invalid pagination parameters"
+          },
+          "response": []
+        },
+        {
+          "name": "400 - Invalid Conditions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather?conditions=invalid",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather"],
+              "query": [
+                {
+                  "key": "conditions",
+                  "value": "invalid"
+                }
+              ]
+            },
+            "description": "Test invalid weather condition"
+          },
+          "response": []
+        },
+        {
+          "name": "400 - Missing Required City Parameter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/city",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "city"]
+            },
+            "description": "Test missing required parameter error"
+          },
+          "response": []
+        },
+        {
+          "name": "404 - Weather ID Not Found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/weather/999999",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "weather", "999999"]
+            },
+            "description": "Test observation not found error"
+          },
+          "response": []
+        },
+        {
+          "name": "400 - Invalid Metric",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/stats/cities?metric=invalid",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "stats", "cities"],
+              "query": [
+                {
+                  "key": "metric",
+                  "value": "invalid"
+                }
+              ]
+            },
+            "description": "Test invalid metric parameter"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
