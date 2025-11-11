@@ -12,41 +12,41 @@ const {
   ALLOWED_UPDATE_FIELDS,
 } = require("../config/constants");
 
-function validateData(data, res, next) {
-  const errors = [];
+// function validateData(data, res, next) {
+//   const errors = [];
 
-  // Validate title
-  if (!data.title || data.title.trim() === "") {
-    errors.push("Title is required and cannot be empty");
-  }
+//   // Validate title
+//   if (!data.title || data.title.trim() === "") {
+//     errors.push("Title is required and cannot be empty");
+//   }
 
-  // Validate priority (optional, but must be valid if provided)
-  if (data.priority && !PRIORITIES.includes(data.priority)) {
-    errors.push(`Priority must be one of: ${PRIORITIES.join(", ")}`);
-  }
+//   // Validate priority (optional, but must be valid if provided)
+//   if (data.priority && !PRIORITIES.includes(data.priority)) {
+//     errors.push(`Priority must be one of: ${PRIORITIES.join(", ")}`);
+//   }
 
-  // Validate dueDate (optional, but must be valid format if provided)
-  if (data.dueDate && !DATE_REGEX.test(data.dueDate)) {
-    errors.push("Due date must be in YYYY-MM-DD format");
-  }
+//   // Validate dueDate (optional, but must be valid format if provided)
+//   if (data.dueDate && !DATE_REGEX.test(data.dueDate)) {
+//     errors.push("Due date must be in YYYY-MM-DD format");
+//   }
 
-  // Validate completed (optional, but must be boolean if provided)
-  if (data.completed !== undefined && typeof data.completed !== "boolean") {
-    errors.push("Completed must be a boolean value");
-  }
+//   // Validate completed (optional, but must be boolean if provided)
+//   if (data.completed !== undefined && typeof data.completed !== "boolean") {
+//     errors.push("Completed must be a boolean value");
+//   }
 
-  if (errors.length > 0) {
-    return res.status(400).json({
-      status: "error",
-      message: "Validation failed",
-      errors: errors,
-      code: 400,
-      timestamp: new Date().toISOString(),
-    });
-  }
+//   if (errors.length > 0) {
+//     return res.status(400).json({
+//       status: "error",
+//       message: "Validation failed",
+//       errors: errors,
+//       code: 400,
+//       timestamp: new Date().toISOString(),
+//     });
+//   }
 
-  next();
-}
+//   next();
+// }
 
 async function getAllTodosController(req, res, next) {
   try {
@@ -86,13 +86,13 @@ async function getTodosByIdController(req, res, next) {
 async function createTodosController(req, res, next) {
   try {
     const newTodo = await createTodosService(req.body, req.user.id);
-      res.status(201).json({
-        status: "success",
-        message: "Todo created successfully",
-        data: newTodo,
-      });
+    res.status(201).json({
+      status: "success",
+      message: "Todo created successfully",
+      data: newTodo,
+    });
   } catch (error) {
-    if (error.code === 11000) { 
+    if (error.code === 11000) {
       return res.status(400).json({
         status: "error",
         message: "Chaque utilisateur doit avoir des titres de tâches uniques.",
@@ -108,7 +108,7 @@ async function updateTodosController(req, res, next) {
   try {
     // For updates, allow partial data (no title required)
     const updateData = {};
-    
+
     for (const field of ALLOWED_UPDATE_FIELDS) {
       if (req.body[field] !== undefined) {
         updateData[field] = req.body[field];
@@ -145,7 +145,7 @@ async function updateTodosController(req, res, next) {
       });
     }
   } catch (error) {
-    if (error.code === 11000) { 
+    if (error.code === 11000) {
       return res.status(400).json({
         status: "error",
         message: "Chaque utilisateur doit avoir des titres de tâches uniques.",
