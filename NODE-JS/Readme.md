@@ -3,5 +3,5 @@
 - Achraf Tabchi
 - Asma Hamma
 
-> [!info]
+>[!NOTE]
 > Here to learn & grow together
